@@ -25,8 +25,9 @@ ___
 - [ ] Crear el repositorio del proyecto y agregar colaboradores
 [Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
-- [ ] Archivo README.md con
-*Definir la temática del Market Place
+- [ ] **Archivo README.md**
+**Definir la temática del Market Place**
+
 *Listado de al menos 5 referentes
     * [dafiti](www.dafiti.com.ar)
     * [dexter](https://www.dexter.com.ar)
@@ -35,8 +36,9 @@ ___
     * [farabella](https://www.falabella.com.ar)
     * [paris](https://www.paris.cl/)
 ___
-- [ ] Crear un wireframe y un boceto del sitio
-    Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:
+- [ ] **Crear un wireframe y un boceto del sitio**
+        **Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:**
+        
 - [ ] Home
 - [ ] Detalle de producto
 - [ ] Carrito de compras
