@@ -37,7 +37,7 @@ ___
 * [paris](https://www.paris.cl/)
 ___
 ## **Crear un wireframe y un boceto del sitio** ##
-        ###**Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:**
+###**Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:**
         
 - [ ] Home
 - [ ] Detalle de producto
