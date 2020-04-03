@@ -38,11 +38,11 @@ ___
 - [ ] Crear un wireframe y un boceto del sitio
     Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:
 - [ ] Home
-- [ ]Detalle de producto
-- [ ]Carrito de compras
-- [ ]Formulario de registro
-- [ ]Formulario de carga de producto (para el administrador)
-- [ ]Entregable (Opcional): Boceto o diseño del sitio incluyendo.
-- [ ]Logo
-- [ ]Colores
-- [ ]Tipografías
+- [ ] Detalle de producto
+- [ ] Carrito de compras
+- [ ] Formulario de registro
+- [ ] Formulario de carga de producto (para el administrador)
+- [ ] Entregable (Opcional): Boceto o diseño del sitio incluyendo.
+- [ ] Logo
+- [ ] Colores
+- [ ] Tipografías
