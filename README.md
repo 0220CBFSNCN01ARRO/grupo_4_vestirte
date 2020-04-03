@@ -23,7 +23,7 @@ ___
 ## *"Wireframe + Boceto"* 
 
 - [ ] Crear el repositorio del proyecto y agregar colaboradores
-(Repositorio)[https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git]
+[Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
 - [ ] Archivo README.md con
 *Definir la temática del Market Place
