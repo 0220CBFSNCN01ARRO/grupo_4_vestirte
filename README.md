@@ -28,11 +28,11 @@ ___
 - [ ] Archivo README.md con
 *Definir la temática del Market Place
 *Listado de al menos 5 referentes
-    - [] [dafiti](www.dafiti.com.ar)
-    - [] [dexter](https://www.dexter.com.ar)
-    - [] [modatex](https://www.modatex.com.ar)
-    - [] [lacoste](https://www.lacoste.com/ar)
-    - [] [farabella](https://www.falabella.com.ar)
+    - [ ] [dafiti](www.dafiti.com.ar)
+    - [ ] [dexter](https://www.dexter.com.ar)
+    - [ ] [modatex](https://www.modatex.com.ar)
+    - [ ] [lacoste](https://www.lacoste.com/ar)
+    - [ ] [farabella](https://www.falabella.com.ar)
 ___
 - [ ] Crear un wireframe y un boceto del sitio
     Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:
