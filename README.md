@@ -22,10 +22,10 @@ Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ági
 ___
 ## *"Wireframe + Boceto"* 
 
-- [ ] Crear el repositorio del proyecto y agregar colaboradores
+- [X] Crear el repositorio del proyecto y agregar colaboradores
 [Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
-- [ ] **Archivo README.md**
+- [X] **Archivo README.md**
 ### **Definir la temática del Market Place** ###
 
 * Listado de al menos 5 referentes
