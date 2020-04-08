@@ -39,14 +39,14 @@ ___
 ## **Crear un wireframe y un boceto del sitio** ##
 ### **Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:** ###
         
-- [Ok] Home
-- [Ok] Detalle de producto
-- [Ok] Carrito de compras
-- [Ok] Formulario de registro
-- [  ] Formulario de carga de producto (para el administrador)
-- [OK] Entregable (Opcional): Boceto o diseño del sitio incluyendo.
-- [OK] Logo
-- [OK] Colores
-- [OK] Tipografías
+- [x] Home
+- [x] Detalle de producto
+- [x] Carrito de compras
+- [x] Formulario de registro
+- [ ] Formulario de carga de producto (para el administrador)
+- [x] Entregable (Opcional): Boceto o diseño del sitio incluyendo.
+- [x] Logo
+- [x] Colores
+- [x] Tipografías
 
 * [Link del prototipo funcional en alta definicion](https://xd.adobe.com/view/f9a30075-a1b7-4b1d-5f66-89cd5c67ec51-8f92/)
