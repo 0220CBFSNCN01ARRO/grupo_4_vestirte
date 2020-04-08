@@ -2,9 +2,9 @@
 ## *"Desarrollador web full stack"*
 # Grupo 4 **"Vestirte.com"**
 ___
-_introduccion:_
+_Descripción del Proyecto:_
 **FullStack**
-* Desarrollo de un ecommerce, utilizando HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
+* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, utilizando HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
 
 * El diseño y desarrollo del FrontEnd toma las buenas prácticas de hacer sitios
 responsive.
@@ -22,10 +22,10 @@ Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ági
 ___
 ## *"Wireframe + Boceto"* 
 
-- [ ] Crear el repositorio del proyecto y agregar colaboradores
+- [X] Crear el repositorio del proyecto y agregar colaboradores
 [Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
-- [ ] **Archivo README.md**
+- [X] **Archivo README.md**
 ### **Definir la temática del Market Place** ###
 
 * Listado de al menos 5 referentes
