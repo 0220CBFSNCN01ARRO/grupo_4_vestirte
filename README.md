@@ -43,7 +43,7 @@ ___
 - [x] Detalle de producto
 - [x] Carrito de compras
 - [x] Formulario de registro
-- [ ] Formulario de carga de producto (para el administrador)
+- [x] Formulario de carga de producto (para el administrador)
 - [x] Entregable (Opcional): Boceto o diseño del sitio incluyendo.
 - [x] Logo
 - [x] Colores
