@@ -8,11 +8,11 @@ _Descripción del Proyecto:_
 
 * El diseño y desarrollo del FrontEnd toma las buenas prácticas de hacer sitios
 responsive.
-* El Backend y la API REST fue desarrollado en PHP, con Laravel como framework
+* El Backend y la API REST fue desarrollado en ???, con ???? como framework
 de apoyo utilizando buenas prácticas MVC.
 
-* Diseñamos y utilizamos un UML para el armado y organización de la base de
-datos relacional con la que luego interactuamos a través de MySQL.
+* Diseñamos y utilizamos un ???? para el armado y organización de la base de
+datos relacional con la que luego interactuamos a través de ????.
 
 Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ágiles
 (Scrum), y se gestionó utilizando Git para control de versiones, en un repositorio PUBLICO de trabajo colaborativo y organizado.
