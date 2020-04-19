@@ -45,8 +45,10 @@ ___
 - [x] Formulario de registro
 - [x] Formulario de carga de producto (para el administrador)
 - [x] Entregable (Opcional): Boceto o diseño del sitio incluyendo.
-- [x] Logo
-- [x] Colores
-- [x] Tipografías
+- [x] Logo - Se ve en el prototipo. 
+- [x] Colores  (#FF8E0A / #303030 / #232323 / #FBFBFB)
+- [x] Tipografías - Roboto Light - Roboto Regualr - Roboto Bold
 
 * [Link del prototipo funcional en alta definicion](https://xd.adobe.com/view/f9a30075-a1b7-4b1d-5f66-89cd5c67ec51-8f92/)
+
+
