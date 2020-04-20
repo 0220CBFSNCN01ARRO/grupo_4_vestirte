@@ -32,7 +32,8 @@ ___
 ___
 
 - [X] **Crear el repositorio del proyecto y agregar colaboradores**
-[Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)(https://www.google.com/url?sa=i&url=https%3A%2F%2Fonloy.com%2Fgithub-logo&psig=AOvVaw2OA4MhHWPrwgHF-v7VYCDB&ust=1587470825187000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLD1m-f79ugCFQAAAAAdAAAAABAH/ "MIRA NUESTRO REPO")
+[Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
+[REPO](https://www.google.com/url?sa=i&url=https%3A%2F%2Fonloy.com%2Fgithub-logo&psig=AOvVaw2OA4MhHWPrwgHF-v7VYCDB&ust=1587470825187000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLD1m-f79ugCFQAAAAAdAAAAABAH)
 ___ 
 
 - [X] **Archivo README.md**
