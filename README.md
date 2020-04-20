@@ -27,15 +27,21 @@ Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ági
 
 # PRIMER SPRINT
 ___
+
 ## *"Wireframe + Boceto"* 
+___
 
 - [X] Crear el repositorio del proyecto y agregar colaboradores
 [Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
-- [X] **Archivo README.md**
-### **Definir la temática del Market Place** ###
 
-## Listado de al menos 5 referentes ##
+- [X] ** Archivo README.md **
+___
+
+- [X] ## ** Definir la temática del Market Place** ##
+___
+
+- [X] ** Listado de al menos 5 referentes **
 * [Dafiti](www.dafiti.com.ar)
 * [Dexter](https://www.dexter.com.ar)
 * [Modatex](https://www.modatex.com.ar)
@@ -43,6 +49,7 @@ ___
 * [Farabella](https://www.falabella.com.ar)
 * [Paris](https://www.paris.cl/)
 ___
+
 ## **Crear un wireframe y un boceto del sitio** ##
 ### **Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:** ###
         
