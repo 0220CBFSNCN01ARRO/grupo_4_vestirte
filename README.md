@@ -1,6 +1,9 @@
 # PROYECTO INTEGRADOR FINAL
 ## *"Desarrollador web full stack"*
 # Grupo 4 **"Vestirte.com"**
+## INTEGRANTES ##
+ * ORTIZ VICTOR
+ * EDUARDO 
 ___
 _Descripción del Proyecto:_
 **FullStack**
