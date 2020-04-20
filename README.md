@@ -31,7 +31,7 @@ ___
 ## *"Wireframe + Boceto"* 
 ___
 
-- [X] Crear el repositorio del proyecto y agregar colaboradores
+- [X] **Crear el repositorio del proyecto y agregar colaboradores**
 [Repositorio](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 ___ 
 
