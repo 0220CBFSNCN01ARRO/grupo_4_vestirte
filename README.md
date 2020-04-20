@@ -10,7 +10,7 @@ ___
 _Descripción del Proyecto:_
 **FullStack**
 
-* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, lo novedoso de este sitio es que podras tener un asesoramiento por un profesional del estilo, el cual tomara lo que **ERES** y lo convertira en quien **SERAS**.
+* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, lo novedoso de este sitio es que tendras un asesoramiento por un profesional del estilo, el cual tomara lo que **ERES** y lo convertira en quien **SERAS**.
 
 * El Wireframe se realizo en Adobe XD. 
 
