@@ -32,7 +32,10 @@ ___
 ___
 
 - [X] **Crear el repositorio del proyecto y agregar colaboradores**
+
 [![REPOSITORIO](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQg7DA58ba6iLPx6TkVQQKVwVlZq7kKKB15LX0keknmArJxqU2G&usqp=CAU)](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
+
+___
 
 - [X] **Archivo README.md**
 ___
