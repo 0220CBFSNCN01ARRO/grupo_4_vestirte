@@ -4,19 +4,18 @@
 ___
 _Descripción del Proyecto:_
 **FullStack**
-* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, utilizando HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
+* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, el Wireframe se realizo en Adobe XD. 
 
-* El diseño y desarrollo del FrontEnd toma las buenas prácticas de hacer sitios
-responsive.
-* El Backend y la API REST fue desarrollado en ???, con ???? como framework
-de apoyo utilizando buenas prácticas MVC.
+*Se utilizará HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
 
-* Diseñamos y utilizamos un ???? para el armado y organización de la base de
-datos relacional con la que luego interactuamos a través de ????.
+* El diseño y desarrollará del FrontEnd toma las buenas prácticas de hacer sitios responsive.
+
+* El Backend ....
+
+* La base de datos...
 
 Todo el proyecto se desarrolló siguiendo los lineamientos de Metodologías Ágiles
-(Scrum), y se gestionó utilizando Git para control de versiones, en un repositorio PUBLICO de trabajo colaborativo y organizado.
-
+(Scrum), y se gestionó utilizando Git para control de versiones, en un repositorio Privado de trabajo colaborativo y organizado.
 
 # PRIMER SPRINT
 ___
@@ -29,12 +28,12 @@ ___
 ### **Definir la temática del Market Place** ###
 
 * Listado de al menos 5 referentes
-* [dafiti](www.dafiti.com.ar)
-* [dexter](https://www.dexter.com.ar)
-* [modatex](https://www.modatex.com.ar)
-* [lacoste](https://www.lacoste.com/ar)
-* [farabella](https://www.falabella.com.ar)
-* [paris](https://www.paris.cl/)
+* [Dafiti](www.dafiti.com.ar)
+* [Dexter](https://www.dexter.com.ar)
+* [Modatex](https://www.modatex.com.ar)
+* [Lacoste](https://www.lacoste.com/ar)
+* [Farabella](https://www.falabella.com.ar)
+* [Paris](https://www.paris.cl/)
 ___
 ## **Crear un wireframe y un boceto del sitio** ##
 ### **Entregable: Wireframe digital o analógico de las siguientes secciones del sitio:** ###
