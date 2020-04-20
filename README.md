@@ -35,7 +35,7 @@ ___
 - [X] **Archivo README.md**
 ### **Definir la temática del Market Place** ###
 
-* Listado de al menos 5 referentes
+## Listado de al menos 5 referentes ##
 * [Dafiti](www.dafiti.com.ar)
 * [Dexter](https://www.dexter.com.ar)
 * [Modatex](https://www.modatex.com.ar)
