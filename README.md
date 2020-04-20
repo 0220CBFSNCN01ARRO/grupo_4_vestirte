@@ -2,12 +2,17 @@
 ## *"Desarrollador web full stack"*
 # Grupo 4 **"Vestirte.com"**
 ## INTEGRANTES ##
+ * IASI SALOMON
+ * EDUARDO PEREYRA
  * ORTIZ VICTOR
- * EDUARDO 
+ * PABLO CANE
 ___
 _Descripción del Proyecto:_
 **FullStack**
-* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, el Wireframe se realizo en Adobe XD. 
+
+* Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, lo novedoso de este sitio es que podras tener un asesoramiento por un profesional del estilo, el cual tomara lo que **ERES** y lo convertira en quien **SERAS**.
+
+* El Wireframe se realizo en Adobe XD. 
 
 * Se utilizará HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
 
