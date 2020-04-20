@@ -38,7 +38,7 @@ ___
 - [X] **Archivo README.md**
 ___
 
-- [X] ## **Definir la temática del Market Place** ##
+- [X] **Definir la temática del Market Place** 
 ___
 
 - [X] **Listado de al menos 5 referentes**
