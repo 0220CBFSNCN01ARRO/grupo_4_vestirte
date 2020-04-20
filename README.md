@@ -37,7 +37,7 @@ ___
 
 
 <img src="https://www.infobae.com/new-resizer/p7T07mifiP_4o5u_x2UYtv6WlK0=/600x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/09153344/Oxaciano.jpg" alt="drawing" width="200"/>
-<img src="<img src="https://www.infobae.com/new-resizer/p7T07mifiP_4o5u_x2UYtv6WlK0=/600x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/09153344/Oxaciano.jpg" alt="drawing" width="200"/>" alt="drawing" width="200"/>
+<img src="https://avatars0.githubusercontent.com/u/61994490?s=460&v=4" alt="drawing" width="200"/>" 
 ___
 
 - [X] **Archivo README.md**
