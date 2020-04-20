@@ -36,9 +36,9 @@ ___
 [![REPOSITORIO](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQg7DA58ba6iLPx6TkVQQKVwVlZq7kKKB15LX0keknmArJxqU2G&usqp=CAU)](https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte.git)
 
 
-<img src="https://www.infobae.com/new-resizer/p7T07mifiP_4o5u_x2UYtv6WlK0=/600x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/09153344/Oxaciano.jpg" alt="drawing" width="200"/>
-<img src="https://avatars0.githubusercontent.com/u/61994490?s=460&v=4" alt="drawing" width="200"/>" 
+<img src="https://www.infobae.com/new-resizer/p7T07mifiP_4o5u_x2UYtv6WlK0=/600x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/09153344/Oxaciano.jpg" alt="drawing" width="200"/>, <img src="https://avatars0.githubusercontent.com/u/61994490?s=460&v=4" alt="drawing" width="200"/>" 
 ___
+
 
 - [X] **Archivo README.md**
 ___
