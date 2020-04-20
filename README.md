@@ -6,7 +6,7 @@ _Descripción del Proyecto:_
 **FullStack**
 * Desarrollo de un ecommerce de ropa masculina llamada *"VESTIRTE.COM"*, el Wireframe se realizo en Adobe XD. 
 
-*Se utilizará HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
+* Se utilizará HTML para la estructura, CSS para el diseño y Javascript para interacciones y/o validaciones del lado del cliente.
 
 * El diseño y desarrollará del FrontEnd toma las buenas prácticas de hacer sitios responsive.
 
