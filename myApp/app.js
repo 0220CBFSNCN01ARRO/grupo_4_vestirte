@@ -4,12 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('./routes/index');//requerir index.js de la carpeta de rutas
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-// view engine setup
+// le indicamos a express donde encontrar los archivo ejs *VICTOR ORTIZ
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -19,8 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//La peticion get del usuario es ingresada, y aqui express se fija con cual coincide.*ORTIZ VICTOR
+app.use('/', indexRouter);//Si machea con "/" llamar a indexRouter
+app.use('/users', usersRouter);//
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
