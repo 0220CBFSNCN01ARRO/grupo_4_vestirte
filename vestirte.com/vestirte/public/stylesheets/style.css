@@ -5,7 +5,7 @@ background-color: #FBFBFB;
 
 }
 
-/* BARRA DE NAVEGACION (ORTIZ VICTOR) */
+/* BARRA DE NAVEGACION */
 #navbarNavAltMarkup{
     border-bottom: solid 3px #30303018;
     color:#FBFBFB;
@@ -27,6 +27,6 @@ background-color: #FBFBFB;
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+   
 }
-/* BARRA DE NAVEGACION (ORTIZ VICTOR) */
+/* BARRA DE NAVEGACION  */
