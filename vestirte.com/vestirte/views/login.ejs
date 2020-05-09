@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html lang="es"></html>
-<html>
-  <head>
-    <title>LOGIN</title>
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- ICONOS SOCIALES BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- CUSTOM CSS -->
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<!-- HEAD -->
+
+<%-include('./partials/head.ejs')%>
+
+<!-- HEAD -->
+
+    <!-- HEADERS -->
+
+    <body>
     <h1>logo+header</h1>
+    
+    <!-- HEADERS -->
 
      <!-- BARRA DE NAVEGACION  -->
     
-     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 conainer-fluid ">
-      
-      <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
+     <%-include('./partials/nav.ejs')%>
 
-      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-lg-auto">
-          
-          <a class="nav-item nav-link mx-auto" href="/">Home</a>
-          <a class="nav-item nav-link mx-auto " href="productos">Productos</a>
-          <a class="nav-item nav-link mx-auto" href="#">Nosotros</a>
-         
-        </div>
-      </div>
-    </nav>
     <!-- BARRA DE NAVEGACION -->
     <section>
         <h1>LOGIN</h1>
