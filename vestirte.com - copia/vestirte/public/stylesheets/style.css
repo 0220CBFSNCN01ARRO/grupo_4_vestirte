@@ -1,0 +1,106 @@
+
+body{
+font-family: 'Roboto', sans-serif;
+background-color: #FBFBFB;
+
+}
+/* HEADER */
+/* MEDIA QUERIES NAV */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+ 
+    }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .ml-auto, .mx-auto{
+        margin:0 !important;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
+/* HEADER */
+
+
+/* BARRA DE NAVEGACION */
+#navbarNavAltMarkup{
+    border-bottom: solid 3px #30303018;
+    color:#FBFBFB;
+}
+#inputText{
+
+    border: none;
+}
+/* MEDIA QUERIES NAV */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+#navbarNavAltMarkup:last-of-type{
+        padding-right: 4rem;
+        border-top: solid 1px #30303011;
+        font-size: .9rem;
+    }}
+    
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
+/* BARRA DE NAVEGACION  */
+
+
+
+
+/* FOOTER */
+.piePagina{
+    background-color: #232323;
+    padding: 15px;
+    color:#FFFFFF;
+}
+.piePagina h3{
+    font-size: 16px;
+}
+.contacto li{
+    list-style: none;
+    font-size: 12px;
+}
+.politica p{
+    font-size: 12px;
+}
+.suscripcion p{
+    font-size: 12px;
+}
+.suscripcion button{
+    background: #FF8E0A;
+    border: none;
+    margin-left: -5px;
+    color:#FFFFFF;
+    font-size: 16px;
+}
+.suscripcion form input{
+    width: 140px;
+}
+.suscripcion input{
+    border: none;
+}
+.base-footer{
+    background-color: #1A1A1A;
+    text-align: center;
+    color:#FFFFFF;
+    padding: 10px;
+    font-size: 10px;
+}
+.fa-facebook{color:grey;}
+.fa-instagram{color:grey;}
+.fa-twitter{color:grey;}
+.fa-pinterest{color:grey;}
+/* FIN FOOTER */
