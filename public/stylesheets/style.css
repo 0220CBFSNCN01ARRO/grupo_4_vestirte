@@ -1,0 +1,186 @@
+
+body{
+font-family: 'Roboto', sans-serif;
+background-color: #FBFBFB;
+
+}
+
+/* BARRA DE NAVEGACION */
+#navbarNavAltMarkup{
+    border-bottom: solid 3px #30303018;
+    color:#FBFBFB;
+}
+/* MEDIA QUERIES NAV */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+#navbarNavAltMarkup:last-of-type{
+        padding-right: 4rem;
+        border-top: solid 1px #30303011;
+        font-size: .9rem;
+    }}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
+/* BARRA DE NAVEGACION  */
+
+/* LOGIN  */
+.background {
+    background-color: #FF8E0A;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    z-index: -1;
+}
+
+.container-box {
+    margin-top: 30px;
+    background-color: #FFF;
+    width: 30vw;
+    margin-bottom: 30px;
+    border-radius: 7px
+}
+
+.container-title{
+  padding-top: 20px;
+}
+.input-mail {
+    margin-left: 70px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+.input-password{
+    margin-left: 28px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.forgot-password span{
+margin-left: 200px;
+}
+
+.btn {
+   background-color: #FF8E0A;
+   color: #FFF;
+}
+
+.register-container {
+    font-size: 10px;
+}
+
+.fa-facebook {
+    color: darkblue;
+}
+
+.facebook-login {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+hr {
+    color: black;
+    margin: 0px;
+    width: 350px;
+}
+/* LOGIN  */
+
+/* ADMINISTRADOR DE PRODUCTOS  */
+.header-admin-products{
+    margin-bottom: 7px;
+    align-items: flex-end;
+}
+
+.header-admin-products h4 {
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.product-line-header {
+    background-color: #ccc;
+}
+
+.lineline {
+    background-color: #FF8E0A;
+
+    height: 5px;
+}
+
+.btn-success {
+    background-color:#FF8E0A;
+    color: #FFF;
+    outline: none;
+    border: none;
+ }
+.product-line {
+    align-items: center;
+    margin-top: 10px;
+}
+.product-line img {
+    size: 40px;
+}
+ .stock-control-triad{
+     height: 25px;
+ }
+
+ .stock-control-triad input{
+     width: 40px;
+ }
+
+ .fas {
+    margin-left: 10px;
+ }
+/* ADMINISTRADOR DE PRODUCTOS  */
+
+/* FOOTER */
+.piePagina{
+    background-color: #232323;
+    padding: 15px;
+    color:#FFFFFF;
+}
+.piePagina h3{
+    font-size: 16px;
+}
+.contacto li{
+    list-style: none;
+    font-size: 12px;
+}
+.politica p{
+    font-size: 12px;
+}
+.suscripcion p{
+    font-size: 12px;
+}
+.suscripcion button{
+    background: #FF8E0A;
+    border: none;
+    margin-left: -5px;
+    color:#FFFFFF;
+    font-size: 16px;
+}
+.suscripcion form input{
+    width: 140px;
+}
+.suscripcion input{
+    border: none;
+}
+.base-footer{
+    background-color: #1A1A1A;
+    text-align: center;
+    color:#FFFFFF;
+    padding: 10px;
+    font-size: 10px;
+}
+.fa-facebook{color:grey;}
+.fa-instagram{color:grey;}
+.fa-twitter{color:grey;}
+.fa-pinterest{color:grey;}
+/* FIN FOOTER */
