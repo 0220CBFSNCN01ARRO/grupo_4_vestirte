@@ -68,5 +68,11 @@ ___
 - [x] Tipografías - Roboto Light - Roboto Regualr - Roboto Bold
 
 * [Link del prototipo funcional en alta definicion](https://xd.adobe.com/view/f9a30075-a1b7-4b1d-5f66-89cd5c67ec51-8f92/)
+___
+## **Crear un TRELLO, y colocar el link en el README ##
+* [Trello](https://trello.com/b/jo2fuuFM/proyecto-integrador/)
+___
+## 
+* [Trello](https://trello.com/b/jo2fuuFM/proyecto-integrador/)
 
 

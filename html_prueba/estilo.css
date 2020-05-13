@@ -1,0 +1,44 @@
+.header-admin-products{
+    margin-bottom: 7px;
+    align-items: flex-end;
+}
+
+.header-admin-products h4 {
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.product-line-header {
+    background-color: #ccc;
+}
+
+.lineline {
+    background-color: #FF8E0A;
+
+    height: 5px;
+}
+
+.btn-success {
+    background-color:#FF8E0A;
+    color: #FFF;
+    outline: none;
+    border: none;
+ }
+.product-line {
+    align-items: center;
+    margin-top: 10px;
+}
+.product-line img {
+    size: 40px;
+}
+ .stock-control-triad{
+     height: 25px;
+ }
+
+ .stock-control-triad input{
+     width: 40px;
+ }
+
+ .fas {
+    margin-left: 10px;
+ }
