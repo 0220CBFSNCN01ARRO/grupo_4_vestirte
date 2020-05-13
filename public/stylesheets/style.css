@@ -135,6 +135,10 @@ hr {
      width: 40px;
  }
 
+ .stock-control-triad .round{
+    border-radius: 10px;
+}
+
  .fas {
     margin-left: 10px;
  }
