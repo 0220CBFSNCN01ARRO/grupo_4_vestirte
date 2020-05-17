@@ -31,6 +31,42 @@ background-color: #FBFBFB;
 }
 /* BARRA DE NAVEGACION  */
 
+/* HEADER */
+.btn{
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding: 0.3rem 1.8rem;
+    background: #FF8E0A;
+    border: none;
+}
+.bi-heart{
+    color: #303030;
+}
+.fa-shopping-cart{
+    color: #303030;
+}
+.active{
+    color: #FBFBFB;
+}
+.bi-search{
+    color: #FBFBFB;
+}
+.bi-phone{
+    color: #FBFBFB;
+}
+.bi-envelope-open{
+    color: #FBFBFB;
+}
+.bi-credit-card{
+    color: #FBFBFB;
+}
+.bi-person-fill{
+    color: #FBFBFB;
+}
+.fa-truck{
+    color: #FBFBFB;
+}
+
 /* LOGIN  */
 .background {
     background-color: #FF8E0A;
