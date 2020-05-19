@@ -3,17 +3,17 @@ var router = express.Router();
 
 //requeriri Controlladores
 const indexController = require('../controller/indexController')
-/* const productosController = require('../controller/productosController')
+const productosController = require('../controller/productosController')
 const detallesController = require('../controller/detallesController')
 const carritoController = require('../controller/carritoController')
 const adminController = require('../controller/adminController')
 const loginController = require('../controller/loginController')
-const formularioController = require('../controller/formularioController') */
+const formularioController = require('../controller/formularioController')
 /* GET home page. */
 router.get('/',indexController.index
 );
 
-/* /* GET producto page. */
+/* GET producto page. */
 router.get('/productos',productosController.productos
 );
 
@@ -36,5 +36,5 @@ router.get('/login',loginController.login
 /* GET formulario de productos page. */
 router.get('/formulario',formularioController.formulario
 );
- */
+
 module.exports = router;
