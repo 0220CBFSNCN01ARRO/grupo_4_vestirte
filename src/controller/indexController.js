@@ -15,15 +15,17 @@ productos = productos.map(producto => {
     return producto;
 });
 //filtra ofertas y visitados
-const ofertas = productos.filter(producto => producto.category == 'oferta');
-const visitados = productos.filter(producto => producto.category == 'visitado');
-const destacados = productos.filter(producto => producto.category == 'destacado')
-const carrucel = productos.filter(producto => producto.category == 'carrucel')
-// console.log(ofertas);
+const ofertas = productos.filter(producto => producto.category == 'ofertas');
+const visitados = productos.filter(producto => producto.category == 'visitados');
+const destacados = productos.filter(producto => producto.category == 'destacados');
+const carrusel = productos.filter(producto => producto.category == 'carrusel');
+
+
+//onsole.log(carrusel);
 
 module.exports={
     root:(req, res, next) =>{
-            res.render('index',{destacados,productos,carrucel})},
+            res.render('index',{destacados,productos,carrusel})},
         
 
         // Detalles informacion-compara el parametro del id del producto, con el id pasado
