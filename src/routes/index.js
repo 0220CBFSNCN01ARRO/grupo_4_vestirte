@@ -14,6 +14,9 @@ router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalle
 router.get('/create/', productosController.create); /* GET - FORMULARIO DE CREACION */
 router.post('/create/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
 
+/*** CREAR UN PRODUCTO ***/ 
+router.get('/products/', productosController.list); /* GET - FORMULARIO DE CREACION */
+
 /*** EDITAR UN PRODUCTO ***/ 
 router.get('/edit/:productoId', productosController.edit); /* GET - FORMULARIO DE CREACION */
 router.put('/edit/:productoId', productosController.update); /* PUT -SUBIDA  */
