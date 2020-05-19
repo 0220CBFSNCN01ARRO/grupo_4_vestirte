@@ -128,6 +128,15 @@ hr {
     width: 350px;
 }
 /* LOGIN  */
+/*  PRODUCTOS DESTACADOS  */
+.border-bottom {
+    border-bottom: solid 3px #FF8E0A !important;
+}
+/* CARRUCEL  */
+.carousel-item {
+    height:20rem;
+}
+
 
 /* ADMINISTRADOR DE PRODUCTOS  */
 .header-admin-products{

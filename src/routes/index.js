@@ -1,40 +1,24 @@
-var express = require('express');
-var router = express.Router();
+// ************ Require's ************
+const express = require('express');
+const router = express.Router();
 
-//requeriri Controlladores
+// ************ Require's Controllers************
 const indexController = require('../controller/indexController')
-const productosController = require('../controller/productosController')
-const detallesController = require('../controller/detallesController')
-const carritoController = require('../controller/carritoController')
-const adminController = require('../controller/adminController')
-const loginController = require('../controller/loginController')
-const formularioController = require('../controller/formularioController')
-/* GET home page. */
-router.get('/',indexController.index
-);
+const productosController = require('../controller/productosController.js')
 
-/* GET producto page. */
-router.get('/productos',productosController.productos
-);
 
-/* GET productos page. */
-router.get('/detalles',detallesController.detalles
-);
+router.get('/', indexController.root); /* GET - todos productos */
+router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalles de produtos*/
 
-/* GET carrito page. */
-router.get('/carrito',carritoController.carrito
-);
+/*** CREAR UN PRODUCTO ***/ 
+router.get('/create/', productosController.create); /* GET - FORMULARIO DE CREACION */
+router.post('/create/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
 
-/* GET Administrador page. */
-router.get('/admin',adminController.admin
-);
+/*** EDITAR UN PRODUCTO ***/ 
+router.get('/edit/:productoId', productosController.edit); /* GET - FORMULARIO DE CREACION */
+router.put('/edit/:productoId', productosController.update); /* PUT -SUBIDA  */
 
-/* GET login page. */
-router.get('/login',loginController.login
-);
-
-/* GET formulario de productos page. */
-router.get('/formulario',formularioController.formulario
-);
+/*** ELIMINAR PRODUCTO***/ 
+router.delete('/delete/:productoId', productosController.destroy); /* DELETE - Delete from DB */
 
 module.exports = router;

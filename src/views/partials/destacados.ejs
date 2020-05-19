@@ -4,12 +4,12 @@
         <div class="col-12 container">
             <h2 class="products-title border-bottom " >Productos destacados</h2>
         </div>
-        <% for (producto of productos) { %>
+        <% for (producto of destacados) { %>
         <div class="col-12 col-sm-6 col-lg-3">
             <section class="product-box ">
                 <!-- <a href="/product/detail/<%= producto.id %>/visitados"> -->
                     <figure class="product-box_image">
-                        <img src="/img/<%= producto.image %>" alt="imagen de producto" height="300" width="250" >
+                        <img src="<%= producto.image %>" alt="imagen de producto" height="300" width="250" >
                     </figure>
                     <article class="product-box_data">
                         <h2>$<%= producto.precio %></h2>
