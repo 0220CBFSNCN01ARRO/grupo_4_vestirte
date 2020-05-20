@@ -5,12 +5,14 @@ const router = express.Router();
 // ************ Require's Controllers************
 const indexController = require('../controller/indexController')
 const productosController = require('../controller/productosController.js')
-
+const userController = require('../controller/userController.js')
 
 router.get('/', indexController.root); /* GET - todos productos */
  
 router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalles de produtos*/
-router.get('/login', indexController.admin)
+
+/*** LOGIN DE USER ***/ 
+router.get('/login', userController.login)
 
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/create/', productosController.create); /* GET - FORMULARIO DE CREACION */

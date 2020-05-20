@@ -5,43 +5,7 @@
 <!-- BARRA DE NAVEGACION -->
 <%-include('./partials/nav.ejs')%>
 <!-- LOGIN -->
-    <div class="background container-fluid">
-        <div class="container container-box col-12 col-sm-6 col-lg-3">
-            <div class="container-title row justify-content-center ">
-                <h1>Login</h1>
-            </div>
-            <div class="row justify-content-center container-email">
-                <span>Email</span>
-                <input class="input-mail" type="email">
-                <span><i class="fas fa-envelope"></i></span>
-            </div>
-            <div class="row justify-content-center">
-                <hr>
-            </div>
-            <div class="row justify-content-center container-password">
-                <span>Contrasena</span>
-                <input class="input-password" type="password">
-                <span><i class="fas fa-key"></i></span>
-            </div>
-            <div class="row justify-content-center">
-                <hr>
-            </div>
-            <div class= "row justify-content-center forgot-password">
-                <span><small><a>Olvido su contrasena?</span></a></small>
-            </div>
-            <div class="row justify-content-center submit-button">
-                <button class='btn btn-sucess' type="submit">Iniciar Sesion</button>
-            </div>
-            <div class="row justify-content-center register-container">
-                <span>No es usuario?</span>
-                <a>Registrese</a>
-            </div>
-            <div class="row justify-content-center facebook-login">
-                <span><a><i class="fab fa-facebook"></i></span></a>
-                <span><a>Ingresar con Facebook</span></a>
-            </div>
-        </div>
-    </div>
+<%-include('./partials/formulario-login.ejs')%>  
 <!-- FOOTER -->
 <%-include('./partials/footer.ejs')%>
 <!--  SCRIPT -->

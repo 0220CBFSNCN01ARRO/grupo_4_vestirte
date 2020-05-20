@@ -33,7 +33,21 @@ background-color: #FBFBFB;
 /* BARRA DE NAVEGACION  */
 
 /* HEADER */
-.btn{
+#up{
+    background-color: #303030;
+}
+.fa-credit-card{
+
+    color: #FBFBFB;
+}
+
+
+#pagos{
+    background-color: #303030;
+    border: none;
+    color:#FBFBFB; 
+}
+#search{
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
     padding: 0.3rem 1.8rem;
@@ -129,6 +143,20 @@ hr {
     width: 350px;
 }
 /* LOGIN  */
+
+/* SECTION INFO */
+#info{
+    border: solid 1.5px #30303011;
+}
+#info i{
+color:#FF8E0A;
+}
+#info a {
+    font-size: 0.8rem;
+    color: #303030;
+    text-decoration: none;
+}
+
 /*  PRODUCTOS DESTACADOS  */
 .border-bottom {
     border-bottom: solid 3px #FF8E0A !important;
