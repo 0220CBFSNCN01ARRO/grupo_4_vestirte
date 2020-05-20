@@ -127,7 +127,7 @@ hr {
     margin: 0px;
     width: 350px;
 }
-/* LOGIN  */
+
 /*  PRODUCTOS DESTACADOS  */
 .border-bottom {
     border-bottom: solid 3px #FF8E0A !important;
@@ -187,7 +187,12 @@ hr {
  .fas {
     margin-left: 10px;
  }
-/* ADMINISTRADOR DE PRODUCTOS  */
+
+ /* DESCRIPCION DE PRODUCTOS */
+
+ .product-detail-price {
+     font-size: 40px;
+ }
 
 /* FOOTER */
 .piePagina{

@@ -23,7 +23,7 @@ const destacados = productos.filter(producto => producto.category == 'destacado'
 
 
 
-module.exports={
+module.exports= {
 create: (req, res) => {
     res.render('productos-crear', {productos});
 },
@@ -34,7 +34,7 @@ list: (req, res) => {
 
 detail: (req, res) => {
     let producto = productos.find(prod => prod.id == req.params.id)
-    res.render('productodetalle',{producto, enMiles});
+    res.render('productodetalle',{producto, productos,  enMiles});
 },
 
 // Create -  Method to store
