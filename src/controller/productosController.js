@@ -18,9 +18,11 @@ productos = productos.map(producto => {
 const ofertas = productos.filter(producto => producto.category == 'oferta');
 const visitados = productos.filter(producto => producto.category == 'visitado');
 const destacados = productos.filter(producto => producto.category == 'destacado')
-// console.log(ofertas);
 
 // Create - Formulario de creacion de productos
+
+
+
 module.exports={
 create: (req, res) => {
     res.render('productos-crear', {productos});
@@ -28,6 +30,11 @@ create: (req, res) => {
 
 list: (req, res) => {
     res.render('productos',{productos});
+},
+
+detail: (req, res) => {
+    let producto = productos.find(prod => prod.id == req.params.id)
+    res.render('productodetalle',{producto, enMiles});
 },
 
 // Create -  Method to store
