@@ -252,7 +252,12 @@ text-align: center;
  .fas {
     margin-left: 10px;
  }
-/* ADMINISTRADOR DE PRODUCTOS  */
+
+ /* DESCRIPCION DE PRODUCTOS */
+
+ .product-detail-price {
+     font-size: 40px;
+ }
 
 /* FOOTER */
 .piePagina{

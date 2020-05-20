@@ -1,5 +1,4 @@
 <div class="container admin-products">
-    <!-- Just an image -->
     <div class="conteiner-fluid">
         <div class="row header-admin-products">
             <h4 class="col-6 align-self-base">Administrador de productos</h4>
@@ -15,52 +14,19 @@
             <span class="col-2 d-flex justify-content-center">Precio</span>
             <span class="col-3 d-flex justify-content-center">Stock</span>
         </div>
-        <div class="row product-line">
-            <img class="col-2 d-flex justify-content-center" src="../../../public/img/img-productos/poleron-canguro.jpg">
-            <span class="col-3 d-flex justify-content-center">Poleron Polar Spalding Half</span>            
-            <span class="col-2 d-flex justify-content-center">Gratis</span>
-            <span class="col-2 d-flex justify-content-center">$50.00</span>
-            <div class="stock-control-triad col-3 d-flex justify-content-center">   
-                <button class="round">-</button>
-                <input type="number">
-                <button class="round">+</button>
-                <i class="fas fa-edit"></i>
+        <% for(producto of productos){ %>
+            <div class="row product-line">
+                <img class="col-2 d-flex justify-content-center" src="<%=producto.image%>">
+                <span class="col-3 d-flex justify-content-center"><%= producto.name %></span>            
+                <span class="col-2 d-flex justify-content-center">Gratis</span>
+                <span class="col-2 d-flex justify-content-center"><%= producto.precio %> </span>
+                <div class="stock-control-triad col-3 d-flex justify-content-center">   
+                    <button class="round">-</button>
+                    <input type="number">
+                    <button class="round">+</button>
+                    <i class="fas fa-edit"></i>
+                </div>
             </div>
-        </div>
-        <div class="row product-line">
-            <img class="col-2 d-flex justify-content-center" src="../../../public/img/img-productos/poleron-canguro.jpg">
-            <span class="col-3 d-flex justify-content-center">Poleron Polar Spalding Half</span>            
-            <span class="col-2 d-flex justify-content-center">Gratis</span>
-            <span class="col-2 d-flex justify-content-center">$50.00</span>
-            <div class="stock-control-triad col-3 d-flex justify-content-center">   
-                <button class="round">-</button>
-                <input type="number">
-                <button class="round">+</button>
-                <i class="fas fa-edit"></i>
-            </div>
-        </div>
-        <div class="row product-line">
-            <img class="col-2 d-flex justify-content-center" src="../../../public/img/img-productos/poleron-canguro.jpg">
-            <span class="col-3 d-flex justify-content-center">Poleron Polar Spalding Half</span>            
-            <span class="col-2 d-flex justify-content-center">Gratis</span>
-            <span class="col-2 d-flex justify-content-center">$50.00</span>
-            <div class="stock-control-triad col-3 d-flex justify-content-center">   
-                <button class="round">-</button>
-                <input type="number">
-                <button class="round">+</button>
-                <i class="fas fa-edit"></i>
-            </div>
-        </div>
-        <div class="row product-line">
-            <img class="col-2 d-flex justify-content-center" src="../../../public/img/img-productos/poleron-canguro.jpg">
-            <span class="col-3 d-flex justify-content-center">Poleron Polar Spalding Half</span>            
-            <span class="col-2 d-flex justify-content-center">Gratis</span>
-            <span class="col-2 d-flex justify-content-center">$50.00</span>
-            <div class="stock-control-triad col-3 d-flex justify-content-center">   
-                <button class="round">-</button>
-                <input type="number">
-                <button class="round">+</button>
-                <i class="fas fa-edit"></i>
-            </div>
+            <% } %>
         </div>
     </div>

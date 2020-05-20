@@ -1,0 +1,28 @@
+<div class="container products-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="products-title">
+                <%=producto.name %> </h2>
+            </div>
+        </div>
+        <div class="product-detail">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <img src="<%= producto.image %>" alt="product image" class="product-detail-img" width="300px">
+                    <p class="product-detail-description">
+                        <%= producto.description %> 
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <article class="product-detail-info">
+                        <h2 class="product-detail-title"><%= producto.name %> </h2>
+                        
+                        <p class="product-detail-price">
+                            $ <%= producto.precio %> <br>            
+                            <a href="#"><button type="button" class="btn btn-primary"> Agregar al Carrito</button></a>
+                            <hr>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>

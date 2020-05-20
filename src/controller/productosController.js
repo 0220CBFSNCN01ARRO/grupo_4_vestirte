@@ -18,16 +18,23 @@ productos = productos.map(producto => {
 const ofertas = productos.filter(producto => producto.category == 'oferta');
 const visitados = productos.filter(producto => producto.category == 'visitado');
 const destacados = productos.filter(producto => producto.category == 'destacado')
-// console.log(ofertas);
 
 // Create - Formulario de creacion de productos
-module.exports={
+
+
+
+module.exports= {
 create: (req, res) => {
-    res.render('productos-crear');
+    res.render('productos-crear', {productos});
 },
 
 list: (req, res) => {
-    res.render('productos');
+    res.render('productos',{productos});
+},
+
+detail: (req, res) => {
+    let producto = productos.find(prod => prod.id == req.params.id)
+    res.render('productodetalle',{producto, productos,  enMiles});
 },
 
 // Create -  Method to store
