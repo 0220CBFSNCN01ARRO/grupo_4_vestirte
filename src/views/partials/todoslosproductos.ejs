@@ -4,19 +4,19 @@
             <h2 class="products-title border-bottom " >Todos los productos</h2>
         </div>
         <% for (producto of productos) { %>
-        <div class="col-12 col-sm-6 col-lg-3 pt-3 ">
-            <section class="product-box">
-                <a href="/product/detail/<%= producto.id %>">
-                    <figure class="product-box_image">
-                        <img src="<%= producto.image %>" alt="imagen de producto" width="250" >
-                    </figure>
-                    <article class="product-box_data">
-                        <p><%= producto.name %></p>
-                        <h2>$<%= producto.precio %></h2>
-                    </article>
-                 </a>
-            </section>
+            <div class="col-12 col-sm-6 col-lg-3 pt-3 ">
+                <section class="product-box">
+                    <a href="/product/detail/<%= producto.id %>">
+                        <figure class="product-box_image">
+                            <img src="<%= producto.image %>" alt="imagen de producto" width="250" >
+                        </figure>
+                        <article class="product-box_data">
+                            <p><%= producto.name %></p>
+                            <h2>$<%= producto.precio %></h2>
+                        </article>
+                    </a>
+                </section>
+            </div>
+            <% } %>
         </div>
-        <% } %>
     </div>
-  </div>
