@@ -23,11 +23,11 @@ const destacados = productos.filter(producto => producto.category == 'destacado'
 // Create - Formulario de creacion de productos
 module.exports={
 create: (req, res) => {
-    res.render('productos-crear');
+    res.render('productos-crear', {productos});
 },
 
 list: (req, res) => {
-    res.render('productos');
+    res.render('productos',{productos});
 },
 
 // Create -  Method to store

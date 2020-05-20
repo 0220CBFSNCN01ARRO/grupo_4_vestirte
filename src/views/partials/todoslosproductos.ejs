@@ -1,21 +1,18 @@
-<!-- ultima visita -->
 <div class="container products-wrapper">
     <div class="row">
         <div class="col-12 container">
-            <h2 class="products-title border-bottom " >Productos destacados</h2>
+            <h2 class="products-title border-bottom " >Todos los productos</h2>
         </div>
-        <% for (producto of destacados) { %>
+        <% for (producto of productos) { %>
         <div class="col-12 col-sm-6 col-lg-3 pt-3 ">
-            <section class="product-box ">
-                <a href="/product/detail/<%= producto.id %>/visitados">
+            <section class="product-box">
+                <a href="/product/detail/<%= producto.id %>">
                     <figure class="product-box_image">
-                        <img src="<%= producto.image %>" alt="imagen de producto" height="300" width="250" >
+                        <img src="<%= producto.image %>" alt="imagen de producto" width="250" >
                     </figure>
                     <article class="product-box_data">
                         <p><%= producto.name %></p>
                         <h2>$<%= producto.precio %></h2>
-                       
-                       
                     </article>
                  </a>
             </section>
@@ -23,4 +20,3 @@
         <% } %>
     </div>
   </div>
-  <!-- /ultima visita -->
