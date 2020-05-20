@@ -27,7 +27,9 @@ module.exports={
     root:(req, res, next) =>{
             res.render('index',{destacados,productos,carrusel})},
         
-
+admin:(req, res)=>{
+    res.render('login')
+},
         // Detalles informacion-compara el parametro del id del producto, con el id pasado
         // por url,al enconrarlo lo guarda en producto
 	detalles: (req, res) => {
