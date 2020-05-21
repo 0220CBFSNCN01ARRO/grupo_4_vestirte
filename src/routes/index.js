@@ -7,8 +7,10 @@ const indexController = require('../controller/indexController')
 const productosController = require('../controller/productosController.js')
 const userController = require('../controller/userController.js')
 
+/*** INDEX ***/ 
 router.get('/', indexController.root); /* GET - todos productos */
- 
+
+/*** DETALLE DE PRODUCTO ***/ 
 router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalles de produtos*/
 
 /*** LOGIN DE USER ***/ 
