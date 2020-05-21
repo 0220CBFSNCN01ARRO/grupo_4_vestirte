@@ -6,6 +6,7 @@ const dataBasePath = path.join(__dirname,'../data/productosDatabase.json');
 let productos = JSON.parse(fs.readFileSync(dataBasePath),'utf-8')
 const enMiles = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+
 //precio final del productos =  let producto = precio final del producto
 productos = productos.map(producto => {
     let descuento = Math.floor(producto.precio * producto.descuento) / 100;
@@ -29,7 +30,7 @@ create: (req, res) => {
 },
 
 list: (req, res) => {
-    res.render('productos',{productos});
+    res.render('productos',{productos,visitados,destacados,ofertas});
 },
 
 detail: (req, res) => {

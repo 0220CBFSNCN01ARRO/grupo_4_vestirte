@@ -33,9 +33,9 @@ admin:(req, res)=>{
         // Detalles informacion-compara el parametro del id del producto, con el id pasado
         // por url,al enconrarlo lo guarda en producto
 	detalles: (req, res) => {
-		let producto = productos.find(prod => prod.id == req.params.productoId)
+		let idProducto = productos.find(prod => prod.id == req.params.productoId)
         res.render('detalles', 
-                    {producto, 
+                    {idProducto, 
 			        enMiles})	
 },
 }

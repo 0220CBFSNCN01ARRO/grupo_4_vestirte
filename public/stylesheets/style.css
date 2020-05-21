@@ -18,13 +18,16 @@ background-color: #FBFBFB;
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 #navbarNavAltMarkup:last-of-type{
-        padding-right: 4rem;
+        padding-right: 2rem;
         border-top: solid 1px #30303011;
         font-size: .9rem;
     }}
+    
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    
+    /* #logo{
+        justify-content: space-between;
+    } */
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -41,24 +44,29 @@ background-color: #FBFBFB;
     color: #FBFBFB;
 }
 
+.fa-heart{
+    color:#303030;
+}
+
 
 #pagos{
     background-color: #303030;
     border: none;
     color:#FBFBFB; 
 }
-#search{
+#search, .suscripcion button{
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
     padding: 0.3rem 1.8rem;
     background: #FF8E0A;
     border: none;
 }
+
 .bi-heart{
     color: #303030;
 }
 .fa-shopping-cart{
-    color: #303030;
+    color: #FF8E0A;
 }
 .active{
     color: #FBFBFB;
@@ -260,6 +268,13 @@ text-align: center;
  }
 
 /* FOOTER */
+.suscripcion button{
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding: 0.09rem 1.8rem;
+    background: #FF8E0A;
+    border: none;
+}
 .piePagina{
     background-color: #232323;
     padding: 15px;
