@@ -22,7 +22,6 @@ background-color: #FBFBFB;
         border-top: solid 1px #30303011;
         font-size: .9rem;
     }}
-    
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     /* #logo{
@@ -102,7 +101,7 @@ background-color: #FBFBFB;
 .container-box {
     margin-top: 30px;
     background-color: #FFF;
-    width: 30vw;
+    width: 60vw;
     margin-bottom: 30px;
     border-radius: 7px
 }
