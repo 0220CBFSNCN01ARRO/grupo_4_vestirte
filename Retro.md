@@ -1,4 +1,4 @@
-## **Retrospectiva
+## Retrospectiva
 
 #Seguir Haciendo
 Continuar el entorno colaborativo entre los integrantes. El apoyo y ambiente de consulta hace sentir apoyo en el cumplimiento de objetivos.
