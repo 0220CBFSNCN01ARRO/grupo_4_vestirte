@@ -1,0 +1,27 @@
+<div class="container admin-products">
+    <div class="conteiner-fluid" style="width: 100%">
+        <div class="row header-admin-products">
+            <h4 class="col-6 align-self-base"> CARRITO DE COMPRAS </h4>
+            <div class="col-4"></div>
+        </div>
+        <div class='row lineline'>
+        </div>
+        <div class="row product-line-header">
+            <span class="col-2 d-flex justify-content-center">Imagen</span>
+            <span class="col-3 d-flex justify-content-center">Nombre</span>
+            <span class="col-2 d-flex justify-content-center">Costo Envio</span>
+            <span class="col-2 d-flex justify-content-center">Precio</span>
+            <span class="col-3 d-flex justify-content-center">Unidades</span>
+        </div>
+        <% for(producto of productos){ %>
+            <div class="row product-line">
+                <img class="col-2 d-flex justify-content-center" src="<%=producto.image%>">
+                <span class="col-3 d-flex justify-content-center"><%= producto.name %></span>            
+                <span class="col-2 d-flex justify-content-center">Gratis</span>
+                <span class="col-2 d-flex justify-content-center"><%= producto.precio %> </span>
+                <div class="stock-control-triad col-3 d-flex justify-content-center">
+                    <input type="number" placeholder="1">
+            </div>
+            <% } %>
+        </div>
+    </div>

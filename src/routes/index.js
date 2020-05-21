@@ -17,11 +17,14 @@ router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalle
 router.get('/login', userController.login)
 
 /*** CREAR UN PRODUCTO ***/ 
-router.get('/create/', productosController.create); /* GET - FORMULARIO DE CREACION */
-router.post('/create/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
+router.get('/crear/', productosController.create); /* GET - FORMULARIO DE CREACION */
+router.post('/crear/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
 
-/*** CREAR UN PRODUCTO ***/ 
+/*** TODOS LOS PRODUCTOS ***/ 
 router.get('/productos/', productosController.list); /* GET - FORMULARIO DE CREACION */
+
+/*** CARRITO ***/ 
+router.get('/carrito', userController.carrito);
 
 /*** EDITAR UN PRODUCTO ***/ 
 router.get('/edit/:productoId', productosController.edit); /* GET - FORMULARIO DE CREACION */
