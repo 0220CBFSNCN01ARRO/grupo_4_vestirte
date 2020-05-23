@@ -1,38 +1,26 @@
-<div class="background container-fluid">
-    <div class="container container-box">
-        <div class="container-title row justify-content-center ">
-            <h1>Login</h1>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1"><i class="fas fa-envelope"></i> Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
+<div class="container-login">
+    <br>
+<form class="col-10 mx-auto  border container-form ">
+    <div class="form-row  ">
+        <div class="col-12 my-3  text-center"><h1>LOGIN</h1></div>
+      <div class=" col-md-6 mb-3 form-inline ">
+        <label  class= "col-2" for="validationServer01 "> <i class="far fa-envelope  mt-2 fa-2x"></i></i></label>
+        <input type="email" class="form-control is-valid col-10  " id="validationServer01" value="" required>
+        <div class="valid-feedback">
+          
         </div>
-        <div class="row justify-content-center">
-            <hr>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">Passdword</label>
+        <input type="password" class="form-control is-valid" id="validationServer02" value="" required>
+        <div class="valid-feedback">
+          
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1"><i class="fas fa-key"></i> Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="row justify-content-center">
-            <hr>
-        </div>
-        <div class="container justify-content">
-            <div id="forgot-password-link" class="d-flex justify-content-center">
-                <span><small><a href="/olvido-contrasena">Olvido su contrasena?</span></a></small>
-            </div>
-            <div class="row justify-content-center submit-button">
-                <button class='btn btn-sucess signupbtn' type="submit">Iniciar Sesion</button>
-            </div>
-            <div class="row justify-content-center register-container">
-                <span class="no-usuario">No es usuario?</span>
-                <a href="/registro">Registrese</a>
-            </div>
-        </div>
-        <div class="row justify-content-center facebook-login">
-            <span><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></span></a>
-            <span><a href="https://www.facebook.com/">Ingresar con Facebook</span></a>
-        </div>
+      </div>
     </div>
-</div>
+    <div class="d-flex justify-content-center col-12 my-2">
+    <button class="btn col-9" type="submit"  >Iniciar sesion</button>
+    </div>
+  </form><br>
+</div> 

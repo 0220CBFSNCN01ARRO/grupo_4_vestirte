@@ -90,14 +90,18 @@ background-color: #FBFBFB;
 }
 
 /* LOGIN  */
-.background {
+.container-login {
     background-color: #FF8E0A;
-    width: 100vw;
-    padding-top: 30px;
-    padding-bottom: 50px;
     z-index: -1;
 }
-
+.container-form{
+    z-index: 1;
+    background-color: #FBFBFB;
+    border-radius:.7rem;
+}
+#validationServer01{
+    border: solid 1px #FBFBFB!important;
+}
 .container-box {
     margin-top: 30px;
     background-color: #FFF;
