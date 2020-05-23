@@ -22,7 +22,6 @@ background-color: #FBFBFB;
         border-top: solid 1px #30303011;
         font-size: .9rem;
     }}
-    
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     /* #logo{
@@ -91,56 +90,70 @@ background-color: #FBFBFB;
 }
 
 /* LOGIN  */
-.background {
+.container-login {
     background-color: #FF8E0A;
-    width: 100vw;
-    padding-top: 30px;
-    padding-bottom: 50px;
     z-index: -1;
+}
+.container-form{
+    z-index: 1;
+    background-color: #FBFBFB;
+    border-radius:.7rem;
+}
+#validationServer01{
+    border: solid 1px #FBFBFB!important;
 }
 .container-box {
     margin-top: 30px;
     background-color: #FFF;
-    width: 40vw;
-    min-width: 300px;
+    width: 60vw;
     margin-bottom: 30px;
     border-radius: 7px
 }
+
 .container-title{
   padding-top: 20px;
 }
 .input-mail {
+    margin-left: 70px;
+    margin-right: 10px;
     border: none;
     outline: none;
-    background-color: cadetblue;
 }
 .input-password{
+    margin-left: 28px;
+    margin-right: 10px;
     border: none;
     outline: none;
-    background-color: cadetblue;
 }
+
+.forgot-password span{
+margin-left: 200px;
+}
+
 .btn {
    background-color: #FF8E0A;
    color: #FFF;
 }
+
 .register-container {
-    font-size: 15px;
+    font-size: 10px;
 }
-.no-usuario {
-    margin-right: 5px;
-}
+
 .fa-facebook {
     color: darkblue;
 }
+
 .facebook-login {
     margin-top: 50px;
     padding-bottom: 20px;
 }
+
 hr {
     color: black;
     margin: 0px;
-    width: 100%;
+    width: 350px;
 }
+/* LOGIN  */
 
 /* SECTION INFO */
 #info{
@@ -154,6 +167,9 @@ color:#FF8E0A;
     color: #303030;
     text-decoration: none;
 }
+@media (max-width: 991.98px) {
+    #info-varios{
+    display: none;} }
 
 /*  PRODUCTOS DESTACADOS  */
 .border-bottom {
@@ -250,6 +266,11 @@ text-align: center;
  .fas {
     margin-left: 10px;
  }
+ @media (max-width: 991.98px) {
+    #barra-sup{
+    display: none;} }
+
+
 
  /* DESCRIPCION DE PRODUCTOS */
 
@@ -269,6 +290,7 @@ text-align: center;
     background-color: #232323;
     padding: 15px;
     color:#FFFFFF;
+    width: 100% !important;
 }
 .piePagina h3{
     font-size: 16px;
