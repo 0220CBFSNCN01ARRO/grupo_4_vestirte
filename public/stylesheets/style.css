@@ -5,7 +5,10 @@ background-color: #FBFBFB;
 
 }
 
-
+a{
+    color:#303030;
+    
+}
 /* BARRA DE NAVEGACION */
 #navbarNavAltMarkup{
     border-bottom: solid 3px #30303018;
@@ -32,9 +35,9 @@ background-color: #FBFBFB;
 @media (min-width: 1200px) {
    
 }
-/* BARRA DE NAVEGACION  */
 
-/* HEADER */
+
+/*  ================================ HEADER =================================*/
 #up{
     background-color: #303030;
 }
@@ -89,7 +92,7 @@ background-color: #FBFBFB;
     color: #FBFBFB;
 }
 
-/* LOGIN  */
+/*====================================== LOGIN  ===============*/
 .container-login {
     background-color: #FF8E0A;
     z-index: -1;
@@ -99,9 +102,7 @@ background-color: #FBFBFB;
     background-color: #FBFBFB;
     border-radius:.7rem;
 }
-#validationServer01{
-    border: solid 1px #FBFBFB!important;
-}
+
 .container-box {
     margin-top: 30px;
     background-color: #FFF;
@@ -109,53 +110,34 @@ background-color: #FBFBFB;
     margin-bottom: 30px;
     border-radius: 7px
 }
-
-.container-title{
-  padding-top: 20px;
+.icon-orange{
+    color:#FF8E0A;
 }
-.input-mail {
-    margin-left: 70px;
-    margin-right: 10px;
+
+.boton{
+    color:#FBFBFB;
+    border-radius: .3rem;
+    padding: 0.3rem 1rem;
+    background: #FF8E0A;
     border: none;
-    outline: none;
 }
-.input-password{
-    margin-left: 28px;
-    margin-right: 10px;
-    border: none;
-    outline: none;
+.border-gris{
+    border-bottom: solid 1px #30303018;
 }
 
-.forgot-password span{
-margin-left: 200px;
+.recordarme,.facebook {
+    
+    list-style-type: none;
+    text-decoration: none;
+    font-size: .6rem;
+}
+.fa-facebook{
+    color:blue !important;
+
 }
 
-.btn {
-   background-color: #FF8E0A;
-   color: #FFF;
-}
+/* =========================SECTION INFO =============================*/
 
-.register-container {
-    font-size: 10px;
-}
-
-.fa-facebook {
-    color: darkblue;
-}
-
-.facebook-login {
-    margin-top: 50px;
-    padding-bottom: 20px;
-}
-
-hr {
-    color: black;
-    margin: 0px;
-    width: 350px;
-}
-/* LOGIN  */
-
-/* SECTION INFO */
 #info{
     border: solid 1.5px #30303011;
 }

@@ -1,26 +1,30 @@
-
 <div class="container-login">
+
     <br>
-<form class="col-10 mx-auto  border container-form ">
-    <div class="form-row  ">
-        <div class="col-12 my-3  text-center"><h1>LOGIN</h1></div>
-      <div class=" col-md-6 mb-3 form-inline ">
-        <label  class= "col-2" for="validationServer01 "> <i class="far fa-envelope  mt-2 fa-2x"></i></i></label>
-        <input type="email" class="form-control is-valid col-10  " id="validationServer01" value="" required>
-        <div class="valid-feedback">
-          
-        </div>
+    
+<form class="col-8 mx-auto border container-form ">
+    
+    <div class="form-row ">
+        <div class="col-12 my-4  text-center"><h3>LOGIN</h3></div>
+      <div class=" col-md-6 mb-1  form-inline border-gris">
+        <input type="email" class="col-10 border-0 p-0" id="validationServer01"placeholder= "correo" required>
+        <label  class= "col-1" for="validationServer01 "> <i class=" icon-orange far fa-envelope  mt-2 fa-1x"></i></label>
+        
       </div>
-      <div class="col-md-6 mb-3">
-        <label for="validationServer02">Passdword</label>
-        <input type="password" class="form-control is-valid" id="validationServer02" value="" required>
-        <div class="valid-feedback">
-          
-        </div>
+      <div class=" col-md-6  mt-2 mb-1 form-inline border-gris">
+        <input type="password" class="col-10 border-0 p-0" id="validationServer01"placeholder= "contraseña" required>
+        <label  class= "col-1" for="validationServer02 "><i class=" icon-orange fas fa-lock-open ml-1 mt-2 fa-1x"></i></label>
+        
       </div>
+        </div>
+        <div class="recordarme d-flex justify-content-end"><p>Olvidaste tu Contraseña <a href="/formulario">Registrate</a></p></div>
+    
+
+    <div class="d-flex justify-content-center col-12 my-2 mt-3">
+    <button class=" col-8 boton" type="submit"  >Iniciar sesion</button>
     </div>
-    <div class="d-flex justify-content-center col-12 my-2">
-    <button class="btn col-9" type="submit"  >Iniciar sesion</button>
-    </div>
-  </form><br>
-</div> 
+    <div class="recordarme d-flex justify-content-center"><p>No eres miembro? <a href="/formulario">Registrate</a></p></div>
+    <div class="d-flex justify-content-center mb-4 mt-2 facebook "><i class="fab fa-facebook fa-2x "></i><p class="my-auto ml-1" > Ingresa con Facebook</p></div>
+</form><br>
+
+</div>  
