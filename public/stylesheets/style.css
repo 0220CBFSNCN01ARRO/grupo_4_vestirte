@@ -336,3 +336,25 @@ text-align: center;
 .fa-twitter{color:grey;}
 .fa-pinterest{color:grey;}
 /* FIN FOOTER */
+/* producto detalle */
+ 
+@media (max-width: 575.98px) { 
+
+}
+
+ 
+@media (max-width: 767.98px) { 
+
+}
+
+
+@media (max-width: 991.98px) { 
+  .botonprecio{
+      height: 50vh;
+  }
+ }
+
+
+@media (max-width: 1199.98px) {
+    
+}
