@@ -19,6 +19,6 @@ Impedimentos -  "bootstrap nodejaba quitar los bordes"
 
 LUNES 25/05/2020
 
-Se comineza a implemntar el CRUD
-Formulario LOGIN terminado!
-Se empiza a hacer el formulario de registracion.
+Se comineza a implemntar el CRUD.
+Formulario LOGIN terminado!.
+Se empieza a hacer el formulario de registracion.
