@@ -17,9 +17,9 @@ productos = productos.map (producto => {
 });
 
 //filtra ofertas y visitados
-const ofertas = productos.filter(producto => producto.category == 'oferta');
-const visitados = productos.filter(producto => producto.category == 'visitado');
-const destacados = productos.filter(producto => producto.category == 'destacado')
+// const ofertas = productos.filter(producto => producto.category == 'oferta');
+// const visitados = productos.filter(producto => producto.category == 'visitado');
+// const destacados = productos.filter(producto => producto.category == 'destacado')
 
 //////////
 
@@ -29,34 +29,26 @@ create: (req, res) => {
 },
 
 list: (req, res) => {
-    res.render('productos',{productos,visitados,destacados,ofertas});
+    res.render('productos',{productos});
 },
 
 detail: (req, res) => {
-    let producto = productos.find (prod => prod.id == 5)
+    let producto = productos.find (prod => prod.id == req.params.productoId)
     res.render('productodetalle', {producto, productos, enMiles});
 },
 
-// Create -  Method to store
 store: (req, res) => {
-    // como elegir el id
     let ids = productos.map(prod=>prod.id) // [1,2,3,4,5....]
-    // Math.max(1,2,3) -> 3
     let id = Math.max(...ids) + 1 //17
-    // creo el producto con los datos del form
-
     req.body.precio = Number(req.body.precio)
-
     let productoNuevo = {
         id:id,
         ... req.body,
         imagen: 'default-image.png'
     }
-    // agrego el producto al array de productos
     let final = [...productos,productoNuevo];
-    // lo guardo en el json
     fs.writeFileSync(dataBasePath, JSON.stringify(final,null,' '));
-    // redirecciono a la lista de productos
+
     res.redirect('/productos')
 },
 

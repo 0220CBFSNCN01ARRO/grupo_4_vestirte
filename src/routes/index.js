@@ -11,9 +11,9 @@ const userController = require('../controller/userController.js')
 router.get('/', indexController.root); /* GET - todos productos */
 
 /*** DETALLE DE PRODUCTO ***/ 
-router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalles de produtos*/
+router.get('/detalles/:productoId/', productosController.detail); /* GET - detalles de produtos*/
 
-/*** LOGIN DE USER ***/ 
+/*** LOGIN DE USER ***/
 router.get('/login', userController.login)
 router.get('/registracion', userController.registracion)
 
