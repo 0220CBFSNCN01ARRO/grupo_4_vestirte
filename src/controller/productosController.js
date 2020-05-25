@@ -32,7 +32,7 @@ list: (req, res) => {
     res.render('productos',{productos});
 },
 
-detail: (req, res) => {
+detalle: (req, res) => {
     let producto = productos.find (prod => prod.id == req.params.productoId)
     res.render('productodetalle', {producto, productos, enMiles});
 },

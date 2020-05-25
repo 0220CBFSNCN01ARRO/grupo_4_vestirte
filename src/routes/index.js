@@ -8,30 +8,30 @@ const productosController = require('../controller/productosController.js')
 const userController = require('../controller/userController.js')
 
 /*** INDEX ***/ 
-router.get('/', indexController.root); /* GET - todos productos */
+router.get('/', indexController.root); 
+
+/*** TODOS LOS PRODUCTOS ***/ 
+router.get('/productos/', productosController.list); /* GET - FORMULARIO DE CREACION */
 
 /*** DETALLE DE PRODUCTO ***/ 
-router.get('/detalles/:productoId/', productosController.detail); /* GET - detalles de produtos*/
-
-/*** LOGIN DE USER ***/
-router.get('/login', userController.login)
-router.get('/registracion', userController.registracion)
+router.get('/productos/detalles/:productoId/', productosController.detalle); /* GET - detalles de produtos*/
 
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/productos/crear/', productosController.create); /* GET - FORMULARIO DE CREACION */
 router.post('/productos/crear/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
 
-/*** TODOS LOS PRODUCTOS ***/ 
-router.get('/productos/', productosController.list); /* GET - FORMULARIO DE CREACION */
+/*** EDITAR UN PRODUCTO ***/ 
+router.get('productos/detalles/:productoId/editar', productosController.edit); /* GET - FORMULARIO DE CREACION */
+router.put('productos/detalles/editar', productosController.update); /* PUT -SUBIDA  */
+
+/*** ELIMINAR PRODUCTO***/ 
+router.delete('productos/delete/:productoId', productosController.destroy); /* DELETE - Delete from DB */
 
 /*** CARRITO ***/ 
 router.get('/carrito', userController.carrito);
 
-/*** EDITAR UN PRODUCTO ***/ 
-router.get('/detalles/:productoId/editar', productosController.edit); /* GET - FORMULARIO DE CREACION */
-router.put('/detalles/editar', productosController.update); /* PUT -SUBIDA  */
-
-/*** ELIMINAR PRODUCTO***/ 
-router.delete('/delete/:productoId', productosController.destroy); /* DELETE - Delete from DB */
+/*** LOGIN DE USER ***/
+router.get('/login', userController.login)
+router.get('/registracion', userController.registracion)
 
 module.exports = router;
