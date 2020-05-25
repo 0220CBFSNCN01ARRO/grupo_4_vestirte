@@ -9,5 +9,7 @@ module.exports={
     login:(req, res, next) =>{
             res.render('login')},
     carrito:(req, res, next) =>{
-            res.render('carrito', {productos, enMiles})}
+            res.render('carrito', {productos, enMiles})},
+    registracion:(req, res, next) =>{
+                res.render('registracion')}
         }

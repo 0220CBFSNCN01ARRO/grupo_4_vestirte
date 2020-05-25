@@ -15,6 +15,7 @@ router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalle
 
 /*** LOGIN DE USER ***/ 
 router.get('/login', userController.login)
+router.get('/registracion', userController.registracion)
 
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/productos/crear/', productosController.create); /* GET - FORMULARIO DE CREACION */
