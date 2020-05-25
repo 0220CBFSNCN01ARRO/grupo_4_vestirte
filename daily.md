@@ -15,3 +15,10 @@ Se crea JSON random.
 Se agrega nuevas carpetas para no tocar el front end que estaba hecho con el JSON anterior.
 
 Impedimentos -  "bootstrap nodejaba quitar los bordes"
+             -   El ciclo for de los EJS, redirige todos los detalle de producto al mismo producto.
+
+LUNES 25/05/2020
+
+Se comineza a implemntar el CRUD
+Formulario LOGIN terminado!
+Se empiza a hacer el formulario de registracion.
