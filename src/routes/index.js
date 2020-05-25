@@ -17,8 +17,8 @@ router.get('/detalles/:productoId/', indexController.detalles); /* GET - detalle
 router.get('/login', userController.login)
 
 /*** CREAR UN PRODUCTO ***/ 
-router.get('/crear/', productosController.create); /* GET - FORMULARIO DE CREACION */
-router.post('/crear/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
+router.get('/productos/crear/', productosController.create); /* GET - FORMULARIO DE CREACION */
+router.post('/productos/crear/', productosController.store); /* POST - ENVIO DE INFO DEL FORMULARIO */
 
 /*** TODOS LOS PRODUCTOS ***/ 
 router.get('/productos/', productosController.list); /* GET - FORMULARIO DE CREACION */
@@ -27,8 +27,8 @@ router.get('/productos/', productosController.list); /* GET - FORMULARIO DE CREA
 router.get('/carrito', userController.carrito);
 
 /*** EDITAR UN PRODUCTO ***/ 
-router.get('/edit/:productoId', productosController.edit); /* GET - FORMULARIO DE CREACION */
-router.put('/edit/:productoId', productosController.update); /* PUT -SUBIDA  */
+router.get('/detalles/:productoId/editar', productosController.edit); /* GET - FORMULARIO DE CREACION */
+router.put('/detalles/editar', productosController.update); /* PUT -SUBIDA  */
 
 /*** ELIMINAR PRODUCTO***/ 
 router.delete('/delete/:productoId', productosController.destroy); /* DELETE - Delete from DB */
