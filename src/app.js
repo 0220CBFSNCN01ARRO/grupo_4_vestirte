@@ -1,39 +1,27 @@
-//***MODULE REQUIRE***//
-const createError = require('http-errors');
-const cookieParser = require('cookie-parser');
-const express = require('express');
-const logger = require('morgan');
-const path = require('path');
-const methodOverride =  require('method-override');
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-//***ROUTERS***//
-const indexRouter = require('./routes/index');
-const productosRouter = require ('./routes/productos');
-const usuariosRouter = require('./routes/usuarios');
-const carritoRouter = require('./routes/carrito');
+let indexRouter = require('./routes/index');
+//let productosRouter = require ('./routes/productos'); NO ESTA EN USO TODAVIA
 
-//***EXPRESS EXECUTION***//
+
 var app = express();
 
-//***VIEW ENGINE***//
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-//***MIDDLEWARES***//
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(methodOverride('_method'));
 
-//***ROUTES***//
 app.use('/', indexRouter);
-app.use('/productos', productosRouter);
-app.use ('/usuarios', usuariosRouter);
-app.use ('/carrito', carritoRouter);
 
-//***OTHER***//
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

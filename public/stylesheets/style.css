@@ -224,21 +224,29 @@ text-align: center;
 
 
 /* ADMINISTRADOR DE PRODUCTOS  */
-.header-admin-products{
-    margin-bottom: 7px;
-    align-items: flex-end;
-    
+
+.imagen2x4{
+    max-width: 150px;
+    max-height:200px
 }
 
-
-.header-admin-products h4 {
-    align-items: flex-end;
-    margin-bottom: 0;
+.letraMed{
+    font-size: 1.5rem;
+    color:#232323;
+}
+.letraChica{
+    font-size: 1rem;
+    color:#232323;
+    font-weight: bolder;
 }
 
 .product-line-header {
     background-color: #ccc;
 }
+.naranja{
+color:#FF8E0A;
+}
+
 
 .lineline {
     background-color: #FF8E0A;
@@ -276,6 +284,19 @@ text-align: center;
     #barra-sup{
     display: none;} }
 
+    /* MODAL-BOTON CREACION */
+    .border-oscuro{
+        border:none;
+        border: solid 2px #303030;
+    }
+    .border-bottom-gris{
+        border-bottom: solid 1px #30303018;
+    }
+    .img-product{
+        max-width: 16rem;
+        max-height: 13rem;
+        border-radius: 1rem;
+    }
 
 
  /* DESCRIPCION DE PRODUCTOS */

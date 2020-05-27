@@ -1,30 +1,19 @@
-<div class="container products-wrapper">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="products-title">
-                <%=producto.nombre %> </h2>
+<div class="container-fluid d-md-flex justify-content-between ">
+    <div class=" d-flex justify-content-center row">
+        <div class="border-0 col-8  ">
+            <img class="card-img-top" src="/img/img-database/cuadradas/<%= producto.imagen%>" alt="Card image cap">
+            <div class="">
+                <h5 class="card-title"><%= producto.nombre %> </h5>
+                <p class="card-text"><%=producto.descripcion%></p>
+
             </div>
         </div>
-        <div class="product-detail">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <img src="/img/img-database/cuadradas/<%= producto.imagen%>" alt="product image" class="product-detail-img" width="300px">
-                    <p class="product-detail-description">
-                        <%= producto.descripcion %> 
-                    </p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <article class="product-detail-info">
-                        <h2 class="product-detail-title"><%= producto.nombre %> </h2>
-                        
-                        <p class="product-detail-price">
-                            $ <%= producto.precio %> <br>            
-                            <a href="./admin.ejs"><button type="button" class="btn btn-primary"> Agregar al Carrito</button></a>
-                            
-                            <a href='/productos/detalles/<%= producto.id %>/editar'><button type="button" class="btn btn-primary">EDITAR</button></a>
-                            <hr>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    </div>
+    <div class="row-md-3 d-flex d-md-block justify-content-center col-md-5">
+        <h5 class="card-title d-none d-md-block"><%= producto.nombre %> </h5>
+        <article class=" pt-2 d-md-block">$<%=producto.precio%></article>
+        <a href="#" class="btn boton col-4 rounded-pill my-0 mx-auto ">Comprar</a>
+
+    </div>
+</div>
