@@ -23,19 +23,5 @@ Se comineza a implemntar el CRUD.
 Formulario LOGIN terminado!.
 Se empieza a hacer el formulario de registracion.
 
-MARTES 26/05/2020
 
-Formulario registro terminado!
-Se dividio los Router para cada cosa, se corrigen los links de las vistas
-Se crean los controller que faltan
-Se unifican los JSON
-Se instala  Method-override
-
-
-
-
-
-
-
-
-
+sarasa

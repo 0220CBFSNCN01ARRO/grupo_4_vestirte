@@ -1,0 +1,60 @@
+<h1>EDITANDO EL PRODUCTO <%= productoedit.nombre %> </h1>
+
+<form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">
+          
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Nombre:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name="nombre" value="<%= productoedit.nombre %>">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Descripcion</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name="descripcion" value="<%= productoedit.descripcion %>">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Precio:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name='precio' value="<%= productoedit.precio %>">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Imagen:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name='imagen' value="<%= productoedit.imagen %>">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Tematica:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name='tematica' value="<%= productoedit.tematica %>">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Claves:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name='claves' value="<%= productoedit.claves %>">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputText" class="col-sm-4 col-form-label pt-3 pb-0">Categoria:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control border-bottom" id="inputText" name='categoria' value="<%= productoedit.categoria %>">
+      </div>
+    </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">EDITAR</button>
+      </div>
+    </div>
+  </form>
+<form method="POST" action="/productos/<%= productoedit.id %>?_method=DELETE">
+    <button class="btn btn-danger my-2" type="submit">BORRAR</button>
+</form>

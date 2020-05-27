@@ -1,233 +1,502 @@
 [
  {
   "id": 1,
-  "nombre": "Wine - Pinot Noir Mondavi Coastal",
-  "descripcion": "primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia",
-  "precio": "2.445.5",
-  "imagen": "product_1.jpg"
+  "nombre": "Bubalornis niger",
+  "descripcion": "morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque",
+  "precio": 2130.61,
+  "imagen": "product_1.jpg",
+  "tematica": "Health",
+  "claves": "India",
+  "categoria": "visitado"
  },
  {
   "id": 2,
-  "nombre": "Wood Chips - Regular",
-  "descripcion": "in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis",
-  "precio": "2.793.27",
-  "imagen": "product_2.jpg"
+  "nombre": "Oreotragus oreotragus",
+  "descripcion": "tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor",
+  "precio": 2068.2,
+  "imagen": "product_2.jpg",
+  "tematica": "Baby",
+  "claves": "Sierra",
+  "categoria": "oferta"
  },
  {
   "id": 3,
-  "nombre": "Juice - Lemon",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "1.269.9",
-  "imagen": "product_3.jpg"
+  "nombre": "Bison bison",
+  "descripcion": "dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget",
+  "precio": 3044.38,
+  "imagen": "product_3.jpg",
+  "tematica": "Kids",
+  "claves": "Alfa",
+  "categoria": "destacado"
  },
  {
   "id": 4,
-  "nombre": "Stock - Beef, White",
-  "descripcion": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc",
-  "precio": "4.942.89",
-  "imagen": "product_4.jpg"
+  "nombre": "Lorythaixoides concolor",
+  "descripcion": "justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor",
+  "precio": 2175.41,
+  "imagen": "product_4.jpg",
+  "tematica": "Toys",
+  "claves": "Victor",
+  "categoria": "visitado"
  },
  {
   "id": 5,
-  "nombre": "Wine - Merlot Vina Carmen",
-  "descripcion": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel",
-  "precio": "971",
-  "imagen": "product_5.jpg"
+  "nombre": "Danio rerio",
+  "descripcion": "dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel",
+  "precio": 4544.6,
+  "imagen": "product_5.jpg",
+  "tematica": "Garden",
+  "claves": "X-ray",
+  "categoria": "visitado"
  },
  {
   "id": 6,
-  "nombre": "Veal - Tenderloin, Untrimmed",
-  "descripcion": "in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla",
-  "precio": "1.887.38",
-  "imagen": "product_6.jpg"
+  "nombre": "Cebus apella",
+  "descripcion": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet",
+  "precio": 1681.17,
+  "imagen": "product_6.jpg",
+  "tematica": "Kids",
+  "claves": "Delta",
+  "categoria": "destacado"
  },
  {
   "id": 7,
-  "nombre": "Tea - Decaf 1 Cup",
-  "descripcion": "quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui",
-  "precio": "4.472.55",
-  "imagen": "product_7.jpg"
+  "nombre": "Corvus albicollis",
+  "descripcion": "ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut",
+  "precio": 970.93,
+  "imagen": "product_7.jpg",
+  "tematica": "Shoes",
+  "claves": "Echo",
+  "categoria": "visitado"
  },
  {
   "id": 8,
-  "nombre": "Juice - V8, Tomato",
-  "descripcion": "pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed",
-  "precio": "2.382.75",
-  "imagen": "product_8.jpg"
+  "nombre": "Felis concolor",
+  "descripcion": "vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo",
+  "precio": 3539.21,
+  "imagen": "product_8.jpg",
+  "tematica": "Health",
+  "claves": "Whiskey",
+  "categoria": "destacado"
  },
  {
   "id": 9,
-  "nombre": "Beer - Sleeman Fine Porter",
-  "descripcion": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl",
-  "precio": "639.92",
-  "imagen": "product_9.jpg"
+  "nombre": "Varanus sp.",
+  "descripcion": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl",
+  "precio": 671.32,
+  "imagen": "product_9.jpg",
+  "tematica": "Jewelery",
+  "claves": "Hotel",
+  "categoria": "visitado"
  },
  {
   "id": 10,
-  "nombre": "Nut - Pecan, Halves",
-  "descripcion": "parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
-  "precio": "3.100.42",
-  "imagen": "product_10.jpg"
+  "nombre": "Eumetopias jubatus",
+  "descripcion": "id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac",
+  "precio": 3593.97,
+  "imagen": "product_10.jpg",
+  "tematica": "Clothing",
+  "claves": "November",
+  "categoria": "visitado"
  },
  {
   "id": 11,
-  "nombre": "Lid - High Heat, Super Clear",
-  "descripcion": "nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec",
-  "precio": "4.672.5",
-  "imagen": "product_11.jpg"
+  "nombre": "Papio ursinus",
+  "descripcion": "erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis",
+  "precio": 672.12,
+  "imagen": "product_11.jpg",
+  "tematica": "Jewelery",
+  "claves": "Whiskey",
+  "categoria": "destacado"
  },
  {
   "id": 12,
-  "nombre": "Fond - Neutral",
-  "descripcion": "libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis",
-  "precio": "4.173.12",
-  "imagen": "product_12.jpg"
+  "nombre": "Conolophus subcristatus",
+  "descripcion": "cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis",
+  "precio": 4368.58,
+  "imagen": "product_12.jpg",
+  "tematica": "Games",
+  "claves": "November",
+  "categoria": "destacado"
  },
  {
   "id": 13,
-  "nombre": "Lamb - Pieces, Diced",
-  "descripcion": "amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue",
-  "precio": "1.908.31",
-  "imagen": "product_13.jpg"
+  "nombre": "Ara chloroptera",
+  "descripcion": "congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at",
+  "precio": 3997.77,
+  "imagen": "product_13.jpg",
+  "tematica": "Clothing",
+  "claves": "Whiskey",
+  "categoria": "visitado"
  },
  {
   "id": 14,
-  "nombre": "Capon - Breast, Wing On",
-  "descripcion": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel",
-  "precio": "4.497.76",
-  "imagen": "product_14.jpg"
+  "nombre": "Felis caracal",
+  "descripcion": "dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis",
+  "precio": 2794.48,
+  "imagen": "product_14.jpg",
+  "tematica": "Books",
+  "claves": "Yankee",
+  "categoria": "destacado"
  },
  {
   "id": 15,
-  "nombre": "Salmon Steak - Cohoe 8 Oz",
-  "descripcion": "nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu",
-  "precio": "2.980.14",
-  "imagen": "product_15.jpg"
+  "nombre": "Phalaropus fulicarius",
+  "descripcion": "dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat",
+  "precio": 4195.44,
+  "imagen": "product_15.jpg",
+  "tematica": "Computers",
+  "claves": "November",
+  "categoria": "oferta"
  },
  {
   "id": 16,
-  "nombre": "Wine - Alicanca Vinho Verde",
-  "descripcion": "eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas",
-  "precio": "2.941.65",
-  "imagen": "product_16.jpg"
+  "nombre": "unavailable",
+  "descripcion": "mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio",
+  "precio": 4324.32,
+  "imagen": "product_16.jpg",
+  "tematica": "Outdoors",
+  "claves": "Quebec",
+  "categoria": "oferta"
  },
  {
   "id": 17,
-  "nombre": "Sansho Powder",
-  "descripcion": "nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio",
-  "precio": "2.222.97",
-  "imagen": "product_17.jpg"
+  "nombre": "Sceloporus magister",
+  "descripcion": "curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus",
+  "precio": 1017.97,
+  "imagen": "product_17.jpg",
+  "tematica": "Movies",
+  "claves": "India",
+  "categoria": "oferta"
  },
  {
   "id": 18,
-  "nombre": "Poppy Seed",
-  "descripcion": "orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum",
-  "precio": "3.403.91",
-  "imagen": "product_18.jpg"
+  "nombre": "Cacatua tenuirostris",
+  "descripcion": "platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla",
+  "precio": 1331.25,
+  "imagen": "product_18.jpg",
+  "tematica": "Clothing",
+  "claves": "Mike",
+  "categoria": "oferta"
  },
  {
   "id": 19,
-  "nombre": "Vodka - Lemon, Absolut",
-  "descripcion": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
-  "precio": "4.497.45",
-  "imagen": "product_19.jpg"
+  "nombre": "Dacelo novaeguineae",
+  "descripcion": "interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu",
+  "precio": 4068.83,
+  "imagen": "product_19.jpg",
+  "tematica": "Sports",
+  "claves": "Golf",
+  "categoria": "oferta"
  },
  {
   "id": 20,
-  "nombre": "Pasta - Penne Primavera, Single",
-  "descripcion": "tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula",
-  "precio": "2.745.17",
-  "imagen": "product_20.jpg"
+  "nombre": "Geochelone elegans",
+  "descripcion": "ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu",
+  "precio": 601.88,
+  "imagen": "product_20.jpg",
+  "tematica": "Books",
+  "claves": "Alfa",
+  "categoria": "visitado"
  },
  {
   "id": 21,
-  "nombre": "Turkey - Breast, Double",
-  "descripcion": "lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet",
-  "precio": "3.662.41",
-  "imagen": "product_21.jpg"
+  "nombre": "Falco peregrinus",
+  "descripcion": "vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam",
+  "precio": 3611.03,
+  "imagen": "product_21.jpg",
+  "tematica": "Music",
+  "claves": "Romeo",
+  "categoria": "oferta"
  },
  {
   "id": 22,
-  "nombre": "Garlic - Peeled",
-  "descripcion": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante",
-  "precio": "2.192.89",
-  "imagen": "product_22.jpg"
+  "nombre": "Drymarchon corias couperi",
+  "descripcion": "nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend",
+  "precio": 4608.79,
+  "imagen": "product_22.jpg",
+  "tematica": "Books",
+  "claves": "Mike",
+  "categoria": "destacado"
  },
  {
   "id": 23,
-  "nombre": "Bay Leaf Ground",
-  "descripcion": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis",
-  "precio": "2.858.72",
-  "imagen": "product_23.jpg"
+  "nombre": "Spermophilus armatus",
+  "descripcion": "sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+  "precio": 2437.57,
+  "imagen": "product_23.jpg",
+  "tematica": "Electronics",
+  "claves": "Delta",
+  "categoria": "oferta"
  },
  {
   "id": 24,
-  "nombre": "Sansho Powder",
-  "descripcion": "consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis",
-  "precio": "1.958.01",
-  "imagen": "product_24.jpg"
+  "nombre": "Coendou prehensilis",
+  "descripcion": "ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
+  "precio": 1670.19,
+  "imagen": "product_24.jpg",
+  "tematica": "Home",
+  "claves": "Papa",
+  "categoria": "visitado"
  },
  {
   "id": 25,
-  "nombre": "Appetizer - Escargot Puff",
-  "descripcion": "quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus",
-  "precio": "3.400.17",
-  "imagen": "product_25.jpg"
+  "nombre": "Pseudalopex gymnocercus",
+  "descripcion": "sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas",
+  "precio": 4053.9,
+  "imagen": "product_25.jpg",
+  "tematica": "Electronics",
+  "claves": "Golf",
+  "categoria": "oferta"
  },
  {
   "id": 26,
-  "nombre": "Lighter - Bbq",
-  "descripcion": "eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam",
-  "precio": "3.325.86",
-  "imagen": "product_26.jpg"
+  "nombre": "Larus novaehollandiae",
+  "descripcion": "sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis",
+  "precio": 3123.34,
+  "imagen": "product_26.jpg",
+  "tematica": "Grocery",
+  "claves": "Hotel",
+  "categoria": "visitado"
  },
  {
   "id": 27,
-  "nombre": "Chocolate - Pistoles, Lactee, Milk",
-  "descripcion": "nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus",
-  "precio": "2.442.06",
-  "imagen": "product_27.jpg"
+  "nombre": "Streptopelia senegalensis",
+  "descripcion": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus",
+  "precio": 4240.81,
+  "imagen": "product_27.jpg",
+  "tematica": "Baby",
+  "claves": "Zulu",
+  "categoria": "visitado"
  },
  {
   "id": 28,
-  "nombre": "Kiwi",
-  "descripcion": "tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris",
-  "precio": "1.797.69",
-  "imagen": "product_28.jpg"
+  "nombre": "Loxodonta africana",
+  "descripcion": "lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin",
+  "precio": 2640.06,
+  "imagen": "product_28.jpg",
+  "tematica": "Outdoors",
+  "claves": "Foxtrot",
+  "categoria": "destacado"
  },
  {
   "id": 29,
-  "nombre": "Ice Cream - Fudge Bars",
-  "descripcion": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea",
-  "precio": "3.573.89",
-  "imagen": "product_29.jpg"
+  "nombre": "Physignathus cocincinus",
+  "descripcion": "magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum",
+  "precio": 1795.59,
+  "imagen": "product_29.jpg",
+  "tematica": "Shoes",
+  "claves": "Mike",
+  "categoria": "visitado"
  },
  {
   "id": 30,
-  "nombre": "Wine - Chardonnay South",
-  "descripcion": "potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non",
-  "precio": "1.507.16",
-  "imagen": "product_30.jpg"
+  "nombre": "Larus novaehollandiae",
+  "descripcion": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in",
+  "precio": 1649.83,
+  "imagen": "product_30.jpg",
+  "tematica": "Industrial",
+  "claves": "Alfa",
+  "categoria": "visitado"
  },
  {
   "id": 31,
-  "nombre": "Campera Marron",
-  "descripcion": "Una campera marron hermosa",
-  "precio": "8.000",
-  "imagen": "default-image.png"
+  "nombre": "Larus fuliginosus",
+  "descripcion": "nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem",
+  "precio": 2946.22,
+  "imagen": "product_31.jpg",
+  "tematica": "Baby",
+  "claves": "Delta",
+  "categoria": "destacado"
  },
  {
   "id": 32,
-  "nombre": "Juice - Lemon",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "8.000",
-  "imagen": "default-image.png"
+  "nombre": "Casmerodius albus",
+  "descripcion": "sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis",
+  "precio": 4286.45,
+  "imagen": "product_32.jpg",
+  "tematica": "Books",
+  "claves": "Romeo",
+  "categoria": "visitado"
  },
  {
   "id": 33,
-  "nombre": "Juguito",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "9.999",
-  "imagen": "default-image.png"
+  "nombre": "Macropus eugenii",
+  "descripcion": "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum",
+  "precio": 1682.56,
+  "imagen": "product_33.jpg",
+  "tematica": "Industrial",
+  "claves": "Foxtrot",
+  "categoria": "visitado"
+ },
+ {
+  "id": 34,
+  "nombre": "Nannopterum harrisi",
+  "descripcion": "massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent",
+  "precio": 4017.78,
+  "imagen": "product_34.jpg",
+  "tematica": "Baby",
+  "claves": "Tango",
+  "categoria": "oferta"
+ },
+ {
+  "id": 35,
+  "nombre": "Prionace glauca",
+  "descripcion": "erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
+  "precio": 3746.16,
+  "imagen": "product_35.jpg",
+  "tematica": "Clothing",
+  "claves": "Sierra",
+  "categoria": "destacado"
+ },
+ {
+  "id": 36,
+  "nombre": "Dendrocitta vagabunda",
+  "descripcion": "vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
+  "precio": 3543.61,
+  "imagen": "product_36.jpg",
+  "tematica": "Shoes",
+  "claves": "Delta",
+  "categoria": "destacado"
+ },
+ {
+  "id": 37,
+  "nombre": "Odocoilenaus virginianus",
+  "descripcion": "quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id",
+  "precio": 2715.81,
+  "imagen": "product_37.jpg",
+  "tematica": "Jewelery",
+  "claves": "Mike",
+  "categoria": "visitado"
+ },
+ {
+  "id": 38,
+  "nombre": "Canis lupus baileyi",
+  "descripcion": "adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis",
+  "precio": 4814.42,
+  "imagen": "product_38.jpg",
+  "tematica": "Movies",
+  "claves": "Kilo",
+  "categoria": "visitado"
+ },
+ {
+  "id": 39,
+  "nombre": "Thamnolaea cinnmomeiventris",
+  "descripcion": "sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et",
+  "precio": 3837.27,
+  "imagen": "product_39.jpg",
+  "tematica": "Music",
+  "claves": "Uniform",
+  "categoria": "oferta"
+ },
+ {
+  "id": 40,
+  "nombre": "Cynomys ludovicianus",
+  "descripcion": "mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque",
+  "precio": 704.01,
+  "imagen": "product_40.jpg",
+  "tematica": "Movies",
+  "claves": "Quebec",
+  "categoria": "destacado"
+ },
+ {
+  "id": 41,
+  "nombre": "Oncorhynchus nerka",
+  "descripcion": "nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec",
+  "precio": 3093.14,
+  "imagen": "product_41.jpg",
+  "tematica": "Books",
+  "claves": "November",
+  "categoria": "destacado"
+ },
+ {
+  "id": 42,
+  "nombre": "Colobus guerza",
+  "descripcion": "magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean",
+  "precio": 4584.46,
+  "imagen": "product_42.jpg",
+  "tematica": "Beauty",
+  "claves": "Foxtrot",
+  "categoria": "visitado"
+ },
+ {
+  "id": 43,
+  "nombre": "Sitta canadensis",
+  "descripcion": "et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel",
+  "precio": 4688.68,
+  "imagen": "product_43.jpg",
+  "tematica": "Games",
+  "claves": "Kilo",
+  "categoria": "visitado"
+ },
+ {
+  "id": 44,
+  "nombre": "Ardea cinerea",
+  "descripcion": "cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida",
+  "precio": 2299.24,
+  "imagen": "product_44.jpg",
+  "tematica": "Games",
+  "claves": "Juliett",
+  "categoria": "visitado"
+ },
+ {
+  "id": 45,
+  "nombre": "Uraeginthus angolensis",
+  "descripcion": "nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor",
+  "precio": 1161.17,
+  "imagen": "product_45.jpg",
+  "tematica": "Beauty",
+  "claves": "Hotel",
+  "categoria": "oferta"
+ },
+ {
+  "id": 46,
+  "nombre": "Nasua narica",
+  "descripcion": "nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut",
+  "precio": 2396.42,
+  "imagen": "product_46.jpg",
+  "tematica": "Games",
+  "claves": "Romeo",
+  "categoria": "visitado"
+ },
+ {
+  "id": 47,
+  "nombre": "unavailable",
+  "descripcion": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam",
+  "precio": 745.36,
+  "imagen": "product_47.jpg",
+  "tematica": "Games",
+  "claves": "India",
+  "categoria": "visitado"
+ },
+ {
+  "id": 48,
+  "nombre": "Pycnonotus nigricans",
+  "descripcion": "nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in",
+  "precio": 2074.43,
+  "imagen": "product_48.jpg",
+  "tematica": "Industrial",
+  "claves": "Alfa",
+  "categoria": "oferta"
+ },
+ {
+  "id": 49,
+  "nombre": "Myrmecobius fasciatus",
+  "descripcion": "felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc",
+  "precio": 3097.41,
+  "imagen": "product_49.jpg",
+  "tematica": "Garden",
+  "claves": "Echo",
+  "categoria": "destacado"
+ },
+ {
+  "id": 50,
+  "nombre": "Microcebus murinus",
+  "descripcion": "in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient",
+  "precio": 4226.94,
+  "imagen": "product_50.jpg",
+  "tematica": "Grocery",
+  "claves": "Quebec",
+  "categoria": "destacado"
  }
 ]

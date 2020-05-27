@@ -276,19 +276,6 @@ text-align: center;
     #barra-sup{
     display: none;} }
 
-    /* MODAL-BOTON CREACION */
-    .border-oscuro{
-        border:none;
-        border: solid 2px #303030;
-    }
-    .border-bottom-gris{
-        border-bottom: solid 1px #30303018;
-    }
-    .img-product{
-        max-width: 16rem;
-        max-height: 13rem;
-        border-radius: 1rem;
-    }
 
 
  /* DESCRIPCION DE PRODUCTOS */
