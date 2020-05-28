@@ -283,7 +283,8 @@ color:#FF8E0A;
  @media (max-width: 991.98px) {
     #barra-sup{
     display: none;} }
-
+    /* FORMULARIO DE EDIT */
+   
     /* MODAL-BOTON CREACION */
     .border-oscuro{
         border:none;

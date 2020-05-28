@@ -1,52 +1,67 @@
-<h1>EDITANDO EL PRODUCTO <%= productoedit.nombre %> </h1>
-
-<form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">
-
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Nombre</label></div>
-    <div class=" col-7   form-inline border-gris ">
-      <input type="text" class="  border-0 p-0" name="nombre" value="<%= productoedit.nombre %>" required>
-    </div>
+<div class=" row d-flex justify-content-center py-3">
+<div class="card col-9 col-md-7 col-lg5 container-fluid">
+  <img src="/img/img-productos/<%= productoedit.imagen %> " class="card-img-top mt-2" alt="imagen del producto a editar">
+  <div class="card-body py-2">
+    <h3 class="card-title text-center"><%= productoedit.nombre %></h3>
+  </div>
+  <form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">
+          
+    <div class="row px2 mt-5 mb-3">
     
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Descripcion</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="text" class="  border-0 p-0" name="descripcion" value="<%= productoedit.descripcion %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Precio</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="number" class="  border-0 p-0" name="precio" value="<%= productoedit.precio %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Descuento</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="number" class="  border-0 p-0" name="descuento" value="<%= productoedit.descuento %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Imagen</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="text" class="  border-0 p-0" name="imagen" value="<%= productoedit.imagen %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Categoria</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="text" class="  border-0 p-0" name="categoria" value="<%= productoedit.categoria %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Costo de envio</label></div>
-    <div class=" col-7  form-inline border-gris ">
-      <input type="number" class="  border-0 p-0" name="costo-envio" value="<%= productoedit.envio %>" required>
-    </div>
-    
-    <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Stock</label></div>
-    <div class=" col-7   form-inline border-gris ">
-      <input type="number" class="  border-0 p-0" name="stock" value="<%= productoedit.stock %>" required>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">EDITAR</button>
+      <div class="col-6"><label for="inputText" class="  pb-1">Nombre</label></div>
+      <div class=" col-5  form-inline border-gris ">
+        <input type="text" class="  border-0 p-0" name="nombre" value="<%= productoedit.nombre %>"required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class="  pb-1">Descripcion</label></div>
+      <div class=" col-5   form-inline border-gris ">
+        <input type="text" class="  border-0 p-0" name="descripcion" value="<%= productoedit.nombre %>" required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class="  pb-1">Precio</label></div>
+      <div class=" col-5  form-inline border-gris ">
+        <input type="number" class="  border-0 p-0" name="precio"  value="<%= productoedit.nombre %>" required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class=" pb-1">Descuento</label></div>
+      <div class=" col-5  form-inline border-gris ">
+        <input type="number" class="  border-0 p-0" name="descuento" value="<%= productoedit.nombre %>"  required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class="  pb-1">Imagen</label></div>
+      <div class="col-5  form-inline border-gris ">
+        <input type="text" class="  border-0 p-0" name="imagen" value="<%= productoedit.nombre %>" required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class=" pb-1">Categoria</label></div>
+      <div class="col-5 form-inline border-gris ">
+        <input type="text" class="  border-0 p-0" name="categoria" value="<%= productoedit.nombre %>" required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class=" pb-1">Costo de envio</label></div>
+      <div class="col-5  form-inline border-gris ">
+        <input type="number" class="  border-0 p-0" name="costo-envio" value="<%= productoedit.nombre %>" required>
+      </div>
+      
+      <div class="col-6"><label for="inputText" class=" pb-1">Stock</label></div>
+      <div class="col-5  form-inline border-gris ">
+        <input type="number" class="  border-0 p-0" name="stock" value="<%= productoedit.stock %>" required>
       </div>
     </div>
-  </form>
+    
+             
+
+
+    </form>
+    <div class=" col-12 mt-1 p-1 form-group row d-flex justify-content-around">
+ <form method="POST" action="/productos/<%= productoedit.id %>?_method=EDIT">
+          <button class="btn btn boton" type="submit">BORRAR</button>
+        </form>
   <form method="POST" action="/productos/<%= productoedit.id %>?_method=DELETE">
-    <button class="btn btn-danger my-2" type="submit">BORRAR</button>
+          <button class="btn boton" type="submit">EDITAR</button>
   </form>
+    </div>
+  </div>
+  </div>
+   
+

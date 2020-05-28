@@ -22,7 +22,7 @@ listar: (req, res) => {
 
 detalle: (req, res) => {
     let producto = productos.find (prod => prod.id == req.params.productoId)
-    res.render('productos-detalle', {producto, productos});
+    res.render('productos-detalle', {producto, productos,productoedit});
 },
 
 guardar: (req, res) => {
