@@ -1,233 +1,68 @@
 [
  {
   "id": 1,
-  "nombre": "Wine - Pinot Noir Mondavi Coastal",
-  "descripcion": "primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia",
-  "precio": "2.445.5",
-  "imagen": "product_1.jpg"
+  "nombre": "Campera Marron",
+  "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  "precio": 1200,
+  "descuento": 50,
+  "imagen": "img-campera-marron.jpg",
+  "categoria": "destacado",
+  "envio": 100,
+  "stock": 5
  },
  {
   "id": 2,
-  "nombre": "Wood Chips - Regular",
-  "descripcion": "in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis",
-  "precio": "2.793.27",
-  "imagen": "product_2.jpg"
+  "nombre": "Canguro Blanco",
+  "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  "precio": 1000,
+  "descuento": 30,
+  "imagen": "img-canguro-blanco.jpg",
+  "categoria": "destacado",
+  "envio": 10,
+  "stock": 3
  },
  {
   "id": 3,
-  "nombre": "Juice - Lemon",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "1.269.9",
-  "imagen": "product_3.jpg"
+  "nombre": "Musculosa Blanca",
+  "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  "precio": 200,
+  "descuento": 50,
+  "imagen": "img-musculosa-blanca.jpg",
+  "categoria": "oferta",
+  "envio": 0,
+  "stock": 2
  },
  {
   "id": 4,
-  "nombre": "Stock - Beef, White",
-  "descripcion": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc",
-  "precio": "4.942.89",
-  "imagen": "product_4.jpg"
+  "nombre": "Pantalon Chino",
+  "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  "precio": 600,
+  "descuento": 50,
+  "imagen": "img-pantalon-chino.jpg",
+  "categoria": "destacado",
+  "envio": 200,
+  "stock": 3
  },
  {
   "id": 5,
-  "nombre": "Wine - Merlot Vina Carmen",
-  "descripcion": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel",
-  "precio": "971",
-  "imagen": "product_5.jpg"
+  "nombre": "Remera Negra",
+  "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  "precio": 610,
+  "descuento": 50,
+  "imagen": "img-remera-negra.jpg",
+  "categoria": "destacado",
+  "envio": 300,
+  "stock": 3
  },
  {
   "id": 6,
-  "nombre": "Veal - Tenderloin, Untrimmed",
-  "descripcion": "in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla",
-  "precio": "1.887.38",
-  "imagen": "product_6.jpg"
- },
- {
-  "id": 7,
-  "nombre": "Tea - Decaf 1 Cup",
-  "descripcion": "quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui",
-  "precio": "4.472.55",
-  "imagen": "product_7.jpg"
- },
- {
-  "id": 8,
-  "nombre": "Juice - V8, Tomato",
-  "descripcion": "pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed",
-  "precio": "2.382.75",
-  "imagen": "product_8.jpg"
- },
- {
-  "id": 9,
-  "nombre": "Beer - Sleeman Fine Porter",
-  "descripcion": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl",
-  "precio": "639.92",
-  "imagen": "product_9.jpg"
- },
- {
-  "id": 10,
-  "nombre": "Nut - Pecan, Halves",
-  "descripcion": "parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
-  "precio": "3.100.42",
-  "imagen": "product_10.jpg"
- },
- {
-  "id": 11,
-  "nombre": "Lid - High Heat, Super Clear",
-  "descripcion": "nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec",
-  "precio": "4.672.5",
-  "imagen": "product_11.jpg"
- },
- {
-  "id": 12,
-  "nombre": "Fond - Neutral",
-  "descripcion": "libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis",
-  "precio": "4.173.12",
-  "imagen": "product_12.jpg"
- },
- {
-  "id": 13,
-  "nombre": "Lamb - Pieces, Diced",
-  "descripcion": "amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue",
-  "precio": "1.908.31",
-  "imagen": "product_13.jpg"
- },
- {
-  "id": 14,
-  "nombre": "Capon - Breast, Wing On",
-  "descripcion": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel",
-  "precio": "4.497.76",
-  "imagen": "product_14.jpg"
- },
- {
-  "id": 15,
-  "nombre": "Salmon Steak - Cohoe 8 Oz",
-  "descripcion": "nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu",
-  "precio": "2.980.14",
-  "imagen": "product_15.jpg"
- },
- {
-  "id": 16,
-  "nombre": "Wine - Alicanca Vinho Verde",
-  "descripcion": "eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas",
-  "precio": "2.941.65",
-  "imagen": "product_16.jpg"
- },
- {
-  "id": 17,
-  "nombre": "Sansho Powder",
-  "descripcion": "nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio",
-  "precio": "2.222.97",
-  "imagen": "product_17.jpg"
- },
- {
-  "id": 18,
-  "nombre": "Poppy Seed",
-  "descripcion": "orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum",
-  "precio": "3.403.91",
-  "imagen": "product_18.jpg"
- },
- {
-  "id": 19,
-  "nombre": "Vodka - Lemon, Absolut",
-  "descripcion": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
-  "precio": "4.497.45",
-  "imagen": "product_19.jpg"
- },
- {
-  "id": 20,
-  "nombre": "Pasta - Penne Primavera, Single",
-  "descripcion": "tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula",
-  "precio": "2.745.17",
-  "imagen": "product_20.jpg"
- },
- {
-  "id": 21,
-  "nombre": "Turkey - Breast, Double",
-  "descripcion": "lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet",
-  "precio": "3.662.41",
-  "imagen": "product_21.jpg"
- },
- {
-  "id": 22,
-  "nombre": "Garlic - Peeled",
-  "descripcion": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante",
-  "precio": "2.192.89",
-  "imagen": "product_22.jpg"
- },
- {
-  "id": 23,
-  "nombre": "Bay Leaf Ground",
-  "descripcion": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis",
-  "precio": "2.858.72",
-  "imagen": "product_23.jpg"
- },
- {
-  "id": 24,
-  "nombre": "Sansho Powder",
-  "descripcion": "consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis",
-  "precio": "1.958.01",
-  "imagen": "product_24.jpg"
- },
- {
-  "id": 25,
-  "nombre": "Appetizer - Escargot Puff",
-  "descripcion": "quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus",
-  "precio": "3.400.17",
-  "imagen": "product_25.jpg"
- },
- {
-  "id": 26,
-  "nombre": "Lighter - Bbq",
-  "descripcion": "eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam",
-  "precio": "3.325.86",
-  "imagen": "product_26.jpg"
- },
- {
-  "id": 27,
-  "nombre": "Chocolate - Pistoles, Lactee, Milk",
-  "descripcion": "nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus",
-  "precio": "2.442.06",
-  "imagen": "product_27.jpg"
- },
- {
-  "id": 28,
-  "nombre": "Kiwi",
-  "descripcion": "tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris",
-  "precio": "1.797.69",
-  "imagen": "product_28.jpg"
- },
- {
-  "id": 29,
-  "nombre": "Ice Cream - Fudge Bars",
-  "descripcion": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea",
-  "precio": "3.573.89",
-  "imagen": "product_29.jpg"
- },
- {
-  "id": 30,
-  "nombre": "Wine - Chardonnay South",
-  "descripcion": "potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non",
-  "precio": "1.507.16",
-  "imagen": "product_30.jpg"
- },
- {
-  "id": 31,
-  "nombre": "Campera Marron",
-  "descripcion": "Una campera marron hermosa",
-  "precio": "8.000",
-  "imagen": "default-image.png"
- },
- {
-  "id": 32,
-  "nombre": "Juice - Lemon",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "8.000",
-  "imagen": "default-image.png"
- },
- {
-  "id": 33,
-  "nombre": "Juguito",
-  "descripcion": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
-  "precio": "9.999",
-  "imagen": "default-image.png"
+  "nombre": "Filopo",
+  "descripcion": "asdafafjAKLDJFKADJF",
+  "precio": 2000,
+  "descuento": "10",
+  "imagen": "default-image.png",
+  "categoria": "oferta",
+  "envio": "100",
+  "stock": "10"
  }
 ]

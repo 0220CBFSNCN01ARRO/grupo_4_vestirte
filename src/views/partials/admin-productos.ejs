@@ -1,31 +1,46 @@
 <div class="container admin-products">
     <div class="conteiner-fluid">
-        <div class="row header-admin-products">
-            <h4 class="col-6 align-self-base">Administrador de productos</h4>
-            <div class="col-4">
-                <a href='/productos/crear'><button type="button" class="btn btn-primary">+ NUEVO</button></a>
+        <div class="row ">
+            <p class="col-12 letraMed text-center">Administrador de productos</p>
+            <div class="col-12 d-flex justify-content-end"><%-include('./modal-boton-crear.ejs')%></div>
+        </div>
+        <div class="d-none d-lg-block col-12  d-flex align-items-center ">
+            <div class="col-12 d-flex justify-content-between">
+                <span class="col-2">Imagen</span>
+                <span class="col-2">Nombre</span>
+                <span class="col-2">Costo Envio</span>
+                <span class="col-2">Precio</span>
+                <span class="col-2">Stock</span>
+                
             </div>
         </div>
-        <div class='row lineline'>
-        </div>
-        <div class="row product-line-header">
-            <span class="col-2 d-flex justify-content-center">Imagen</span>
-            <span class="col-3 d-flex justify-content-center">Nombre</span>
-            <span class="col-2 d-flex justify-content-center">Costo Envio</span>
-            <span class="col-2 d-flex justify-content-center">Precio</span>
-            <span class="col-3 d-flex justify-content-center">Stock</span>
-        </div>
-        <% for(producto of productos){ %>
-            <div class="row product-line">
-                <img class="col-2 d-flex justify-content-center" src="/img/img-database/cuadradas/<%= producto.imagen %>">
-                <span class="col-3 d-flex justify-content-center"><%= producto.nombre %></span>            
-                <span class="col-2 d-flex justify-content-center">Gratis</span>
-                <span class="col-2 d-flex justify-content-center"><%= producto.precio %> </span>
-                <div class="stock-control-triad col-3 d-flex justify-content-center">   
-                    <button class="round">-</button>
-                    <input type="number">
-                    <button class="round">+</button>
-                    <a href="/productos/detalles/<%= producto.id%>/editar"><i class="fas fa-edit"></i></a>
+        <% for(producto of productos) { %>
+            <div class=" text-center mt-3 d-lg-flex justify-content-between align-items-center border-gris mb-3">
+                <img class="img-md-fluid imagen2x4" src="/img/img-productos/<%=producto.imagen %> ">
+                <div class=" mt-3 d-none d-lg-block ">
+                    <a class="active pr-3" href="/productos/detalles/<%= producto.id %>/editar">
+                        <i class="fas fa-trash-alt fa-2x naranja"></i>
+                    </a>
+                    <a class="active pr-3" href="/productos/detalles/<%= producto.id %>/editar">
+                        <i class="fas fa-edit fa-2x naranja"></i>
+                    </a>
+                </div>
+                
+                <div class=" d-lg-none col-12 mt-3">
+                    <span class="d-flex justify-content-between"><p>Producto:</p><%= producto.id %> </span> 
+                    <span class="d-flex justify-content-between"><p>Envio:</p>Gratis</span>
+                    <span class="d-flex justify-content-between"><p>Precio:</p><%= producto.precio %> </span>
+                    
+                    
+                    <div class="d-flex justify-content-around my-2 d-block d-lg-none">
+                        <a class="active pr-3" href="/productos/detalles/<%= producto.id %>/editar">
+                            <i class="fas fa-trash-alt fa-2x naranja"></i>
+                        </a>
+                        
+                        <a class="active pr-3" href="/productos/detalles/<%= producto.id %>/editar">
+                            <i class="fas fa-edit fa-2x naranja"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <% } %>
