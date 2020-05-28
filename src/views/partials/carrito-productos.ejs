@@ -1,7 +1,7 @@
 <div class="container admin-products">
     <div class="conteiner-fluid">
         <div class="row header-admin-products">
-            <h4 class="col-6 align-self-base">Administrador de productos</h4>
+            <h4 class="col-6 align-self-base">RESUMEN DE SU ORDEN</h4>
             <div class="col-4"></div>
             <div class="col-2"></div>
         </div>
@@ -12,19 +12,16 @@
             <span class="col-3 d-flex justify-content-center">Nombre</span>
             <span class="col-2 d-flex justify-content-center">Costo Envio</span>
             <span class="col-2 d-flex justify-content-center">Precio</span>
-            <span class="col-3 d-flex justify-content-center">Stock</span>
+            <span class="col-3 d-flex justify-content-center">Cantidad</span>
         </div>
         <% for(producto of productos){ %>
             <div class="row product-line">
-                <img class="col-2 d-flex justify-content-center" src="<%=producto.image%>">
-                <span class="col-3 d-flex justify-content-center"><%= producto.name %></span>            
+                <img class="col-2 d-flex justify-content-center" src="/img/img-productos/<%=producto.imagen%>">
+                <span class="col-3 d-flex justify-content-center"><%= producto.nombre %></span>            
                 <span class="col-2 d-flex justify-content-center">Gratis</span>
                 <span class="col-2 d-flex justify-content-center"><%= producto.precio %> </span>
                 <div class="stock-control-triad col-12 col-lg-3 d-flex justify-content-center">   
-                    <button class="round">-</button>
-                    <input type="number">
-                    <button class="round">+</button>
-                    <i class="fas fa-edit"></i>
+                    <input type="number" value="1">
                 </div>
             </div>
             <% } %>

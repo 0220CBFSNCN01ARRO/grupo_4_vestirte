@@ -1,6 +1,6 @@
 <h1>EDITANDO EL PRODUCTO <%= productoedit.nombre %> </h1>
 
-<form method="POST" action="/detalles/editar?_method=PUT">
+<form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">
 
     <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Nombre</label></div>
     <div class=" col-7   form-inline border-gris ">
@@ -14,7 +14,7 @@
     
     <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Precio</label></div>
     <div class=" col-7  form-inline border-gris ">
-      <input type="number" class="  border-0 p-0" name="precio" required>
+      <input type="number" class="  border-0 p-0" name="precio" value="<%= productoedit.precio %>" required>
     </div>
     
     <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Descuento</label></div>
@@ -47,6 +47,6 @@
       </div>
     </div>
   </form>
-  <form method="POST" action="/productos/crear?_method=DELETE/<% productoedit.id%>">
+  <form method="POST" action="/productos/<%= productoedit.id %>?_method=DELETE">
     <button class="btn btn-danger my-2" type="submit">BORRAR</button>
   </form>
