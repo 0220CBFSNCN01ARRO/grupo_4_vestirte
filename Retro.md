@@ -14,3 +14,24 @@ Detenernos ante la primer tarea del trabajo que presente dificultad, en el caso 
 
 #Menos de
 Dejar de intentar de hacer las cosas solo. Si bien el trabajo y las tareas dividen responsabilidad, si somos tercos en resolver solos lo que se nos ha asignado puede que no lleguemos a la entrega. 
+
+
+## Retrospectiva 2 Sprint 3
+
+Seguir haciendo:
+División de tarea.
+
+Hacer mas:
+Utilizacion Trello.
+Reuniones mas frecuentes.
+Mejorar comunicacion.
+Verificar ejecucion de tareas.
+
+
+Empezar a hacer:
+Por whatsapp pasar informe diario de lo que se hizo en el dia.
+
+
+Dejar de hacer:
+No realizar tareas que estan por fuera del sprint (futuristas)
+Ejecucion de tareas cerca de la fecha de entrega del sprint
