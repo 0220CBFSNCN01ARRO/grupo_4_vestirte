@@ -22,7 +22,7 @@ listar: (req, res) => {
 
 detalle: (req, res) => {
     let producto = productos.find (prod => prod.id == req.params.productoId)
-    res.render('productos-detalle', {producto, productos,productoedit});
+    res.render('productos-detalle', {producto, productos});
 },
 
 guardar: (req, res) => {
@@ -41,7 +41,7 @@ guardar: (req, res) => {
 },
 
 editar: (req, res) => {
-    let productoedit = productos.find(prod => prod.id == req.params.productoId)
+    var productoedit = productos.find(prod => prod.id == req.params.productoId)
     res.render('productos-editar',{productoedit});
 },
 actualizar: (req, res) => {
@@ -57,11 +57,11 @@ actualizar: (req, res) => {
         }
     })
 fs.writeFileSync(dataBasePath, JSON.stringify(final, null, ' '));
-res.redirect('/');
+res.redirect('/productos/crear');
 },
 destruir : (req, res) => {
     let final = productos.filter(prod=> prod.id != req.params.productoId)
     fs.writeFileSync(dataBasePath, JSON.stringify(final, null, ' '));
-    res.redirect('/');
+    res.redirect('/productos/crear');
 }
 };

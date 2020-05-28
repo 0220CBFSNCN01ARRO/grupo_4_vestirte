@@ -4,7 +4,7 @@
   <div class="card-body py-2">
     <h3 class="card-title text-center"><%= productoedit.nombre %></h3>
   </div>
-  <form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">
+  <form method="POST" action="/productos/<%= productoedit.id %>/editar?_method=PUT">
           
     <div class="row px2 mt-5 mb-3">
     
@@ -54,11 +54,11 @@
 
     </form>
     <div class=" col-12 mt-1 p-1 form-group row d-flex justify-content-around">
- <form method="POST" action="/productos/<%= productoedit.id %>?_method=EDIT">
-          <button class="btn btn boton" type="submit">BORRAR</button>
+ <form method="POST" action="/productos/<%= productoedit.id %>/actualizar?_method=PUT">
+          <button class="btn btn boton" type="submit">EDITAR</button>
         </form>
-  <form method="POST" action="/productos/<%= productoedit.id %>?_method=DELETE">
-          <button class="btn boton" type="submit">EDITAR</button>
+  <form method="POST" action="/productos/<%= productoedit.id %>/destruir?_method=DELETE">
+          <button class="btn boton" type="submit">BORRAR</button>
   </form>
     </div>
   </div>

@@ -16,10 +16,10 @@ router.get('/crear/', productosController.crear);
 router.post('/crear/', productosController.guardar);
 
 /*** EDITAR UN PRODUCTO ***/ 
-router.get('/detalles/:productoId/editar', productosController.editar);
-router.put('/:productoId/', productosController.actualizar);
+router.get('/editar/:productoId', productosController.editar);
+router.put('/:productoId/actualizar', productosController.actualizar);
 
 /*** ELIMINAR PRODUCTO***/ 
-router.delete('/:productoId', productosController.destruir);
+router.delete('/:productoId/destruir', productosController.destruir);
 
 module.exports = router;
