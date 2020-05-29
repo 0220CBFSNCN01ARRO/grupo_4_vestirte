@@ -9,12 +9,13 @@ a{
     color:#303030;
     
 }
-/* BARRA DE NAVEGACION */
+/*  ================================ NAV =================================*/
 #navbarNavAltMarkup{
     border-bottom: solid 3px #30303018;
     color:#FBFBFB;
 }
 /* MEDIA QUERIES NAV */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { }
 
@@ -25,8 +26,6 @@ a{
         border-top: solid 1px #30303011;
         font-size: .9rem;
     }}
-
-
 
 /*  ================================ HEADER =================================*/
 #up{
@@ -130,10 +129,6 @@ a{
 }
 /* MEDIA QUERIES LOGIN */
 
-@media (max-width: 575.98px) {
- }
-
-
 @media (max-width: 767.98px) {
     .form-row{
         display:flex;
@@ -149,18 +144,6 @@ a{
         margin: 2rem 0;
     }
 }
-
-
-@media (max-width: 991.98px) { 
-   
- 
-}
-
- 
-@media (max-width: 1199.98px) { 
-    
- }
-
 
 /* =========================SECTION INFO =============================*/
 
@@ -179,7 +162,7 @@ color:#FF8E0A;
     #info-varios{
     display: none;} }
 
-/*  PRODUCTOS DESTACADOS  */
+/*  ================================ PRODUCTOS DESTACADOS =================================*/
 .border-bottom {
     border-bottom: solid 3px #FF8E0A !important;
 }
@@ -199,31 +182,18 @@ text-align: center;
     }
     }
 
-/* CARRUCEL  */
+/*  ================================ CARRUCEL =================================*/
 .carousel-item {
     height:20rem;
 }
 /* MEDIA QUERIES CARRUSEL */
- 
-@media (max-width: 575.98px) {  }
-
-
-@media (max-width: 767.98px) { }
-
 
 @media (max-width: 991.98px) {
     #carouselExampleControls{
     display: none;} }
 
-@media (max-width: 1199.98px) {  }
+/*  ================================  ADMINISTRADOR DE PRODUCTOS =================================*/
 
-
-
-/* SECTION */
-
-
-
-/* ADMINISTRADOR DE PRODUCTOS  */
 
 .imagen2x4{
     max-width: 150px;
@@ -283,9 +253,9 @@ color:#FF8E0A;
  @media (max-width: 991.98px) {
     #barra-sup{
     display: none;} }
-    /* FORMULARIO DE EDIT */
-   
-    /* MODAL-BOTON CREACION */
+    /*  ================================  FORMULARIO DE EDIT =================================*/
+    
+   /*  ================================MODAL-BOTON CREACION =================================*/
     .border-oscuro{
         border:none;
         border: solid 2px #303030;
@@ -299,14 +269,50 @@ color:#FF8E0A;
         border-radius: 1rem;
     }
 
+/*  ================================ DETALLES DE PRODUCTO =================================*/
+.texto-grande{
+    font-size: 44px;
+    font-weight: 300;
+}
+.texto-grande-negrita{
+    font-size: 44px;
+    font-weight: 500;
+}
+.texto-media{
+    font-size: 30px;
+    font-weight: 300;
+}
+.texto-media-negrita{
+    font-size: 30px;
+    font-weight: 500;
+}
 
- /* DESCRIPCION DE PRODUCTOS */
 
- .product-detail-price {
-     font-size: 40px;
- }
+/* MEDIA-QUERIES */
+@media (max-width: 575.98px) {  }
 
-/* FOOTER */
+
+@media (max-width: 767.98px) {  }
+
+
+@media (max-width: 991.98px) { 
+    .border-left{
+        border-left: none;
+
+    }
+    .borde-abajo{
+        border-bottom: solid 1px #30303018;
+    }
+}
+
+
+@media (max-width: 1199.98px) {  }
+
+
+
+
+/*  ================================ FOOTER=================================*/
+
 .suscripcion button{
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
