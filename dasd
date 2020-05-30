@@ -1,0 +1,581 @@
+[33mcommit edf01fdc4364e3c366772a43f904ea34694320ad[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: peduito <peduito@gmail.com>
+Date:   Thu May 28 17:41:30 2020 -0300
+
+    Retro
+
+[33mcommit ce57559c820f5d0ae26d4e99409f075201ca52c0[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 28 17:12:44 2020 -0300
+
+    jsn
+
+[33mcommit 71194521511514d3ba9d2494d7aff0b2e6d5384a[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 28 16:43:58 2020 -0300
+
+    ultimo
+
+[33mcommit 085b80728ac0816d356ebf707eb2f680675ab779[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 28 14:39:18 2020 -0300
+
+    admin
+
+[33mcommit e961a766c8a255e2d698ec769031aafe52fdff08[m
+Author: Iasi Salomon <iasisalomon@gmail.com>
+Date:   Thu May 28 12:23:57 2020 -0300
+
+    cambios en admin prod
+
+[33mcommit e145752277aa82c3ab9bb61465914c6637a040a5[m
+Author: peduito <peduito@gmail.com>
+Date:   Thu May 28 12:10:40 2020 -0300
+
+    subo usuarios.jason
+
+[33mcommit d3cc713d81e733ba3bda607ae52b3665e5e98342[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 28 11:47:07 2020 -0300
+
+    form
+
+[33mcommit c266e45b7fe66b8338002ee024bcf5643ac43343[m
+Author: Iasi Salomon <iasisalomon@gmail.com>
+Date:   Thu May 28 00:05:46 2020 -0300
+
+    agregados y debugs
+
+[33mcommit f5c60baf136e6e9291d499032c56eb43d073b2e9[m
+Author: Iasi Salomon <iasisalomon@gmail.com>
+Date:   Wed May 27 23:37:10 2020 -0300
+
+    rehaciendo el CRUD
+
+[33mcommit 217673ff4a9e2e4195178f5ff5d3c457110b6f78[m
+Author: Iasi Salomon <iasisalomon@gmail.com>
+Date:   Wed May 27 20:51:33 2020 -0300
+
+    estandarizando pulls
+
+[33mcommit dc4c4b964be2542490e9d18b0ca533db6d41dc41[m
+Author: peduito <peduito@gmail.com>
+Date:   Wed May 27 11:50:34 2020 -0300
+
+    sarasa
+
+[33mcommit cf67ad664837a42c261a5efe8f76580b645f69f4[m
+Author: peduito <peduito@gmail.com>
+Date:   Tue May 26 22:44:45 2020 -0300
+
+    Actualizo Daily
+
+[33mcommit 1d238fa2585dc8d75625603383aecf4441aebbaf[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Tue May 26 10:36:49 2020 -0300
+
+    formulario de carga de productos
+
+[33mcommit f2c3f9c9f7580c0c11c000a433d2582014c1213a[m
+Author: PabloCane <pablocane92@gmail.com>
+Date:   Mon May 25 20:24:30 2020 -0300
+
+    productos detalles
+
+[33mcommit 4fe57ac01ccc157fd1d253eb6bd0edbd21c2fe87[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 25 15:29:09 2020 -0300
+
+    formulario de registracion
+
+[33mcommit e8e517ac4200fbe328e21565e2e0595e220e39c4[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Mon May 25 13:18:04 2020 -0300
+
+    acomodado para pasar a prodcutos router
+
+[33mcommit eff53dd5b799d77652f949c8f1927a44445b27a2[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Mon May 25 13:01:01 2020 -0300
+
+    va todo por index router todavia
+
+[33mcommit fee2bfdb922c80088d28ee06e649d96cec5a4dc0[m
+Author: peduito <peduito@gmail.com>
+Date:   Mon May 25 12:40:09 2020 -0300
+
+    actualizacion Daily
+
+[33mcommit 69054a163f8ce9da21e3d15a47f4c5a8bf00b4d5[m
+Author: peduito <peduito@gmail.com>
+Date:   Mon May 25 12:38:50 2020 -0300
+
+    actualizacion Daily
+
+[33mcommit 8f8721bdb74c1b962e6b417247ba564e2b43c054[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 25 12:10:09 2020 -0300
+
+    regitracion
+
+[33mcommit 991f5cbeae1e284b792dea294763e88be648c119[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 25 10:33:53 2020 -0300
+
+    login terminado-2
+
+[33mcommit 00d6c47912f2197c5e0ec1d03cba78baa653a48f[m
+Merge: 9983f48 e9336df
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 25 10:27:25 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit 9983f48e003cc540e8d986b314e8e3480926e134[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 25 10:27:13 2020 -0300
+
+    login terminado
+
+[33mcommit e9336df2c8dc0a6ddb5986f4c134cfdec3042e7c[m
+Merge: f68e101 054449a
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Mon May 25 02:52:07 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit f68e10147ba1a20273db1259af00a40d650c856a[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Mon May 25 02:51:44 2020 -0300
+
+    creando el CRUD
+
+[33mcommit 054449ac82f173b3659b6d7424bdf6805095d619[m
+Author: peduito <peduito@gmail.com>
+Date:   Mon May 25 00:46:16 2020 -0300
+
+    Actualizo Daily
+
+[33mcommit e682cdcfcdeb0e1a7c231d08757dde412ebcb326[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Sun May 24 17:04:27 2020 -0300
+
+    push de iasi
+
+[33mcommit bc71396a7bb388864036bd9f659d3ad850503a5e[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sun May 24 16:18:41 2020 -0300
+
+    login mobil
+
+[33mcommit 547382f609b5a846e718ac3223028b046d782045[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Sun May 24 00:04:19 2020 -0300
+
+    agregue las bases de datos placeholders
+
+[33mcommit 13e58236dfcf506dfaf835b244879d8b7d8a0bb5[m
+Merge: 28e40a2 6c85ccb
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Sat May 23 16:27:33 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit 6c85ccb296732dd8828e7a000a3cb529dbb36c0c[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sat May 23 14:26:17 2020 -0300
+
+    login
+
+[33mcommit a4f6f442b677d7501d22a69c784343a02625a7bf[m
+Author: peduito <peduito@gmail.com>
+Date:   Fri May 22 21:46:59 2020 -0300
+
+    logo
+
+[33mcommit 9bc1dac3599f872801c969ec24f426348b966450[m
+Author: peduito <peduito@gmail.com>
+Date:   Fri May 22 21:35:46 2020 -0300
+
+    subo logo sin fondo
+
+[33mcommit 1e450bf989a1fa8b5fa838ff1d66ea9c8d92328e[m
+Author: peduito <peduito@gmail.com>
+Date:   Fri May 22 21:27:05 2020 -0300
+
+    cracion daily.md
+
+[33mcommit c8fcad2f862fb8ff54732adf996dad9a52d519b9[m
+Author: PabloCane <pablocane92@gmail.com>
+Date:   Thu May 21 16:35:44 2020 -0300
+
+    login update
+
+[33mcommit 56d20828794912954cf45ba2cc37268ad2ee2848[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 21 13:58:56 2020 -0300
+
+    final
+
+[33mcommit 28e40a2d102e0c67a06a99ff58f9799fb6d2fa94[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Thu May 21 11:04:39 2020 -0300
+
+    hola
+
+[33mcommit 0456c600847fb25a81707835dd94c91ab69152c4[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Thu May 21 03:30:45 2020 -0300
+
+    carrito y otros menesteres
+
+[33mcommit 27b98946e5cbd0ece349c00051b227ba821fb37d[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Thu May 21 02:52:53 2020 -0300
+
+    login
+
+[33mcommit a81fa1ad4e939ec88934f526c5643b708c5a8760[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 20 22:03:03 2020 -0300
+
+    ultimo 20-05-2020
+
+[33mcommit 92613b8c92175927e0e89ee8b9a58e1db4d4dc35[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 20 18:50:55 2020 -0300
+
+    ultimo
+
+[33mcommit df54b132e1f38fdcc3d86ddca1a972dcf8572124[m
+Merge: 532b83b 408c230
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 20 18:10:10 2020 -0300
+
+    ultimo-fina
+
+[33mcommit 532b83bdbbb6fe1e8728a26cdcdd5845cde58362[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 20 17:05:41 2020 -0300
+
+    final-2
+
+[33mcommit 598fe3fafb109d5381b285d9dc1ea991b446aa1a[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 20 11:52:58 2020 -0300
+
+    ultimo
+
+[33mcommit 408c230e1543bc80644e5059ccfe5af9ce3fcb16[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Wed May 20 01:57:43 2020 -0300
+
+    todo funciona
+
+[33mcommit 86db9c9ab50c416c5411abd27789a569685092c5[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Wed May 20 01:00:22 2020 -0300
+
+    pusheo para no perder cambios
+
+[33mcommit 2cf662ec28a25140f4acf3b5caab22a18e0297bc[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Tue May 19 23:12:28 2020 -0300
+
+    modificaciones al form de carga de products
+
+[33mcommit 4d58bdc5b496cbd94421211ac99f12fb42f51e77[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Tue May 19 23:00:32 2020 -0300
+
+    creada pagina de prodcutos, adaptando ejs de carga de productos
+
+[33mcommit 1229a52c7ff0a38a8f2004630af313f1795d62ff[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Tue May 19 14:40:30 2020 -0300
+
+    ultimo
+
+[33mcommit 81d830b45669de5cff096cf286a22efadca54a3c[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Tue May 19 12:04:06 2020 -0300
+
+    arregle algunos a
+
+[33mcommit e1fde1fd004ad2a5aca5048cb15f98ef2d41a92a[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Tue May 19 10:44:55 2020 -0300
+
+    separe el retro del readme
+
+[33mcommit bf9ecd7659a1233dec27ba314ff2cbbef9b6e3f9[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Tue May 19 10:09:14 2020 -0300
+
+    carrucel
+
+[33mcommit c966a29f0df7c170e62547117971a762e1885ec3[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Tue May 19 00:12:05 2020 -0300
+
+    format
+
+[33mcommit 9e2c0cbad290f3da0416dc495768d86afc9d0e10[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Mon May 18 23:38:19 2020 -0300
+
+    ultimo
+
+[33mcommit 273b62c87c1755c73d8defee696df26da21c2c79[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sun May 17 09:28:43 2020 -0300
+
+    header
+
+[33mcommit 3310ac2c8836749099975783e114f80a1e6081ab[m
+Author: PabloCane <pablocane92@gmail.com>
+Date:   Sun May 17 09:05:54 2020 -0300
+
+    header
+
+[33mcommit 3771ed9285d792a9adc0840086f580063f6434d4[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu May 14 08:41:49 2020 -0300
+
+    format
+
+[33mcommit cf9fbd0bab9f03bea0749d54d3843815dd069762[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Thu May 14 01:17:45 2020 -0300
+
+    agregue detalles iasi
+
+[33mcommit 16083dd2bb6e1648922aa387d0a8f61ea35f53fd[m
+Merge: 4e65fd6 91e0734
+Author: PabloCane <pablocane92@gmail.com>
+Date:   Wed May 13 13:56:44 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit 4e65fd69e5fd074fca0d3efa3589e8fc4cbcff3b[m
+Author: PabloCane <pablocane92@gmail.com>
+Date:   Wed May 13 13:54:35 2020 -0300
+
+    Header
+
+[33mcommit 91e0734fd71643b9f90d2e338053b097950a4339[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Wed May 13 13:29:42 2020 -0300
+
+    retoques formularios
+
+[33mcommit 1944845558ee03658693ff52ddddbdc1d28c03d8[m
+Merge: 90c42e8 c3648f2
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 13 12:39:32 2020 -0300
+
+    modal
+
+[33mcommit 90c42e80f33ad5471e0c1d29d3b55bfc8e8f2c4b[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 13 10:05:52 2020 -0300
+
+    ultimo
+
+[33mcommit c3648f24b84b07e2e1b36f65e56fe944e87633f1[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Wed May 13 02:52:16 2020 -0300
+
+    final iasi
+
+[33mcommit 780a125ff0a9358988fd378cd7f997addecfe601[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Wed May 13 02:32:41 2020 -0300
+
+    login y prod
+
+[33mcommit d7033206eef74a07b0bc07d17c9b43b35cbc44fb[m
+Merge: 60e110d 8a4ead7
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Sat May 9 11:20:29 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit 60e110db1d19f03cfd422e3b0a143965c7614e97[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Sat May 9 11:20:01 2020 -0300
+
+    hola
+
+[33mcommit 8a4ead769f68a23843ab93ac3790da3f804e794c[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed May 6 12:18:14 2020 -0300
+
+    modularizar el nav
+
+[33mcommit 6ba6146aa1b7462ca6f98f438f4695c14a1d64d7[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Tue May 5 10:27:12 2020 -0300
+
+    ultimo
+
+[33mcommit c42ff0409f09a5ea544c96a73e38326d227d262a[m
+Author: peduito <peduito@gmail.com>
+Date:   Mon May 4 11:34:09 2020 -0300
+
+    se agrega footer
+
+[33mcommit 68060399cd5ffce9b64bd94df68f317afbf2387f[m
+Author: oxaciano <iasisalomon@gmail.com>
+Date:   Mon May 4 00:45:08 2020 -0300
+
+    alo:
+
+[33mcommit bb58a40311e167a922550ad399af926bb610dae2[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sun May 3 16:50:29 2020 -0300
+
+    nav
+
+[33mcommit 4221355d26f0856562b07d6cd8e93687fc6d485e[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sun May 3 16:11:08 2020 -0300
+
+    nav termnado
+
+[33mcommit 11252bb43963a2f12d0933aeeae596eb41e52f33[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sat May 2 10:06:34 2020 -0300
+
+    agregado de google fonts
+
+[33mcommit c70ecf7ac5eb91278c67088d25508acbd02c3cc5[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Sat May 2 09:07:18 2020 -0300
+
+    colocacion de css style
+
+[33mcommit 2c0907b62ed4b2994a83e7d59b8819590a8138a7[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Fri May 1 09:56:30 2020 -0300
+
+    meta agregado
+
+[33mcommit ed642a6522093ce59dc267ae4210ab5b8777b014[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Fri May 1 09:32:27 2020 -0300
+
+    BOOSTRAP 4
+
+[33mcommit f68b3bdf18e4b98c0fe81735bc14ffdf5517d536[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu Apr 23 14:20:22 2020 -0300
+
+    ruteo realizado
+
+[33mcommit 7fde8177a7d058709c69d7bef3adcceb56e779c6[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu Apr 23 12:12:30 2020 -0300
+
+    archi eliminado
+
+[33mcommit c1a86ddcbeac0eb98ae68df555b6bb3a1a2eccca[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu Apr 23 12:10:47 2020 -0300
+
+    repo viejo eliminado
+
+[33mcommit 10ab76f4bcf94a17e662aaa04c0ac2cc1d62b6b3[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu Apr 23 11:06:36 2020 -0300
+
+    nueva estructura funcionando
+
+[33mcommit 7736fb9079124ff5e6402050853e1b0194273bae[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Thu Apr 23 09:01:25 2020 -0300
+
+    relacionando
+
+[33mcommit d0124d521f335d670eb2446a19dedf8b76f62737[m
+Merge: 384150a c791d88
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed Apr 22 15:35:51 2020 -0300
+
+    Merge branch 'master' of https://github.com/0220CBFSNCN01ARRO/grupo_4_vestirte
+
+[33mcommit 384150a2bd9483a57732f7cc27e97a0110be0e40[m
+Author: ortizvictorw <ortiz.victor.w@gmail.com>
+Date:   Wed Apr 22 15:29:22 2020 -0300
+
+    esqueleto express
+
+[33mcommit c791d88cdc32172968a702e1839815f4ce4e62cd[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:24:03 2020 -0300
+
+    Update README.md
+
+[33mcommit 3b2c1a4273e1dbf303ccb5c852714b03bd97662c[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:23:35 2020 -0300
+
+    Update README.md
+
+[33mcommit afc09fe85a9f3cbcecbb53d64e8b3828a9b246ec[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:22:20 2020 -0300
+
+    Update README.md
+
+[33mcommit 6248f39e014f456bfa6643a81eec977bd25bbd04[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:21:21 2020 -0300
+
+    Update README.md
+
+[33mcommit b9c4009ecd449fc1185fe6b9202addf6a6a8725b[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:20:25 2020 -0300
+
+    Update README.md
+
+[33mcommit e1b5049deafe3297b461af3d6202fd3a3cf213aa[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:17:44 2020 -0300
+
+    Update README.md
+
+[33mcommit 6ffe14e82d3969d54e1d47d9396d0aee030d0339[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:16:20 2020 -0300
+
+    Update README.md
+
+[33mcommit a6c1c1c0a10e30a21d6d50284989047206ec2808[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:14:24 2020 -0300
+
+    Update README.md
+
+[33mcommit 176f39f290a8913fe8cde08bd0f783d0a90249ac[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:13:09 2020 -0300
+
+    Update README.md
+
+[33mcommit 733413b06caba96c991723469e568391e54d6f68[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:08:22 2020 -0300
+
+    Update README.md
+
+[33mcommit 9649706fde2fccb1e9c1998692bdbb02d08d904c[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mon Apr 20 10:07:19 2020 -0300
+
+    Update README.md
+
+[33mcommit 1e575b1938bbc469909b9d671dd5b7981950731d[m
+Author: ortizvictorw <57049891+ortizvictorw@users.noreply.github.com>
+Date:   Mo

@@ -17,7 +17,7 @@ router.post('/crear/', productosController.guardar);
 
 /*** EDITAR UN PRODUCTO ***/ 
 router.get('/editar/:productoId', productosController.editar);
-router.put('/:productoId/actualizar', productosController.actualizar);
+router.put('/:productoId/', productosController.actualizar);
 
 /*** ELIMINAR PRODUCTO***/ 
 router.delete('/:productoId/destruir', productosController.destruir);
