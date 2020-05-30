@@ -402,3 +402,11 @@ color:#FF8E0A;
 @media (max-width: 1199.98px) {
     
 }
+/*  ================================ CARITO =================================*/
+.gris{
+    background-color:#30303009 ;
+    border-top:solid 2px #FF8E0A ;
+}
+.borde-naranja{
+    border-bottom:solid 2px rgba(255, 141, 10, 0.397) ;
+}
