@@ -31,6 +31,11 @@ Se crean los controller que faltan
 Se unifican los JSON
 Se instala  Method-override
 
+SABADO 30/05/2020
+
+Vestirte quedo funcionando! Solucionado el botón Editar y el botón borrar. No se realizan cambios en el master sin que todos estemos de acuerdo! Podemos trabajar en local o cada uno en su rama!
+
+
 
 
 
