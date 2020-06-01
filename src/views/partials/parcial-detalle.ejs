@@ -1,18 +1,39 @@
-<div class="container-fluid d-md-flex justify-content-between ">
-    <div class=" d-flex justify-content-center row">
-        <div class="border-0 col-8  ">
-            <img class="card-img-top" src="/img/img-productos/<%= producto.imagen%>" alt="Card image cap">
-            <div class="">
-                <h5 class="card-title"><%= producto.nombre %> </h5>
-                <p class="card-text"><%=producto.descripcion%></p>
 
+<div class="container-fluid d-flex justify-content-center">
+
+<div class=" row container">
+
+    <div class="container  d-lg-flex ">
+        <section class="col-sm-12 col-lg-8 ">
+            <img class="img-fluid p-2" src="/img/img-productos/<%= producto.imagen%>" alt="imagen-producto">
+            <div class=" container m-2 d-none d-lg-block">
+                <h3 class=" ">DESCRIPCION</h3>
+                <section>
+                    <%= producto.descripcion%>
+                </section>
             </div>
-        </div>
-
+        </section>
+        <section class="col-sm-12 col-lg-4 border-left borde-abajo p-2">
+            <p class=" p-2 texto-media-negrita "><%= producto.nombre %> </p>
+            <p class=" p-2 texto-grande">$<%= producto.precio %> </p>
+            <img class="img-sm-fluid  mb-2 " src="/img/envios-detalles.png">
+            
+            <div class="d-flex justify-content-start align-items-center ">
+    
+            <form method="POST" action="" >
+                <button class="btn boton mx-3 my-2" type="submit">Comprar</button>
+             </form>
+             <form method="POST" action="">
+                <button class="btn boton-sub mx-2 my-2" type="submit">Agregar al Carrito</button>
+             </form>
+             </div>
+             <div class=" container mx-2 my-4 d-block d-lg-none">
+                <h3 class=" ">DESCRIPCION</h3>
+                <section>
+                    <%= producto.descripcion%>
+                </section>
+            </div>
+        </section> 
     </div>
-    <div class="row-md-3 d-flex d-md-block justify-content-center col-md-5">
-        <h5 class="card-title d-none d-md-block"><%= producto.nombre %> </h5>
-        <article class=" pt-2 d-md-block">$<%=producto.precio%></article>
-        <a href="#" class="btn boton col-4 rounded-pill my-0 mx-auto ">Comprar</a>
-    </div>
+</div>
 </div>

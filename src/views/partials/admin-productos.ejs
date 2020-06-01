@@ -1,10 +1,10 @@
 <div class="container admin-products">
     <div class="conteiner-fluid">
         <div class="row ">
-            <p class="col-12 letraMed text-center">Administrador de productos</p>
+            <p class="col-12 letraMed text-center ">Administrador de productos</p>
             <div class="col-12 d-flex justify-content-end"><%-include('./modal-boton-crear.ejs')%></div>
         </div>
-        <div class="d-none col-12  d-flex align-items-center ">
+        <div class="d-none col-12  d-flex align-items-center gris">
             <div class="d-none d-lg-block col-12 ">
             <div class="d-flex justify-content-between">
                 <span class="col-2">Imagen</span>   
@@ -16,8 +16,8 @@
             </div>
         </div>
         <% for(producto of productos) { %>
-            <div class=" row text-center mt-3 d-lg-flex justify-content-between align-items-center border-gris mb-3">
-                <img class="img-md-fluid imagen2x4 col-2" src="/img/img-productos/<%=producto.imagen %> ">
+            <div class=" row text-center mt-3mb-3 d-lg-flex justify-content-between align-items-center border-gris mb-3">
+                <img class="img-fluid col-lg-2" src="/img/img-productos/<%=producto.imagen %> ">
                 
                 <div class="col-2 text-center d-none d-lg-block"><%= producto.nombre %></div>
                 <div class="col-2 text-center d-none d-lg-block"><%= producto.envio %></div>
