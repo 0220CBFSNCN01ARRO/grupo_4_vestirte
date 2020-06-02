@@ -36,6 +36,16 @@ SABADO 30/05/2020
 Vestirte quedo funcionando! Solucionado el botón Editar y el botón borrar. No se realizan cambios en el master sin que todos estemos de acuerdo! Podemos trabajar en local o cada uno en su rama!
 
 
+----------------------> SPRINT 4 <----------------------
+
+MARTES 2/06/2020
+
+Se crea Rama Test En la misma el titulo del home es Prueba!
+En el master esta todo ok, footer responsive, formulario de carga de producto con multer  Se realiza prueba con tres archivos de manera exitosa 
+vean si pueden trabajar en la rama test.
+Por alguna razon la rama Iasi y Samu siguen estando en el remoto
+Recuerden que no se puede modificar el master, si no estamos todos de acuerdo
+
 
 
 
