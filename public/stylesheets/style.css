@@ -46,7 +46,7 @@ a{
     border: none;
     color:#FBFBFB; 
 }
-#search, .suscripcion button{
+#search {
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
     padding: 0.3rem 1.8rem;
@@ -329,13 +329,6 @@ color:#FF8E0A;
 
 /*  ================================ FOOTER=================================*/
 
-.suscripcion button{
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-    padding: 0.09rem 1.8rem;
-    background: #FF8E0A;
-    border: none;
-}
 .piePagina{
     background-color: #232323;
     padding: 15px;
@@ -352,20 +345,22 @@ color:#FF8E0A;
 .politica p{
     font-size: 12px;
 }
-.suscripcion p{
+.suscripcions p{
     font-size: 12px;
 }
-.suscripcion button{
+.suscripcions button{
     background: #FF8E0A;
     border: none;
-    margin-left: -5px;
     color:#FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
 }
-.suscripcion form input{
-    width: 140px;
+.suscripcions form input{
+    width: 100px;
+    height: 24px;
 }
-.suscripcion input{
+.suscripcions input{
     border: none;
 }
 .base-footer{

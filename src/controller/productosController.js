@@ -32,7 +32,7 @@ guardar: (req, res) => {
     let productoNuevo = {
         id:id,
         ... req.body,
-        imagen: 'default-image.png'
+        imagen: req.files[0].filename
     }
     let final = [...productos,productoNuevo];
     fs.writeFileSync(dataBasePath, JSON.stringify(final,null,' '));
