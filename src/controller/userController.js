@@ -1,15 +1,18 @@
+//***MODULE REQUIRE***//
 const fs = require('fs');
 const path = require('path');
 const bcrypt = require ('bcrypt');
+//const checklogin = require ('..middlewares/checklogin.js');
 
+//***PRODUCTOS UNPACK***//
 const dataBasePath = path.join(__dirname,'../data/productos.json');
-
 let productos = JSON.parse(fs.readFileSync(dataBasePath),'utf-8');
-//const enMiles = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+//***USUARIOS UNPACK***//
 const databaseUserPath = path.join(__dirname,'../data/usuarios.json');
 let usuarios = JSON.parse(fs.readFileSync(databaseUserPath),'utf-8')
 
+//***CONTROLLERS***//
 module.exports={
     login:(req, res, next) =>{
             res.render('usuarios-login')},
@@ -36,5 +39,15 @@ module.exports={
     fs.writeFileSync(databaseUserPath, JSON.stringify(usuarioJSON,null,' '));
 
     res.redirect('/usuarios/login')
-}
+},
+checklogin: (req, res, next)=>{
+        let usuariolog = usuarios.find (usua => usua.email == req.body.email)
+        let passlog = bcrypt.compareSync (req.body.password, usuariolog.password)  
+        if (usuariolog != undefined && passlog==true){
+                res.redirect ('/')
+        }       
+        else {
+        res.redirect ('/usuarios/login')
+        };
         }
+}

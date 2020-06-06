@@ -2,7 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
-let path = require ('path');
+const path = require ('path');
+
 
 
 // ************ Multer************
@@ -23,6 +24,10 @@ const userController = require('../controller/userController.js')
 
 /*** LOGIN DE USER ***/
 router.get('/login', userController.login)
+
+router.post('/login', userController.checklogin)
+
+
 
 router.get('/registro', userController.registro)
 

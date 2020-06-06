@@ -178,5 +178,14 @@
   "password": "NH639zZ",
   "category": "admin",
   "image": "user_20.jpg"
+ },
+ {
+  "id": 21,
+  "nombre": "Iasi ",
+  "apellido": "Salomon",
+  "email": "iasisalomon@gmail.com",
+  "password": "$2b$10$qBPCust/UBbhY9o.8jZFPOwYIkjltO48lCk.ktN6qS9OcjPsx4bK6",
+  "categoria": "user",
+  "image": "image-1591477395530.png"
  }
 ]
