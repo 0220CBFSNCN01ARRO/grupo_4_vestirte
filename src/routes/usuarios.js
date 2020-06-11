@@ -27,7 +27,7 @@ router.get('/login', userController.login)
 
 router.post('/login', userController.checklogin)
 
-
+router.get('/perfil/:id', userController.perfil)
 
 router.get('/registro', userController.registro)
 

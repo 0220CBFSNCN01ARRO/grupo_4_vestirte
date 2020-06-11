@@ -16,8 +16,9 @@ let usuarios = JSON.parse(fs.readFileSync(databaseUserPath),'utf-8')
 module.exports={
     login:(req, res, next) =>{
             res.render('usuarios-login')},
-    landing:(req, res, next) =>{
-                res.render('landing')},
+    perfil:(req, res, next) =>{
+        let usuarioencontrado = usuarios.find (usua => usua.id == req.params.id)
+                res.render('perfil', {usuarioencontrado})},
     carrito:(req, res, next) =>{
             res.render('carrito', {productos, enMiles})},
     registro:(req, res, next) =>{
@@ -44,7 +45,9 @@ checklogin: (req, res, next)=>{
         let usuariolog = usuarios.find (usua => usua.email == req.body.email)
         let passlog = bcrypt.compareSync (req.body.password, usuariolog.password)  
         if (usuariolog != undefined && passlog==true){
-                res.redirect ('/')
+                delete usuariolog.password;
+                req.session.usuario = usuariolog;
+                res.redirect (`perfil/${usuariolog.id}`);
         }       
         else {
         res.redirect ('/usuarios/login')

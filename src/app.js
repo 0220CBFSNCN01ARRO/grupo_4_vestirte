@@ -5,6 +5,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override');
+const session = require('express-session');
 
 //***ROUTERS***//
 const indexRouter = require('./routes/index');
@@ -14,6 +15,7 @@ const carritoRouter = require('./routes/carrito');
 
 //***EXPRESS EXECUTION***//
 var app = express();
+
 
 //***VIEW ENGINE***//
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +28,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
+app.use(session({
+  secret: 'vestirte',
+  resave: false,
+  saveUninitialized: true,
+}));
 
 //***ROUTES***//
 app.use('/', indexRouter);
