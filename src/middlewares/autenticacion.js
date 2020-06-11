@@ -3,6 +3,7 @@ module.exports = (req,res,next) => {
 
     if(req.session.user){
         res.locals.user = req.session.user
+        console.log(req.session.user)
     } else if (req.cookies.usuario) {
       
         req.session.user = req.cookies.usuario;

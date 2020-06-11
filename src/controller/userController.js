@@ -41,7 +41,7 @@ checklogin: (req, res, next)=>{
         if(usuariolog != undefined){
                 if(bcrypt.compareSync(req.body.password,usuariolog.password)){
 
-                    delete usuariolog.pass
+                    delete usuariolog.password
                     req.session.user = usuariolog
 
                     if (req.body.recuerdame) {
