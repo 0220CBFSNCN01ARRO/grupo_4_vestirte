@@ -6,6 +6,7 @@ const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override');
 const session = require('express-session');
+const autenticacion = require ('./middlewares/autenticacion');
 
 //***ROUTERS***//
 const indexRouter = require('./routes/index');
@@ -33,6 +34,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
 }));
+app.use(autenticacion);
 
 //***ROUTES***//
 app.use('/', indexRouter);

@@ -16,14 +16,8 @@ let usuarios = JSON.parse(fs.readFileSync(databaseUserPath),'utf-8')
 module.exports={
     login:(req, res, next) =>{
             res.render('usuarios-login')},
-    perfil:(req, res, next) =>{
-        let usuarioencontrado = usuarios.find (usua => usua.id == req.params.id)
-                res.render('perfil', {usuarioencontrado})},
-    carrito:(req, res, next) =>{
-            res.render('carrito', {productos, enMiles})},
     registro:(req, res, next) =>{
                 res.render('usuarios-registro')},
-
     crear: (req, res, next)=>{
         let ids = usuarios.map(usua=>usua.id)
         let id = Math.max(...ids) + 1
@@ -43,14 +37,42 @@ module.exports={
 },
 checklogin: (req, res, next)=>{
         let usuariolog = usuarios.find (usua => usua.email == req.body.email)
-        let passlog = bcrypt.compareSync (req.body.password, usuariolog.password)  
-        if (usuariolog != undefined && passlog==true){
-                delete usuariolog.password;
-                req.session.usuario = usuariolog;
-                res.redirect (`perfil/${usuariolog.id}`);
-        }       
-        else {
-        res.redirect ('/usuarios/login')
-        };
-        }
+
+        if(usuariolog != undefined){
+                if(bcrypt.compareSync(req.body.password,usuariolog.password)){
+
+                    delete usuariolog.pass
+                    req.session.user = usuariolog
+
+                    if (req.body.recuerdame) {
+                        res.cookie('usuario', usuariolog, { maxAge: 1000 * 60 * 60 * 24 * 90 });
+                    }
+                    res.redirect(`perfil/${usuariolog.id}`)
+                } else {
+                        res.render('usuarios-login', {
+                        errors: {
+                            password: 'la contrasena no coincide'
+                        }
+                    })
+                }
+            } else {
+                res.render('usuarios-login',{
+                    errors: {
+                        email: 'email ingresado es incorrecto'
+                    }
+                })
+            }
+        },
+perfil: (req, res) => {
+                let usuariolog = usuarios.find (usua => usua.id == req.params.id)
+                res.render('perfil', {usuariolog}); 
+
+},
+logout: (req, res) => {
+        req.session.user = null;
+        res.clearCookie('usuario');
+
+        res.locals.usuario = null
+        res.redirect('/')
+    }
 }

@@ -3,6 +3,8 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 const path = require ('path');
+const rutaGuest = require ('../middlewares/rutaGuest');
+const rutaUser = require ('../middlewares/rutaUser');
 
 
 
@@ -22,19 +24,15 @@ var upload = multer ({storage: storage});
 // ************ Require's Controllers************
 const userController = require('../controller/userController.js')
 
-/*** LOGIN DE USER ***/
-router.get('/login', userController.login)
+/*** RUTAS DE GUEST ***/
+router.get('/login', rutaGuest, userController.login)
+router.post('/login', rutaGuest, userController.checklogin)
+router.get('/registro',  rutaGuest, userController.registro)
+router.post('/crear', upload.any(),rutaGuest, userController.crear)
 
-router.post('/login', userController.checklogin)
+/*** RUTAS DE SESSION ***/
 
-router.get('/perfil/:id', userController.perfil)
-
-router.get('/registro', userController.registro)
-
-
-
-/* ruta post de registro de usuario */
-router.post('/crear', upload.any(), userController.crear)
-
+router.get('/perfil/:id', rutaUser, userController.perfil)
+router.post('/logout', rutaUser, userController.logout);
 
 module.exports = router;
