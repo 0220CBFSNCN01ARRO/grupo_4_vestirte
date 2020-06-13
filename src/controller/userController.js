@@ -30,6 +30,7 @@ module.exports={
                 categoria: 'user',
                 image: req.files[0].filename
         };
+        console.log (usuarioNuevo);
         let usuarioJSON = [...usuarios,usuarioNuevo];
     fs.writeFileSync(databaseUserPath, JSON.stringify(usuarioJSON,null,' '));
 
@@ -41,11 +42,13 @@ checklogin: (req, res, next)=>{
         if(usuariolog != undefined){
                 if(bcrypt.compareSync(req.body.password,usuariolog.password)){
 
-                    delete usuariolog.password
+                    // delete usuariolog.password
                     req.session.user = usuariolog
-
+                    
                     if (req.body.recuerdame) {
-                        res.cookie('usuario', usuariolog, { maxAge: 1000 * 60 * 60 * 24 * 90 });
+                        res.cookie('usuario', usuariolog.id, { maxAge: 1000 * 60 * 60 * 24 * 90 });
+                        console.log (res.cookie)
+                        console.log (usuariolog)
                     }
                     res.redirect(`perfil/${usuariolog.id}`)
                 } else {

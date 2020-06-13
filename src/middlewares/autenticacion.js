@@ -1,3 +1,10 @@
+//***USUARIOS UNPACK***//
+const databaseUserPath = path.join(__dirname,'../data/usuarios.json');
+let usuarios = JSON.parse(fs.readFileSync(databaseUserPath),'utf-8')
+
+
+
+
 module.exports = (req,res,next) => {
     res.locals.user = false;
 

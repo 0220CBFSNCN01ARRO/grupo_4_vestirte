@@ -184,8 +184,24 @@
   "nombre": "Iasi ",
   "apellido": "Salomon",
   "email": "iasisalomon@gmail.com",
-  "password": "$2b$10$qBPCust/UBbhY9o.8jZFPOwYIkjltO48lCk.ktN6qS9OcjPsx4bK6",
   "categoria": "user",
   "image": "image-1591477395530.png"
+ },
+ {
+  "id": 22,
+  "nombre": "marcela",
+  "apellido": "valenti",
+  "email": "marcelavalenti@gmail.com",
+  "categoria": "user",
+  "image": "image-1592079426437.png"
+ },
+ {
+  "id": 23,
+  "nombre": "hola",
+  "apellido": "perro",
+  "email": "holaperro@gmail.com",
+  "password": "$2b$10$YsSGY452HCyQ.xDpgTimYecYpOFmZt8xwTrJ.hupdI6062s8q2gOS",
+  "categoria": "user",
+  "image": "image-1592079710969.jpg"
  }
 ]
