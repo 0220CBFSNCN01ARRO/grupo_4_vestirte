@@ -203,5 +203,32 @@
   "password": "$2b$10$YsSGY452HCyQ.xDpgTimYecYpOFmZt8xwTrJ.hupdI6062s8q2gOS",
   "categoria": "user",
   "image": "image-1592079710969.jpg"
+ },
+ {
+  "id": 24,
+  "nombre": "pablo",
+  "apellido": "cane",
+  "email": "pablocane92@gmail.com",
+  "password": "$2b$10$lRYeoF987lPcHDJVvQ/HqOOp6/TgMbuU./txedhmBknnhAuCptN6K",
+  "categoria": "user",
+  "image": "image-1592082229999.jpg"
+ },
+ {
+  "id": 25,
+  "nombre": "ricardo",
+  "apellido": "ricardo",
+  "email": "ricardo@gmail.com",
+  "password": "$2b$10$cd90hQgkPjqTsPzDa0hX9eN77grG4qxq/dKyE9wsxvf8pDG5p5Tbe",
+  "categoria": "user",
+  "image": "image-1592085120690.jpg"
+ },
+ {
+  "id": 26,
+  "nombre": "nuevo",
+  "apellido": "ultimo",
+  "email": "nuevo@ultimo.com",
+  "password": "$2b$10$xTbQHfRhGK7KcRaMvlRl.u5KAPdqIzfeEYGEGmrjN8UrMXd8op.wu",
+  "categoria": "user",
+  "image": "image-1592087075274.jpg"
  }
 ]
