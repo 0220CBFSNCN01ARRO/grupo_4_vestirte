@@ -230,5 +230,14 @@
   "password": "$2b$10$xTbQHfRhGK7KcRaMvlRl.u5KAPdqIzfeEYGEGmrjN8UrMXd8op.wu",
   "categoria": "user",
   "image": "image-1592087075274.jpg"
+ },
+ {
+  "id": 27,
+  "nombre": "hola",
+  "apellido": "hola",
+  "email": "hola@gmail.com",
+  "password": "$2b$10$/P3wlGnoDJuCybhYPb5Bqe1J3E7zSsvB1srzEkvFiRv4CjmleKiyy",
+  "categoria": "user",
+  "image": "image-1592094796360.jpg"
  }
 ]
