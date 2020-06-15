@@ -248,5 +248,14 @@
   "password": "$2b$10$znenFEHPvxyZBxo62ESVO.AVPC3QQjFULuoC2YJJitpxjbwu/ffeW",
   "categoria": "admin",
   "image": "image-1592226304801.jpg"
+ },
+ {
+  "id": 29,
+  "nombre": "1",
+  "apellido": "2",
+  "email": "2@gmail.com",
+  "password": "$2b$10$aZBgGSL6L7e/keg0eEY7OOgc5rb9VnD5e0DIUcaUVHOARJQhjrvoW",
+  "categoria": "user",
+  "image": "image-1592248635888.jpg"
  }
 ]
