@@ -1,10 +1,10 @@
 <!-- Just an image -->
-<div id="up"class="conteiner-fluid">
+<div id="up" class="conteiner-fluid">
     <div class="conteiner-fluid p-2" height="2">
         <div class="container row d-inline">
-            
+
             <div class="float-left">
-                <a class="active pr-3" href="tel:+54341458787">
+                <a class="active pr-1" href="tel:+54341458787">
                     <i class="fas fa-phone"></i>
                 </a>
                 <a class="active col-1" href="mailto:vestirte@digitalhouse.com">
@@ -14,43 +14,77 @@
             <div class="float-right">
                 <%-include('./modal-pagos.ejs')%>
                 <%-include('./modal-envio.ejs')%>
+                
+                
                 <a class="active col-1" href="/usuarios/login">
                     <i class="fas fa-user"></i>
                 </a>
+
+
+                <% if (locals.user) { %>
+
+                <div class="float-right">
+                    <form action="/usuarios/logout" method="POST">
+                        <button class="btn btn-light py-0"type="submit"><i class="fas fa-sign-out-alt"></i></button>
+                    </form>
+                </div><% } %>
+                
+
+
+
+
             </div>
         </div>
     </div>
-        
+
+</div>
+<nav id="logo" class="navbar navbar-light bg-light col-12 d-flex justify-content-around ">
+
+    <div class="col-5 col-lg-3 col-xl-2 ">
+        <a class="navbar-brand " href="#">
+            <img src="/img/logoVestirte.png" alt="" loading="lazy" class="img-fluid">
+        </a>
     </div>
-    <nav  id="logo"class="navbar navbar-light bg-light col-12 d-flex justify-content-around ">
 
-        <div class="col-5 col-lg-3 col-xl-2 ">
-            <a class="navbar-brand " href="#">
-                <img src="/img/logoVestirte.png" alt="" loading="lazy" class="img-fluid">
+    <nav class="navbar navbar-light bg-light col-lg-5 d-none d-lg-block ">
+        <form class="form-inline mx-right d-flex justify-content-end">
+            <input class="form-control w-90 rounded-righ" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn boton my-2" id="search" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </nav>
+
+    <div class="col-lg-4 d-flex justify-content-end">
+        <li class="nav-item d-none d-lg-block ">
+            <a class="nav-link" href="#">
+                <i class="far fa-heart fa-2x"></i>
             </a>
-        </div>
+        </li>
+        <% if (locals.user.categoria == "admin") { %>
 
-        <nav class="navbar navbar-light bg-light col-lg-5 d-none d-lg-block ">
-            <form class="form-inline mx-right d-flex justify-content-end">
-                <input class="form-control w-90 rounded-righ" type="search"  placeholder="Search" aria-label="Search">
-                <button class="btn boton my-2" id="search" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-        </nav>
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link" href="/productos/crear/">
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+            </div><% }else if (locals.user) { %>
+        <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="/carrito">
+                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                </i>
+            </a>
+        </li>
+        <% }else { %>
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link" href="/usuarios/registro">
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        <% }%>
 
-       <div class="col-lg-4 d-flex justify-content-end">
-    <li class="nav-item d-none d-lg-block ">
-        <a class="nav-link" href="#">
-            <i class="far fa-heart fa-2x"></i>
-    </a>
-</li>
-<li class="nav-item d-none d-lg-block">
-    <a class="nav-link" href="/carrito">
-        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
-        </i>
-    </a>
-</li>
-       </div>
+    </div>
 
 </nav>
