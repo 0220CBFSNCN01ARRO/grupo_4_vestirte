@@ -50,6 +50,18 @@ Miercoles 3/06/2020.
 Formulario de registro con carga de imagen (Multer) y encriptacion de contraseña (Bcrypt) funcionando.
 No se realiza la valizadacion de contraseña ya que es necesario el que formulario de LOGIN sea funcional.
 
+Sabado 6/06/2020.
+El login quedo andando
+
+Lunes 8/06/2020.
+
+Se acomoda código del middleware si estan logueados entra directamente si no te redirige a registracion.
+Se le da estilo a los botones de cerrar sesion.
+
+
+
+
+
 
 
 

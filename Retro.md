@@ -35,3 +35,25 @@ Por whatsapp pasar informe diario de lo que se hizo en el dia.
 Dejar de hacer:
 No realizar tareas que estan por fuera del sprint (futuristas)
 Ejecucion de tareas cerca de la fecha de entrega del sprint
+
+
+
+## Retrospectiva 3 Sprint 4
+
+Seguir haciendo:
+División de tarea.
+Comunicacion efectiva.
+Ejecucion de tareas en conjunto!
+Comunicacion por Whatsapp
+
+Hacer mas:
+Verificar ejecucion de tareas mediante la utilizaicion de Trello.
+Coordinar horario pra logra más ejecucionde tareas juntos.
+
+Empezar a hacer:
+Optimizar uso de Git.
+
+
+Dejar de hacer:
+No realizar tareas que estan por fuera del sprint
+Ejecucion de tareas cerca de la fecha de entrega del sprint
