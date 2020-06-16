@@ -185,6 +185,7 @@
   "apellido": "Salomon",
   "email": "iasisalomon@gmail.com",
   "categoria": "user",
+  "password": "$2b$10$YsSGY452HCyQ.xDpgTimYecYpOFmZt8xwTrJ.hupdI6062s8q2gOS",
   "image": "image-1591477395530.png"
  },
  {
@@ -193,6 +194,7 @@
   "apellido": "valenti",
   "email": "marcelavalenti@gmail.com",
   "categoria": "user",
+  "password": "$2b$10$YsSGY452HCyQ.xDpgTimYecYpOFmZt8xwTrJ.hupdI6062s8q2gOS",
   "image": "image-1592079426437.png"
  },
  {
