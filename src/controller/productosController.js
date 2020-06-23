@@ -1,14 +1,7 @@
+//***MODULE REQUIRE***//
 const fs = require('fs');
 const path = require('path');
-
-//let productos=array de productos
-const dataBasePath = path.join(__dirname,'../data/productos.json');
-let productos = JSON.parse(fs.readFileSync(dataBasePath),'utf-8')
-
-//filtra ofertas y visitados
-// const ofertas = productos.filter(producto => producto.category == 'oferta');
-// const visitados = productos.filter(producto => producto.category == 'visitado');
-// const destacados = productos.filter(producto => producto.category == 'destacado')
+const db = require ('../database/models')
 
 
 module.exports= {
@@ -17,12 +10,17 @@ crear: (req, res) => {
 },
 
 listar: (req, res) => {
-    res.render('productos',{productos});
+    db.productos.findAll()
+    .then (function(productos){
+        res.render('productos', {productos})
+    })
 },
 
 detalle: (req, res) => {
-    let producto = productos.find (prod => prod.id == req.params.productoId)
-    res.render('productos-detalle', {producto, productos});
+        db.productos.findByPk(req.params.productoId)
+        .then (function(producto){
+            res.render('productos-detalle', {producto});
+        })
 },
 
 guardar: (req, res) => {

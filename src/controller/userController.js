@@ -2,15 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const bcrypt = require('bcrypt');
-//const checklogin = require ('..middlewares/checklogin.js');
 
-//***PRODUCTOS UNPACK***//
-const dataBasePath = path.join(__dirname, '../data/productos.json');
-let productos = JSON.parse(fs.readFileSync(dataBasePath), 'utf-8');
-
-//***USUARIOS UNPACK***//
-const databaseUserPath = path.join(__dirname, '../data/usuarios.json');
-let usuarios = JSON.parse(fs.readFileSync(databaseUserPath), 'utf-8')
 
 //***CONTROLLERS***//
 module.exports = {
