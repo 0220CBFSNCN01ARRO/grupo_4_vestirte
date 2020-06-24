@@ -2,7 +2,6 @@
 const path = require('path');
 const fs = require('fs');
 
-
 module.exports = (req, res, next) => {
     res.locals.user = false;
     //no se cerro el navegador
@@ -12,11 +11,14 @@ module.exports = (req, res, next) => {
         //existe si pones recordame 
     } else if (req.cookies.usuario) {
 
-        let usuariolog = usuarios.find(usua => usua.id == req.cookies.usuario)
-
-        req.session.user = usuariolog;
-        res.locals.user = usuariolog;
-        console.log(req.cookies.usuario)
+        db.usuarios.findByPk(req.cookies.usuario.id)
+        .then (function(usuariolog){
+            req.session.user = usuariolog;
+            res.locals.user = usuariolog;
+            console.log(req.cookies.usuario)
+        }
+        )
+        //let usuariolog = usuarios.find(usua => usua.id == req.cookies.usuario)
         /* console.log(req.session.user)
         console.log(res.locals.user) */
     }
