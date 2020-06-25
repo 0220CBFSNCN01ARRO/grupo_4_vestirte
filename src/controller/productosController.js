@@ -42,7 +42,7 @@ guardar: (req, res) => {
 editar: (req, res) => {
     db.productos.findByPk(req.params.productoId)
     .then (function(productoedit){
-        console.log (productoedit)
+        console.log (productoedit.dataValues)
         res.render('productos-editar',{productoedit})
     })
 },
