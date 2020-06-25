@@ -29,17 +29,17 @@ module.exports = {
         })
         .then(function(usuariolog){
             if (usuariolog != undefined) {
-                if (bcrypt.compareSync(req.body.password, usuariolog.password)) {
+                if (bcrypt.compareSync(req.body.password, usuariolog.dataValues.password)) {
+
                     
-                    // delete usuariolog.password
-                    req.session.user = usuariolog
+                    delete usuariolog.dataValues.password
+                    req.session.user = usuariolog.dataValues
                     
+
                     if (req.body.recuerdame) {
-                        res.cookie('usuario', usuariolog.id, { maxAge: 1000 * 60 * 60 * 24 * 90 });
-                        /*  console.log(res.cookie)
-                        console.log(usuariolog) */
+                        res.cookie('usuario', usuariolog.dataValues.id, {maxAge: 1000 * 60 * 60 * 24 * 90 });
                     }
-                    res.redirect(`perfil/${usuariolog.id}`)
+                    res.redirect(`perfil/${usuariolog.dataValues.id}`)
                 } else {
                     res.render('usuarios-login', {
                         errors: {

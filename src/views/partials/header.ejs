@@ -61,7 +61,7 @@
                 <i class="far fa-heart fa-2x"></i>
             </a>
         </li>
-        <% if (locals.user.categoria == "admin") { %>
+        <% if (locals.user.categoria != null) { %>
 
             <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="/productos/crear/">

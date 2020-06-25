@@ -1,26 +1,20 @@
 //***USUARIOS UNPACK***//
-const path = require('path');
-const fs = require('fs');
+const db = require ('../database/models')
 
 module.exports = (req, res, next) => {
     res.locals.user = false;
-    //no se cerro el navegador
-    if (req.session.user) {
-        res.locals.user = req.session.user
-        /* console.log(req.session.user) */
-        //existe si pones recordame 
-    } else if (req.cookies.usuario) {
 
-        db.usuarios.findByPk(req.cookies.usuario.id)
+    if (req.session.user) {
+    res.locals.user = req.session.user
+
+    } else if (req.cookies.usuario) {
+        db.usuarios.findByPk(req.cookies.usuario)
         .then (function(usuariolog){
-            req.session.user = usuariolog;
-            res.locals.user = usuariolog;
-            console.log(req.cookies.usuario)
+            delete usuariolog.dataValues.password;
+            req.session.user = usuariolog.dataValues;
+            res.locals.user = usuariolog.dataValues;
         }
         )
-        //let usuariolog = usuarios.find(usua => usua.id == req.cookies.usuario)
-        /* console.log(req.session.user)
-        console.log(res.locals.user) */
     }
     next();
 };
