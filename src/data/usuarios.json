@@ -259,5 +259,14 @@
   "password": "$2b$10$aZBgGSL6L7e/keg0eEY7OOgc5rb9VnD5e0DIUcaUVHOARJQhjrvoW",
   "categoria": "user",
   "image": "image-1592248635888.jpg"
+ },
+ {
+  "id": 30,
+  "nombre": "Eduardo",
+  "apellido": "pereyra da silva",
+  "email": "pereyraeduardo@hotmail.com",
+  "password": "$2b$10$ITDlqUfZ7ECeEomC2XZzreRXn7d1vSahKXSQZMp0TAVa81qD4qKBq",
+  "categoria": "user",
+  "image": "image-1592398256827.jpg"
  }
 ]
