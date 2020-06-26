@@ -6,15 +6,10 @@ module.exports = (req, res, next) => {
 
     if (req.session.user) {
     res.locals.user = req.session.user
-
+        return next ();
     } else if (req.cookies.usuario) {
-        db.usuarios.findByPk(req.cookies.usuario)
-        .then (function(usuariolog){
-            delete usuariolog.dataValues.password;
-            req.session.user = usuariolog.dataValues;
-            res.locals.user = usuariolog.dataValues;
-        }
-        )
+            req.session.user = req.cookies.usuario;
+            res.locals.user = req.cookies.usuario;
     }
-    next();
+    return next();
 };

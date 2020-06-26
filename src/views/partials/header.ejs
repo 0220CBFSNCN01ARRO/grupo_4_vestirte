@@ -22,12 +22,15 @@
 
 
                 <% if (locals.user) { %>
-
-                <div class="float-right">
-                    <form action="/usuarios/logout" method="POST">
-                        <button class="btn btn-light py-0"type="submit"><i class="fas fa-sign-out-alt"></i></button>
-                    </form>
-                </div><% } %>
+                    <div class="float-right">
+                        <form action="/usuarios/logout" method="POST">
+                            <button class="btn btn-light py-0"type="submit"><i class="fas fa-sign-out-alt"></i></button>
+                        </form>
+                    </div>
+                    <div class="float-right text-white">
+                        <%= user.nombre  %>
+                    </div>
+                <% } %>
                 
 
 

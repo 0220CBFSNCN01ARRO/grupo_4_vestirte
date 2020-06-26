@@ -34,12 +34,12 @@ module.exports = {
                     
                     delete usuariolog.dataValues.password
                     req.session.user = usuariolog.dataValues
-                    
+                    // return res.send(req.session.user)
 
                     if (req.body.recuerdame) {
-                        res.cookie('usuario', usuariolog.dataValues.id, {maxAge: 1000 * 60 * 60 * 24 * 90 });
+                        res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
                     }
-                    res.redirect(`perfil/${usuariolog.dataValues.id}`)
+                    res.redirect(`perfil/${usuariolog.dataValues}`)
                 } else {
                     res.render('usuarios-login', {
                         errors: {
