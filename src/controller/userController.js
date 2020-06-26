@@ -34,8 +34,7 @@ module.exports = {
                     
                     delete usuariolog.dataValues.password
                     req.session.user = usuariolog.dataValues
-                    // return res.send(req.session.user)
-
+                    
                     if (req.body.recuerdame) {
                         res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
                     }
