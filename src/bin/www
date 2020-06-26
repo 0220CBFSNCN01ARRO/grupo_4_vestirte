@@ -8,6 +8,9 @@ var app = require('../app');
 var debug = require('debug')('vestirte:server');
 var http = require('http');
 
+//***DOTENV***//
+require('dotenv').config();
+
 /**
  * Get port from environment and store in Express.
  */

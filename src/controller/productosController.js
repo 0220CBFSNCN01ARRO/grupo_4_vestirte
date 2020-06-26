@@ -1,67 +1,75 @@
-const fs = require('fs');
-const path = require('path');
+//***MODULE REQUIRE***//
+const db = require ('../database/models')
 
-//let productos=array de productos
-const dataBasePath = path.join(__dirname,'../data/productos.json');
-let productos = JSON.parse(fs.readFileSync(dataBasePath),'utf-8')
-
-//filtra ofertas y visitados
-// const ofertas = productos.filter(producto => producto.category == 'oferta');
-// const visitados = productos.filter(producto => producto.category == 'visitado');
-// const destacados = productos.filter(producto => producto.category == 'destacado')
-
+//***CONTROLLER METHODS***//
 
 module.exports= {
 crear: (req, res) => {
-    res.render('productos-crear', {productos});
+    db.productos.findAll()
+    .then (function(productos){
+        res.render('productos-crear', {productos});
+    })
 },
 
 listar: (req, res) => {
-    res.render('productos',{productos});
+    db.productos.findAll()
+    .then (function(productos){
+        res.render('productos', {productos})
+    })
 },
 
 detalle: (req, res) => {
-    let producto = productos.find (prod => prod.id == req.params.productoId)
-    res.render('productos-detalle', {producto, productos});
+               db.productos.findByPk(req.params.productoId)
+        .then (function(producto){
+            res.render('productos-detalle', {producto});
+        })
 },
 
 guardar: (req, res) => {
-    let ids = productos.map(prod=>prod.id) // [1,2,3,4,5....]
-    let id = Math.max(...ids) + 1 //17
-    req.body.precio = Number(req.body.precio)
-    let productoNuevo = {
-        id:id,
-        ... req.body,
-        imagen: req.files[0].filename
-    }
-    let final = [...productos,productoNuevo];
-    fs.writeFileSync(dataBasePath, JSON.stringify(final,null,' '));
-
+    db.productos.create ({
+        nombre:req.body.nombre,
+        descripcion:req.body.descripcion,
+        precio:req.body.precio,
+        descuento:req.body.descuento,
+        imagen:req.files[0].filename,
+        categoria:req.body.categoria,
+        envio:req.body.envio,
+        stock:req.body.stock,
+        });
     res.redirect('/productos')
 },
 
 editar: (req, res) => {
-    var productoedit = productos.find(prod => prod.id == req.params.productoId)
-    res.render('productos-editar',{productoedit});
-},
-actualizar: (req, res) => {
-    req.body.precio = Number(req.body.precio);
-    let final = productos.map(prod => {
-        if(prod.id == req.params.productoId){
-            return {
-                id: prod.id,
-                ...req.body,
-            }
-        } else {
-            return prod
-        }
+    db.productos.findByPk(req.params.productoId)
+    .then (function(productoedit){
+        console.log (productoedit.dataValues)
+        res.render('productos-editar',{productoedit})
     })
-fs.writeFileSync(dataBasePath, JSON.stringify(final, null, ' '));
-res.redirect('/productos/crear');
+},
+
+actualizar: (req, res) => {
+    db.productos.update ({
+        nombre:req.body.nombre,
+        descripcion:req.body.descripcion,
+        precio:req.body.precio,
+        descuento:req.body.descuento,
+        imagen:req.body.imagen,
+        categoria:req.body.categoria,
+        envio:req.body.envio,
+        stock:req.body.stock,
+        }, { 
+            where: {
+            id: req.params.productoId
+        }        
+        });
+    res.redirect('/productos/detalles/' + req.params.productoId)
 },
 destruir : (req, res) => {
-    let final = productos.filter(prod=> prod.id != req.params.productoId)
-    fs.writeFileSync(dataBasePath, JSON.stringify(final, null, ' '));
-    res.redirect('/productos/crear');
+    db.productos.destroy({
+        where:{
+            id:req.params.productoId
+        }
+    })
+    res.redirect('/productos/crear')
 }
 };
