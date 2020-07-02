@@ -17,6 +17,19 @@ module.exports = {
         AND usuario_producto.usuarioId = ${pendorcho}`
         )
 
-        return res.render('index', {destacados, visitados})
+        // no lo aplicamos asi porque la PK no puede ser null, queda para el proximo sprint
+        // let visitados = await db.usuarios.findAll(
+        //     {
+        //         where: {
+        //             id: req.session.user.id
+        //         },
+                
+        //         include:'visitados'
+        // })
+        
+       
+        // res.send(visitados)}}
+
+        return res.render('index', {destacados, visitados, pendorcho})
     },
 }

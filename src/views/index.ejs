@@ -9,7 +9,10 @@
 <%-include('./partials/parcial-info-varios.ejs')%>
 <!-- DESTACADOS Y VISITADOS -->
 <%-include('./partials/parcial-destacados.ejs')%>
-<%-include('./partials/parcial-visitados.ejs')%>
+<!-- DESTACADOS Y VISITADOS -->
+<% if (pendorcho!=null) { %>
+    <%-include('./partials/parcial-visitados.ejs')%>
+<% } %>
 <!--  FOOTER  -->
 <%-include('./partials/footer.ejs')%>
 <!--  SCRIPT -->
