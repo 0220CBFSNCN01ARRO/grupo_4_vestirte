@@ -18,12 +18,29 @@ listar: (req, res) => {
     })
 },
 
-detalle: (req, res) => {
-               db.productos.findByPk(req.params.productoId)
-        .then (function(producto){
-            res.render('productos-detalle', {producto});
-        })
-},
+detalle: async (req, res) => {
+         let producto= await db.productos.findByPk(req.params.productoId)
+         let usuario= await db.usuarios.findByPk(req.session.user.id)
+         //datos para la construccion del los campos de la tabla usuario_producto
+         let usuario_id=usuario.id
+         let producto_id=producto.id
+
+         
+         
+     //crea un campo dentro de usuario_producto tomando 
+      //ejemplo//  let usuario_id=usuario.id ==>1
+         //let producto_id=producto.id==2
+
+      let visitados = db.usuario_producto.create({
+            usuarioId:usuario_id,
+            productoId:producto_id
+         })
+        
+         console.log("estes es el mensaje  ==> "+ visitados )
+         
+         return res.render('productos-detalle', {producto});
+        } ,
+
 
 guardar: (req, res) => {
     db.productos.create ({
@@ -40,6 +57,7 @@ guardar: (req, res) => {
 },
 
 editar: (req, res) => {
+   
     db.productos.findByPk(req.params.productoId)
     .then (function(productoedit){
         console.log (productoedit.dataValues)
