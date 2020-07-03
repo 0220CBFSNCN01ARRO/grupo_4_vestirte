@@ -31,5 +31,5 @@ module.exports = {
         // res.send(visitados)}}
 
         return res.render('index', {destacados, visitados, pendorcho})
-    },
+    }
 }
