@@ -404,3 +404,11 @@ color:#FF8E0A;
 .borde-naranja{
     border-bottom:solid 2px rgba(255, 141, 10, 0.397) ;
 }
+/*  ================================ error =================================*/
+.error{
+    padding: 0 1rem;
+    color:#303030;
+    
+
+    
+}
