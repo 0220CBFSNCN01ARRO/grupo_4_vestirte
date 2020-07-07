@@ -10,25 +10,16 @@ module.exports = {
             }
         })
 
-        if (res.locals.user){pendorcho=res.locals.user.id} else {pendorcho=null}
-        
-        let visitados = await db.sequelize.query (`SELECT * FROM usuario_producto, usuarios, productos WHERE usuarioId = usuarios.id
-        AND productoId = productos.id
-        AND usuario_producto.usuarioId = ${pendorcho}`
-        )
+        if (res.locals.user){pendorcho=res.locals.user.id} else {pendorcho=1}
 
-        // no lo aplicamos asi porque la PK no puede ser null, queda para el proximo sprint
-        // let visitados = await db.usuarios.findAll(
-        //     {
-        //         where: {
-        //             id: req.session.user.id
-        //         },
+        let visitados = await db.usuarios.findAll(
+            {
+                where: {
+                    id: pendorcho
+                },
                 
-        //         include:'visitados'
-        // })
-        
-       
-        // res.send(visitados)}}
+                include:'visitados'
+        })
 
         return res.render('index', {destacados, visitados, pendorcho})
     }
