@@ -417,7 +417,6 @@ color:#FF8E0A;
 
   #divAvatar{
       width:100%;
-     
       
       position: relative;
       font-size: 30px;
@@ -432,4 +431,5 @@ color:#FF8E0A;
       width: 20%;
       height: 100%;
       opacity: 0;
+      cursor:pointer;
   }
