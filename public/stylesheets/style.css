@@ -406,9 +406,30 @@ color:#FF8E0A;
 }
 /*  ================================ error =================================*/
 .error{
+   
     padding: 0 1rem;
-    color:#303030;
-    
-
-    
+    border-radius: 3px;
+    color:#FF8E0A;
+    font-size: .7rem;
+    font-weight: bold;
 }
+/*  ================================ file =================================*/
+
+  #divAvatar{
+      width:100%;
+     
+      
+      position: relative;
+      font-size: 30px;
+  }
+
+  #image{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 140px;
+      right: 0;
+      width: 20%;
+      height: 100%;
+      opacity: 0;
+  }

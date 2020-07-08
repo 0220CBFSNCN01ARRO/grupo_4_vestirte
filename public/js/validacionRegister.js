@@ -14,14 +14,13 @@ formulario.addEventListener('submit',e=>{
      let error="";
 
 
-     if (nombre.value.length <3){
-     error += `<p class="error">Escribe un nombre mas largo <br>` 
+     if (nombre.value.length <3 || !isNaN (nombre.value)){
+     error += `<p class="error">Formato incorrecto para nombre </p>` 
      entrar = true;
-
-     
      }
-     if (apellido.value.length <3){
-          error += `<p class="error">Escribe un apellido mas largo <br>` 
+     
+     if (apellido.value.length <3 || !isNaN (apellido.value)){
+          error += `<p class="error">Formato incorrecto para apellido </p>` 
           entrar = true;
      
           
@@ -38,7 +37,7 @@ formulario.addEventListener('submit',e=>{
           entrar = true;
      }
      if (image.value === "") {
-          error += `<p class="error">no mando imagen </p>` 
+          error += `<p class="error">no mando imagen </p><br>` 
           entrar = true;
           
  
@@ -82,3 +81,6 @@ function validarImagen(obj){
     
                     
  }
+ //quitar texto por defecto file
+
+ 
