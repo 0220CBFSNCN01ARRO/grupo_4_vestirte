@@ -1,11 +1,12 @@
 //***MODULE REQUIRE***//
 const bcrypt = require('bcrypt');
 const db = require ('../database/models')
+const { validationResult } = require('express-validator');
 
 //***CONTROLLERS***//
 module.exports = {
     login: (req, res, next) => {
-        res.render('usuarios-login')
+    res.render('usuarios-login')
     },
     registro: (req, res, next) => {
         res.render('usuarios-registro')
@@ -21,40 +22,47 @@ module.exports = {
         });
         res.redirect('/usuarios/login')
     },
-    checklogin: (req, res) => {
-        db.usuarios.findOne({
+    checklogin: async (req, res) => {
+        
+        let errors = validationResult(req);
+
+        if(!errors.isEmpty()) {
+            return res.render('usuarios-login', { 
+                errors: errors.mapped()
+            });
+        } else {
+        let userencontrado = await db.usuarios.findOne({
             where:{
                 email:req.body.email
             }
         })
-        .then(function(usuariolog){
-            if (usuariolog != undefined) {
-                if (bcrypt.compareSync(req.body.password, usuariolog.dataValues.password)) {
-
-                    
-                    delete usuariolog.dataValues.password
-                    req.session.user = usuariolog.dataValues
-                    
-                    if (req.body.recuerdame) {
-                        res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
-                    }
-                    res.redirect(`perfil/${usuariolog.dataValues}`)
-                } else {
-                    res.render('usuarios-login', {
-                        errors: {
-                            password: 'la contrasena no coincide'
-                        }
-                    })
-                }
+        if (userencontrado){
+            if (bcrypt.compareSync(req.body.password, userencontrado.dataValues.password)) {
+                
+                delete userencontrado.dataValues.password
+                req.session.user = userencontrado.dataValues
+                //si recuerda
+                if (req.body.recuerdame) {
+                    res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
+                    res.redirect(`perfil/${userencontrado.dataValues}`)
+                    //si no recuerda
+                  } else {
+                    res.redirect(`perfil/${userencontrado.dataValues}`)
+                  }
+            //si la contrasena no coincide
             } else {
-                res.render('usuarios-login', {
+                return res.render('usuarios-login', { 
                     errors: {
-                        email: 'email ingresado es incorrecto'
+                        passsword: {
+                            msg: 'Lacontrasena no coincide con la base'
+                        }
                     }
-                })
-            }
-        })
-    },
+                });
+            };
+        };
+
+    }
+},
     perfil: (req, res) => {
         db.usuarios.findByPk(req.params.id)
         .then (function(usuariolog){

@@ -5,6 +5,7 @@ const multer = require ('multer');
 const path = require ('path');
 const rutaGuest = require ('../middlewares/rutaGuest');
 const rutaUser = require ('../middlewares/rutaUser');
+const loginValidator = require ('../middlewares/loginValidator')
 
 
 
@@ -26,7 +27,7 @@ const userController = require('../controller/userController.js')
 
 /*** RUTAS DE GUEST ***/
 router.get('/login', rutaGuest, userController.login)
-router.post('/login', rutaGuest, userController.checklogin)
+router.post('/login', rutaGuest, loginValidator.userLogin, userController.checklogin)
 router.get('/registro',  rutaGuest, userController.registro)
 router.post('/crear', upload.any(),rutaGuest, userController.crear)
 

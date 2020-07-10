@@ -1,0 +1,26 @@
+        db.usuarios.findOne({
+                        where:{
+                            email:req.body.email
+                        }
+                    })
+                    .then(usuariolog => {
+                    if (usuariolog != undefined) {
+                        if (bcrypt.compareSync(req.body.password, usuariolog.dataValues.password)) {
+                            
+                            delete usuariolog.dataValues.password
+                            req.session.user = usuariolog.dataValues
+                            
+                            if (req.body.recuerdame) {
+                                res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
+                            }
+                            
+                            res.redirect(`perfil/${usuariolog.dataValues}`)
+                        } else {
+                            errors.push('la contrasena no coincide')
+                            res.render('usuarios-login', {errors})
+                        }
+                    } else {
+                        errors.push ('email ingresado es incorrecto')
+                        res.render('usuarios-login', {errors})
+                    }
+            })
