@@ -8,10 +8,10 @@
 //         let errores = [];
 
 //         let email = document.querySelector('input.email')
-//         if (email.value == "") {errores.push ('El campo de email tiene que estar completo')}
+//         if (email.value == "") {errores.push ('El campo de email tiene que estar completo FRONT')}
 
 //         let password = document.querySelector('input.password')
-//         if (password.value == "") {errores.push ('El campo de password tiene que estar completo')}
+//         if (password.value == "") {errores.push ('El campo de password tiene que estar completo FRONT')}
 
 //         if (errores.length > 0){
 //             e.preventDefault();

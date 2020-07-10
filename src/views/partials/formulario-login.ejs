@@ -8,10 +8,23 @@
     
     <div class="form-row ">
         <div class="col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center"><h3>LOGIN</h3></div>
+        
         <div class='errores col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center'>
           <ul></ul>
         </div>
-      <div class="col-11 col-md-11 col-sm-11  mt-2 mb-1 mx-auto form-inline border-gris">
+        
+        <% if(locals.errors && errors.email) { %>
+          <div class='errores col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center'>
+          <ul><%= errors.email.msg %></ul>
+          </div>
+          <% } %>
+        <% if(locals.errors && errors.password) { %>
+          <div class='errores col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center'></div>
+            <ul><%= errors.password.msg %></ul>
+          </div>
+        <% } %>
+
+        <div class="col-11 col-md-11 col-sm-11  mt-2 mb-1 mx-auto form-inline border-gris">
         <input type="email" name='email' class="email col-10 col-sm-10 col-md-10 p-2  border-0 p-0" id="validationServer01"placeholder= "correo" >
         <label  class= "col-1 col-sm-1 col-md-2" for="validationServer01 "> <i class=" icon-orange far fa-envelope  mt-2 fa-1x"></i></label>
         
