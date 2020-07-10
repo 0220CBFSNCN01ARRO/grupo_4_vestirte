@@ -19,18 +19,18 @@
         </div>
         <!-- <input class="btn btn-light mt-1 mb-3" type="submit" value="Cargar imagen"> -->
         <div class="errores" >
-          <ul>3</ul>
+          <ul></ul>
         </div>
 
-        <form method="POST" action="/productos/crear" enctype="multipart/form-data" id="formulario">
+        <form method="POST" action="/productos/crear" enctype="multipart/form-data" id="formulario" class="">
 
           <div class="row">
-            <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Nombre</label></div>
+            <div class="col-4"><label for="inputText" class=" pt-3 pb-0" id="label">Nombre</label></div>
             <div class=" col-7   form-inline border-gris ">
               <input type="text" class="border-0 p-0" name="nombre" required id="nombre">
             </div>
 
-            <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Descripcion</label></div>
+            <!-- <div class="col-4"><label for="inputText" class=" pt-3 pb-0">Descripcion</label></div>
             <div class=" col-7  form-inline border-gris ">
               <input type="text" class="  border-0 p-0" name="descripcion" required id="descripcion">
             </div>
@@ -66,7 +66,7 @@
             </div>
             <div class=" col-7   form-inline border-gris ">
              
-            </div>
+            </div> -->
 
           </div>
 
@@ -74,7 +74,7 @@
         
         <div class="form-group row d-flex justify-content-end mb-0">
           <div class=" col-4 ml-3 mb-0">
-            <button type="submit" class="boton mb-3 ml-3 px-4 py-2 ">Cargar</button>
+            <button  type="submit" class="boton mb-3 ml-3 px-4 py-2  ">Cargar</button>
           </div>
         </div>
        
@@ -83,4 +83,4 @@
   </div>
 </div>
 
-
+<script src="/js/validacionprodcutoscrear.js"></script>
