@@ -1,30 +1,50 @@
-window.addEventListener('load', function () {
-    let formulario = document.getElementById('formulario');
-    let nombre = document.getElementById('nombre');
+let formularioCrear = document.getElementById('formularioCrear');
+let nombreProducto = document.getElementById('nombreProducto');
+let descripcion = document.getElementById('descripcion');
+let precio = document.getElementById('precio');
+let categoria = document.getElementById('categoria');
+let stock = document.getElementById('stock');
+let imagen = document.getElementById('imagen');
 
-    formulario.addEventListener('submit', () => {
-   
+formularioCrear.addEventListener('submit', e => {
+     errorTexProducto.innerHTML = "";
+        let error = ""
 
-       /*  if (nombre.value == '') {
-           formulario.querySelector('label').innerHTML = 'Samu, estas aca!'
-        } */
+     if (nombreProducto.value.length < 5 || !isNaN (nombreProducto.value)){
+          error += `<p class="error">El nombre debe tener al menos 5 caracteres </p>`
+          entrar = true;
+          }
 
-
-        let errores = [];
-
-        if (nombre.value == '') {
-            errores.push('completa el campo de nombre')
-        } else if (nombre.value.length < 3) {
-            errores.push('Debe tener al menos 3 caracteres')
-        };
-        if (errores.length > 0) {
-            evento.preventDefault();
-            let ulErrores = document.querySelector('div.errores ul')
-            for (let index = 0; index < errores.length; index++) {
-
-                ulErrores.innerHTML = '<li>' + errores[index] + '</li>'
-
+          if (descripcion.value.length < 20){
+            error += `<p class="error">La descripcion debe tener al menos 20 caracteres</p>`
+            entrar = true;
             }
-        }
-    })
+            if (precio.value.length < 1 || !isNaN){
+                error += `<p class="error">EL campo precio no puede estar vacio</p>`
+                entrar = true;
+                }
+                if (categoria.value.length == ''){
+                    error += `<p class="error">La categoria no puede estar vacia</p>`
+                    entrar = true;
+                    }
+                    if (imagen.value.length == ''){
+                        error += `<p class="error">Adjunte una imagen</p>`
+                        entrar = true;
+                        }
+          if (entrar) {
+            e.preventDefault();
+          errorTexProducto.innerHTML += error
+     }
 })
+function uploadImage(obj){
+
+     var uploadFile = obj.files[0];
+     if (!window.FileReader) {
+         alert('El navegador no soporta la lectura de archivos');
+         image.value= null;
+     }
+     if (!(/\.(jpg|png|gif)$/i).test(uploadFile.name)) {
+         alert('Solo aceptamos imagenes');
+         image.value= null;
+     }
+ }
