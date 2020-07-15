@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 let path = require ('path');
-
+const {check, validationResult, body} = require('express-validator')
 
 
 
@@ -33,7 +33,17 @@ router.get('/detalles/:productoId/', productosController.detalle);
 
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/crear/', productosController.crear);
-router.post('/crear/', upload.any(), productosController.guardar);
+router.post('/crear/',upload.any(),  [
+    //campos a chekear 
+    check('nombre').isLength({min:3}),
+    check('descripcion').isLength({min:3}),
+    check('precio').isInt().isLength(),
+    check('descuento').isInt().isLength(),
+    check('categoria').isLength(),
+    check('envio').isInt().isLength(),
+    check('stock').isInt().isLength()
+    
+],productosController.guardar);
 
 /*** EDITAR UN PRODUCTO ***/ 
 router.get('/editar/:productoId', productosController.editar);
