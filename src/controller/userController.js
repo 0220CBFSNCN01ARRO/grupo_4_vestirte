@@ -43,7 +43,7 @@ module.exports = {
                     req.session.user = userencontrado.dataValues
                     //si recuerda
                     if (req.body.recuerdame) {
-                        res.cookie('usuario', usuariolog.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
+                        res.cookie('usuario', userencontrado.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
                         res.redirect(`perfil/${userencontrado.dataValues}`)
                         //si no recuerda
                     } else {

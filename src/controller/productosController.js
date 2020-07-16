@@ -1,6 +1,6 @@
 //***MODULE REQUIRE***//
 const db = require ('../database/models')
-const {check, validationResult, body} = require('express-validator')
+const {validationResult} = require('express-validator')
 
 //***CONTROLLER METHODS***//
 
@@ -49,7 +49,7 @@ guardar:  (req, res) => {
     
     let errores= errors.errors
     
-     res.redirect('/productos/crear/',{errores})
+     res.send('ERROR')
      
 
 }
