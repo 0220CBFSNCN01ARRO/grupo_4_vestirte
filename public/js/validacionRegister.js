@@ -20,7 +20,7 @@ formulario.addEventListener('submit', e => {
           entrar = true;
      }
      if (regular.test(email.value) === false) {
-          /* alert('email no valido')} */
+          // alert('email no valido')} 
           error += `<p class="error">El email no es valido </p>`
           entrar = true;
      }
@@ -37,6 +37,7 @@ formulario.addEventListener('submit', e => {
           errorTex.innerHTML += error
      }
 })
+
 
 //funcion para validar imagenen
 //Los criterios a validar serán

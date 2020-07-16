@@ -1,7 +1,11 @@
 //***MODULE REQUIRE***//
 const bcrypt = require('bcrypt');
-const db = require ('../database/models')
-const { validationResult } = require('express-validator');
+const db = require('../database/models')
+const {
+    check,
+    validationResult,
+    body
+} = require('express-validator');
 
 //***CONTROLLERS***//
 module.exports = {
@@ -11,55 +15,61 @@ module.exports = {
     registro: (req, res, next) => {
         res.render('usuarios-registro')
     },
-    crear: async (req, res, next) =>   {
-        
-        let emailEncontrado = await db.usuarios.findOne({
-            where:{
-                email:req.body.email
-            } 
-        })
-        let emaildb = emailEncontrado.email
-      
-           if(emaildb!=req.body.email) {
-        db.usuarios.create ({
-            nombre:req.body.nombre,
-            apellido: req.body.apellido,
-            email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
-            categoria: 'user',
-            image: req.files[0].filename
-        });
-        res.redirect('/usuarios/login')
-        
-    }else{
-        
-        res.render('usuarios-registro',emaildb)
-    }
-
-}
-        ,
-    checklogin: async (req, res) => {
-        
+    crear: async (req, res, next) => {
         let errors = validationResult(req);
-        
-        if(!errors.isEmpty()) {
-            return res.render('usuarios-login', { 
+        if (errors.isEmpty()) {
+            let emailEncontrado = await db.usuarios.findOne({
+                where: {
+                    email: req.body.email
+                }
+            })
+            let emaildb = emailEncontrado.email
+
+            if (emaildb != req.body.email) {
+                db.usuarios.create({
+                    nombre: req.body.nombre,
+                    apellido: req.body.apellido,
+                    email: req.body.email,
+                    password: bcrypt.hashSync(req.body.password, 10),
+                    categoria: 'user',
+                    image: req.files[0].filename
+                });
+                res.redirect('/usuarios/login')
+
+            } else {
+
+                res.render('usuarios-registro', emaildb)
+            }
+        } else {
+            return res.render('usuarios-registro', {
+                errors: errors.errors
+            });
+        }
+    },
+    checklogin: async (req, res) => {
+
+        let errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return res.render('usuarios-login', {
                 errors: errors.mapped()
             });
         } else {
             let userencontrado = await db.usuarios.findOne({
-                where:{
-                    email:req.body.email
+                where: {
+                    email: req.body.email
                 }
             })
-            if (userencontrado){
+            if (userencontrado) {
                 if (bcrypt.compareSync(req.body.password, userencontrado.dataValues.password)) {
-                    
+
                     delete userencontrado.dataValues.password
                     req.session.user = userencontrado.dataValues
                     //si recuerda
                     if (req.body.recuerdame) {
-                        res.cookie('usuario', userencontrado.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
+                        res.cookie('usuario', userencontrado.dataValues, {
+                            maxAge: 1000 * 60 * 60 * 24 * 90
+                        });
                         res.redirect(`perfil/${userencontrado.dataValues}`)
                         //si no recuerda
                     } else {
@@ -67,7 +77,7 @@ module.exports = {
                     }
                     //si la contrasena no coincide
                 } else {
-                    return res.render('usuarios-login', { 
+                    return res.render('usuarios-login', {
                         errors: {
                             password: {
                                 msg: 'Lacontrasena no coincide con la base'
@@ -79,8 +89,8 @@ module.exports = {
                 return res.render('usuarios-login', {
                     errors: {
                         email: {
-                            msg: 'El email no se encuentra registrado en nuestra base de datos' 
-                        }, 
+                            msg: 'El email no se encuentra registrado en nuestra base de datos'
+                        },
                     }
                 });
             }
@@ -88,14 +98,16 @@ module.exports = {
     },
     perfil: (req, res) => {
         db.usuarios.findByPk(req.params.id)
-        .then (function(usuariolog){
-            res.render('perfil', {usuariolog});
-        })
+            .then(function (usuariolog) {
+                res.render('perfil', {
+                    usuariolog
+                });
+            })
     },
     logout: (req, res) => {
         req.session.user = null;
         res.clearCookie('usuario');
-        
+
         res.locals.usuario = null
         res.redirect('/')
     }
