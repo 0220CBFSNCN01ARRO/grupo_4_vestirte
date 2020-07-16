@@ -4,62 +4,64 @@
   <div class="card-body py-2">
     <h3 class="card-title text-center"><%= productoedit.nombre %></h3>
   </div>
-  
-  
-  <form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT">        
+
+  <div class="error" >
+    <ul ></ul>
+  </div>
+
+  <form method="POST" action="/productos/<%= productoedit.id %>?_method=PUT" class="formEditar" >
     <div class="row px2 mt-5 mb-3">
-    
+
       <div class="col-6"><label for="inputText" class="  pb-1">Nombre</label></div>
       <div class=" col-5  form-inline border-gris ">
-        <input type="text" class="  border-0 p-0" name="nombre" value="<%= productoedit.nombre %>"required>
+        <input type="text" class=" nombre border-0 p-0" name="nombre" value="<%= productoedit.nombre %>">
       </div>
-      
+
       <div class="col-6"><label for="inputText" class="  pb-1">Descripcion</label></div>
       <div class=" col-5   form-inline border-gris ">
-        <input type="text" class="  border-0 p-0" name="descripcion" value="<%= productoedit.descripcion %>" required>
+        <input type="text" class=" descripcion border-0 p-0" name="descripcion" value="<%= productoedit.descripcion %>" >
       </div>
-      
+
       <div class="col-6"><label for="inputText" class="  pb-1">Precio</label></div>
       <div class=" col-5  form-inline border-gris ">
         <input type="number" class="  border-0 p-0" name="precio"  value="<%= productoedit.precio %>" required>
       </div>
-      
+
       <div class="col-6"><label for="inputText" class=" pb-1">Descuento</label></div>
       <div class=" col-5  form-inline border-gris ">
         <input type="number" class="  border-0 p-0" name="descuento" value="<%= productoedit.descuento %>"  required>
       </div>
-      
+
       <div class="col-6"><label for="inputText" class="  pb-1">Imagen</label></div>
       <div class="col-5  form-inline border-gris ">
-        <input type="text" class="  border-0 p-0" name="imagen" value="<%= productoedit.imagen %>" required>
+        <input type="text" class=" imagen border-0 p-0" name="imagen" value="<%= productoedit.imagen %>" >
       </div>
-      
+
       <div class="col-6"><label for="inputText" class=" pb-1">Categoria</label></div>
       <div class="col-5 form-inline border-gris ">
         <input type="text" class="  border-0 p-0" name="categoria" value="<%= productoedit.categoria %>" required>
       </div>
-      
+
       <div class="col-6"><label for="inputText" class=" pb-1">Costo de envio</label></div>
       <div class="col-5  form-inline border-gris ">
         <input type="number" class="  border-0 p-0" name="envio" value="<%= productoedit.envio %>" required>
       </div>
-      
+
       <div class="col-6"><label for="inputText" class=" pb-1">Stock</label></div>
       <div class="col-5  form-inline border-gris ">
         <input type="number" class="  border-0 p-0" name="stock" value="<%= productoedit.stock %>" required>
       </div>
     </div>
-    
+
     <div class=" col-12 mt-1 p-1 form-group row d-flex justify-content-around">
           <button class="btn btn boton" type="submit">EDITAR</button>
   </form>
-  
-      
+
         <form method="POST" action="/productos/<%= productoedit.id %>/destruir?_method=DELETE">
           <button class="btn boton" type="submit">BORRAR</button>
   </form>
     </div>
   </div>
   </div>
-   
+  <script src="/js/validacionProdEditar.js"></script>
 

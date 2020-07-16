@@ -57,3 +57,40 @@ Optimizar uso de Git.
 Dejar de hacer:
 No realizar tareas que estan por fuera del sprint
 Ejecucion de tareas cerca de la fecha de entrega del sprint
+
+## Retrospectiva 4 Sprint 5
+
+Seguir haciendo:
+División de tarea.
+Comunicacion efectiva.
+Comunicacion por Whatsapp
+
+Hacer mas:
+Verificar ejecucion de tareas mediante la utilizaicion de Trello.
+Cumplir con la fecha de entrega de cada tarea.
+
+Empezar a hacer:
+Cumplir con la fecha de entrega de cada tarea.
+
+Dejar de hacer:
+No realizar tareas que estan por fuera del sprint (siempre recordar)
+Ejecucion de tareas cerca de la fecha de entrega del sprin
+
+
+## Retrospectiva 5 Sprint 6
+
+Seguir haciendo:
+Acordar estilos.
+Comunicacion efectiva.
+Daily por Whatsapp.
+
+
+Hacer mas:
+Reuniones por Zoom.
+
+Empezar a hacer:
+Cumplir con la fecha de entrega de cada tarea segun tablero Trello.
+
+Dejar de hacer:
+Ejecucion de tareas cerca de la fecha de entrega del sprin
+
