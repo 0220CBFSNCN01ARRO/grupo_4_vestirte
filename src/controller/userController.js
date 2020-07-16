@@ -4,6 +4,8 @@ const db = require ('../database/models')
 const { validationResult } = require('express-validator');
 
 //***CONTROLLERS***//
+
+ 
 module.exports = {
     login: (req, res, next) => {
         res.render('usuarios-login')
@@ -12,16 +14,19 @@ module.exports = {
         res.render('usuarios-registro')
     },
     crear: async (req, res, next) =>   {
-        
+
         let emailEncontrado = await db.usuarios.findOne({
             where:{
                 email:req.body.email
-            } 
+            }
+           
         })
-        let emaildb = emailEncontrado.email
-      
-           if(emaildb!=req.body.email) {
-        db.usuarios.create ({
+        console.log(emailEncontrado)
+
+        if(!emailEncontrado){
+
+       
+            db.usuarios.create ({
             nombre:req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
@@ -29,15 +34,13 @@ module.exports = {
             categoria: 'user',
             image: req.files[0].filename
         });
-        res.redirect('/usuarios/login')
-        
+    res.redirect('/login')
+    
     }else{
-        
-        res.render('usuarios-registro',emaildb)
+        res.send('El email ya existe')
     }
-
-}
-        ,
+    
+}  ,
     checklogin: async (req, res) => {
         
         let errors = validationResult(req);

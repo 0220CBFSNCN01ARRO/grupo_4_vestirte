@@ -1,23 +1,29 @@
  window.addEventListener('load', function() {
-   let loginform=document.querySelector('form.loginform')
+  
 
-    console.log (loginform);
+ 
+    let loginform=document.getElementById('formularioLogin')
+    loginform.addEventListener('submit', e => {
+    let email = document.getElementById('emailLogin') 
+    let password = document.getElementById('passwordLogin')
+    let ulerrores=document.getElementById('errorTexLogin');
     
-   loginform.addEventListener('submit', function (e){
-                let errores = [];
-       let email = document.querySelector('input.email')        
-       if (email.value == "") {errores.push ('El campo de email tiene que estar completo ')}
+    
+    ulerrores.innerHTML = "";
+    let error = "";
+    if (password.value.length < 3 ) {
+         error += `<p class="error">Contraseña muy corta </p>`
+         entrar = true;
+    }
+    if (email.value.length < 3 ) {
+         error += `<p class="error">Formato incorrecto para apellido </p>`
+         entrar = true;
+    }
 
-         let password = document.querySelector('input.password')
-        if (password.value == "") {errores.push ('El campo de password tiene que estar completo')}
-
-        if (errores.length > 0){
-            e.preventDefault();
-
-            let ulerrores=document.getElementById('errorTexLogin');
-            errores.forEach(element => {
-                 ulerrores.innerHTML += '<p>' + element + '</p>'
-            });
-       }
-     })
- })
+    if (entrar) {
+         e.preventDefault();
+         
+         ulerrores.innerHTML += error
+    }
+})
+})
