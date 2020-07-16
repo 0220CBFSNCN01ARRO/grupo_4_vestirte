@@ -11,7 +11,16 @@ module.exports = {
     registro: (req, res, next) => {
         res.render('usuarios-registro')
     },
-    crear: (req, res, next) => {
+    crear: async (req, res, next) =>   {
+        
+        let emailEncontrado = await db.usuarios.findOne({
+            where:{
+                email:req.body.email
+            } 
+        })
+        let emaildb = emailEncontrado.email
+      
+           if(emaildb!=req.body.email) {
         db.usuarios.create ({
             nombre:req.body.nombre,
             apellido: req.body.apellido,
@@ -21,7 +30,14 @@ module.exports = {
             image: req.files[0].filename
         });
         res.redirect('/usuarios/login')
-    },
+        
+    }else{
+        
+        res.render('usuarios-registro',emaildb)
+    }
+
+}
+        ,
     checklogin: async (req, res) => {
         
         let errors = validationResult(req);
