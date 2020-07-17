@@ -24,6 +24,8 @@
          e.preventDefault();
          
          ulerrores.innerHTML += error
+
+         entrar = false;
     }
 })
 })

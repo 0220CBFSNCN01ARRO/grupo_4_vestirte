@@ -35,6 +35,8 @@ formulario.addEventListener('submit', e => {
      if (entrar) {
           e.preventDefault();
           errorTex.innerHTML += error
+
+          error=false;
      }
 })
 
