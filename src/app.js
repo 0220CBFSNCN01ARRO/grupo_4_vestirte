@@ -14,6 +14,8 @@ const productosRouter = require ('./routes/productos');
 const usuariosRouter = require('./routes/usuarios');
 const carritoRouter = require('./routes/carrito');
 
+/* Rutas api */
+var productosApiRouter = require('./routes/api/productos' );
 //***EXPRESS EXECUTION***//
 var app = express();
 
@@ -41,6 +43,9 @@ app.use('/', indexRouter);
 app.use('/productos', productosRouter);
 app.use ('/usuarios', usuariosRouter);
 app.use ('/carrito', carritoRouter);
+
+/* Rutas api */
+app.use('/api/productos', productosApiRouter);
 
 //***OTHER***//
 // catch 404 and forward to error handler
