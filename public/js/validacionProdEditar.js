@@ -29,6 +29,7 @@ window.addEventListener('load', function () {
             e.preventDefault();
             let ulerrores = document.getElementById('errorTexEdit');
             ulerrores.innerHTML += error
+            entrar=false;
        }
     })
 })
