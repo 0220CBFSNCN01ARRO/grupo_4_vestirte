@@ -1,31 +1,31 @@
- window.addEventListener('load', function() {
+//  window.addEventListener('load', function() {
   
 
  
-    let loginform=document.getElementById('formularioLogin')
-    loginform.addEventListener('submit', e => {
-    let email = document.getElementById('emailLogin') 
-    let password = document.getElementById('passwordLogin')
-    let ulerrores=document.getElementById('errorTexLogin');
+//     let loginform=document.getElementById('formularioLogin')
+//     loginform.addEventListener('submit', e => {
+//     let email = document.getElementById('emailLogin') 
+//     let password = document.getElementById('passwordLogin')
+//     let ulerrores=document.getElementById('errorTexLogin');
     
     
-    ulerrores.innerHTML = "";
-    let error = "";
-    if (password.value.length < 3 ) {
-         error += `<p class="error">Contraseña muy corta </p>`
-         entrar = true;
-    }
-    if (email.value.length < 3 ) {
-         error += `<p class="error">Formato incorrecto para apellido </p>`
-         entrar = true;
-    }
+//     ulerrores.innerHTML = "";
+//     let error = "";
+//     if (password.value.length < 3 ) {
+//          error += `<p class="error">Contraseña muy corta </p>`
+//          entrar = true;
+//     }
+//     if (email.value.length < 3 ) {
+//          error += `<p class="error">Formato incorrecto para mail</p>`
+//          entrar = true;
+//     }
 
-    if (entrar) {
-         e.preventDefault();
+//     if (entrar) {
+//          e.preventDefault();
          
-         ulerrores.innerHTML += error
+//          ulerrores.innerHTML += error
 
-         entrar = false;
-    }
-})
-})
+//          entrar = false;
+//     }
+// })
+// })

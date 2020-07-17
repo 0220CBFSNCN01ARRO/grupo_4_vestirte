@@ -3,33 +3,32 @@ window.addEventListener('load', function () {
 
 
     formEditar.addEventListener('submit', function (e) {
-
-        ulerrores.innerHTML = "";
-        let error = "";
-        
+        let errores = [];
 
         let nombre = document.querySelector('input.nombre')
         if (nombre.value.length < 5 || !isNaN(nombre.value)) {
-            error += 'El campo nombre tiene que tener al menos 5 caracteres'
-            entrar = true;
+            errores.push('El campo nombre tiene que tener al menos 5 caracteres')
         };
 
         let descripcion = document.querySelector('input.descripcion')
         if (descripcion.value.length < 5) {
-            error +='La descripcion no debe tener  menos de 20 caracteres'
-            entrar = true;
+            errores.push('La descripcion no debe tener  menos de 20 caracteres')
         }
 
         let imagen = document.querySelector('input.imagen')
         if (imagen.value.length < 5) {
-            error +='Debe adjuntar una imagen'
-            entrar = true;
+            errores.push('Debe adjuntar una imagen')
         }
-        if (entrar) {
+
+
+        if (errores.length > 0) {
             e.preventDefault();
-            let ulerrores = document.getElementById('errorTexEdit');
-            ulerrores.innerHTML += error
-            entrar=false;
-       }
+
+            let ulerrores = document.querySelector('div .error ul');
+
+            errores.forEach(issues => {
+                ulerrores.innerHTML += '<li>' + issues + '</li>'
+            });
+        }
     })
 })
