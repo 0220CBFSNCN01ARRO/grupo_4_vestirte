@@ -34,6 +34,7 @@ formularioCrear.addEventListener('submit', e => {
           if (entrar) {
             e.preventDefault();
           errorTexProducto.innerHTML += error
+          entrar=false;
      }
 })
 function uploadImage(obj){
