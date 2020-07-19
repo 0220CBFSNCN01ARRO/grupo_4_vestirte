@@ -1,31 +1,21 @@
-//  window.addEventListener('load', function() {
-  
+ window.addEventListener('load', function() {
+    let email = document.getElementById('emailLogin')
+    let password = document.getElementById('passwordLogin')
+    let error = "";
 
- 
-//     let loginform=document.getElementById('formularioLogin')
-//     loginform.addEventListener('submit', e => {
-//     let email = document.getElementById('emailLogin') 
-//     let password = document.getElementById('passwordLogin')
-//     let ulerrores=document.getElementById('errorTexLogin');
-    
-    
-//     ulerrores.innerHTML = "";
-//     let error = "";
-//     if (password.value.length < 3 ) {
-//          error += `<p class="error">Contraseña muy corta </p>`
-//          entrar = true;
-//     }
-//     if (email.value.length < 3 ) {
-//          error += `<p class="error">Formato incorrecto para mail</p>`
-//          entrar = true;
-//     }
+    email.addEventListener ('change', e => {
+        if (email.value.length < 4 ) {
+            if (!error) {
+            let errormail=document.getElementById('errormail');
+            return errormail.innerHTML += `<p class="error">Formato incorrecto para mail</p>`}
+            }
+        })
 
-//     if (entrar) {
-//          e.preventDefault();
-         
-//          ulerrores.innerHTML += error
-
-//          entrar = false;
-//     }
-// })
-// })
+    password.addEventListener ('change', e => {
+        if (password.value.length < 3) {
+            if (!error) {
+                let errorpass=document.getElementById('errorpass');
+                return errorpass.innerHTML += `<p class="error">Contraseña muy corta </p>`}
+    }
+    })
+})
