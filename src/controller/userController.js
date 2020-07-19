@@ -34,7 +34,7 @@ module.exports = {
             categoria: 'user',
             image: req.files[0].filename
         });
-    res.redirect('/login')
+    res.render('usuarios-login')
     
     }else{
         res.send('El email ya existe')
