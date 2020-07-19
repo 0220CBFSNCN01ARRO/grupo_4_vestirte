@@ -11,22 +11,26 @@
 
         <div class="col-11 col-md-11 col-sm-11  mt-2 mb-1 mx-auto form-inline border-gris">
         <input type="text" name='email' class="email col-10 col-sm-10 col-md-10 p-2  border-0 p-0" id="emailLogin"placeholder= "correo" >
-        <div id="errormail" class="text-center"></div>
         <label  class= "col-1 col-sm-1 col-md-2" for="validationServer01 "> <i class=" icon-orange far fa-envelope  mt-2 fa-1x"></i></label>
         
       </div>
+        <div id="errormail" class="text-center error"></div>
+
+
       <div class="col-11 col-md-11 col-sm-11  mt-2 mb-1 mx-auto form-inline border-gris">
-        <input type="password" name='password' class="password col-10 col-sm-10 col-md-10 p-2 border-0 p-0" id="passwordLogin" placeholder="contraseña">
-        <div id="errorpass" class="text-center"></div>
-        <label  class= "col-1 col-sm-1 col-md-2" for="validationServer02 "><i class=" icon-orange fas fa-lock-open  mt-2 fa-1x"></i></label>
-        
+        <input type="password" name='password' class="password col-10 col-sm-10 col-md-10 p-2 border-0 p-0" id="passwordLogin" placeholder="contraseña"> 
+        <label  class= "col-1 col-sm-1 col-md-2" for="validationServer02 "><i class=" icon-orange fas fa-lock-open  mt-2 fa-1x"></i></label> 
       </div>
+        <div id="errorpass" class="text-center error"></div>
         </div>
         <div class="recordarme d-flex justify-content-end col-md-11 p-md-2"><p><a href="/formulario"></a>Olvidaste tu Contraseña?</a></p></div>
       <div class="d-flex justify-content-end col-md-11 p-md-2">
         <label>Recuerdame</label><input name="recuerdame" type="checkbox"> 
       </div>
       <div class="d-flex justify-content-center col-12 my-2 mt-3">
+        
+
+
       <% if(locals.errors && errors.email) { %>
         <div class='error text-center'>
         <ul><%= errors.email.msg %></ul>

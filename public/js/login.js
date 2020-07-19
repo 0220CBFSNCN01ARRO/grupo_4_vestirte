@@ -1,13 +1,18 @@
  window.addEventListener('load', function() {
-    let email = document.getElementById('emailLogin')
+
+    let email = document.getElementById('emailLogin') 
+    
+
     let password = document.getElementById('passwordLogin')
-    let error = "";
+   
+
+   let error = ""
 
     email.addEventListener ('change', e => {
         if (email.value.length < 4 ) {
             if (!error) {
             let errormail=document.getElementById('errormail');
-            return errormail.innerHTML += `<p class="error">Formato incorrecto para mail</p>`}
+            return errormail.innerHTML += `<p >Formato incorrecto para mail</p>`}
             }
         })
 
@@ -15,7 +20,8 @@
         if (password.value.length < 3) {
             if (!error) {
                 let errorpass=document.getElementById('errorpass');
-                return errorpass.innerHTML += `<p class="error">Contraseña muy corta </p>`}
+                return errorpass.innerHTML = `<p >Contraseña muy corta </p>`}
     }
+    
     })
 })
