@@ -8,12 +8,14 @@ const { validationResult } = require('express-validator');
  
 module.exports = {
     login: (req, res, next) => {
-        res.render('usuarios-login')
+        let token = false;
+        res.render('usuarios-login', {token})
     },
     registro: (req, res, next) => {
         res.render('usuarios-registro')
     },
     crear: async (req, res, next) =>   {
+
 
         let emailEncontrado = await db.usuarios.findOne({
             where:{
@@ -25,22 +27,24 @@ module.exports = {
 
         if(!emailEncontrado){
 
-       
-            db.usuarios.create ({
+           let UserSession= {
             nombre:req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             categoria: 'user',
             image: req.files[0].filename
-        });
-    res.render('usuarios-login')
-    
+           }
+            db.usuarios.create (
+                UserSession
+        );
+        delete UserSession.password
+        res.render('usuarios-ok', {UserSession})
     }else{
-        res.send('El email ya existe')
+        let token = true;
+        res.render('usuarios-login', {token})
     }
-    
-}  ,
+},
     checklogin: async (req, res) => {
         
         let errors = validationResult(req);
@@ -63,10 +67,10 @@ module.exports = {
                     //si recuerda
                     if (req.body.recuerdame) {
                         res.cookie('usuario', userencontrado.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
-                        res.redirect(`perfil/${userencontrado.dataValues}`)
+                        res.redirect(`perfil/${userencontrado.dataValues.id}`)
                         //si no recuerda
                     } else {
-                        res.redirect(`perfil/${userencontrado.dataValues}`)
+                        res.redirect(`perfil/${userencontrado.dataValues.id}`)
                     }
                     //si la contrasena no coincide
                 } else {
