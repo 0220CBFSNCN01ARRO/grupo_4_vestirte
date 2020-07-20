@@ -46,12 +46,12 @@ module.exports = {
     }
 },
     checklogin: async (req, res) => {
-        
+        let token = false;
         let errors = validationResult(req);
         
         if(!errors.isEmpty()) {
             return res.render('usuarios-login', { 
-                errors: errors.mapped()
+                errors: errors.mapped(), token
             });
         } else {
             let userencontrado = await db.usuarios.findOne({
@@ -79,7 +79,7 @@ module.exports = {
                             password: {
                                 msg: 'Lacontrasena no coincide con la base'
                             },
-                        }
+                        }, token
                     });
                 };
             } else {
@@ -88,7 +88,7 @@ module.exports = {
                         email: {
                             msg: 'El email no se encuentra registrado en nuestra base de datos' 
                         }, 
-                    }
+                    }, token
                 });
             }
         }
