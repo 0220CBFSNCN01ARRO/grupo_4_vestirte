@@ -22,9 +22,7 @@ module.exports = {
                 email:req.body.email
             }
            
-        })
-        console.log(emailEncontrado)
-
+        })      
         if(!emailEncontrado){
 
            let UserSession= {
@@ -35,11 +33,15 @@ module.exports = {
             categoria: 'user',
             image: req.files[0].filename
            }
-            db.usuarios.create (
+        let UserSessionCreated = await db.usuarios.create (
                 UserSession
         );
-        delete UserSession.password
-        res.render('usuarios-ok', {UserSession})
+        
+        delete UserSessionCreated.dataValues.password
+        req.session.user = UserSessionCreated.dataValues
+        res.locals.user = UserSessionCreated.dataValues
+
+        res.redirect(`perfil/${UserSessionCreated.dataValues.id}`)
     }else{
         let token = true;
         res.render('usuarios-login', {token})
