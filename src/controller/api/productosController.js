@@ -14,5 +14,9 @@ list: (req, res) => {
 
         res.send(respuesta)
     })
-}
+},
+detalle: async (req, res) => {
+    let producto= await db.productos.findByPk(req.params.productoId)
+    return res.json(producto);
+   } 
 }
