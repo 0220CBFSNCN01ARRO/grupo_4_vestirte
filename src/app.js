@@ -17,7 +17,6 @@ const carritoRouter = require('./routes/carrito');
 /* Rutas api */
 var productosApiRouter = require('./routes/api/productos' );
 var usuariosApiRouter = require('./routes/api/usuarios' );
-
 //***EXPRESS EXECUTION***//
 var app = express();
 

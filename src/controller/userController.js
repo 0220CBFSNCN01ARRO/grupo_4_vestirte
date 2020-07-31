@@ -8,52 +8,46 @@ const { validationResult } = require('express-validator');
  
 module.exports = {
     login: (req, res, next) => {
-        let token = false;
-        res.render('usuarios-login', {token})
+        res.render('usuarios-login')
     },
     registro: (req, res, next) => {
         res.render('usuarios-registro')
     },
     crear: async (req, res, next) =>   {
 
-
         let emailEncontrado = await db.usuarios.findOne({
             where:{
                 email:req.body.email
             }
            
-        })      
+        })
+        console.log(emailEncontrado)
+
         if(!emailEncontrado){
 
-           let UserSession= {
+       
+            db.usuarios.create ({
             nombre:req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             categoria: 'user',
             image: req.files[0].filename
-           }
-        let UserSessionCreated = await db.usuarios.create (
-                UserSession
-        );
-        
-        delete UserSessionCreated.dataValues.password
-        req.session.user = UserSessionCreated.dataValues
-        res.locals.user = UserSessionCreated.dataValues
-
-        res.redirect(`perfil/${UserSessionCreated.dataValues.id}`)
+        });
+    res.render('usuarios-login')
+    
     }else{
-        let token = true;
-        res.render('usuarios-login', {token})
+        res.send('El email ya existe')
     }
-},
+    
+}  ,
     checklogin: async (req, res) => {
-        let token = false;
+        
         let errors = validationResult(req);
         
         if(!errors.isEmpty()) {
             return res.render('usuarios-login', { 
-                errors: errors.mapped(), token
+                errors: errors.mapped()
             });
         } else {
             let userencontrado = await db.usuarios.findOne({
@@ -69,10 +63,10 @@ module.exports = {
                     //si recuerda
                     if (req.body.recuerdame) {
                         res.cookie('usuario', userencontrado.dataValues, {maxAge: 1000 * 60 * 60 * 24 * 90 });
-                        res.redirect(`perfil/${userencontrado.dataValues.id}`)
+                        res.redirect(`perfil/${userencontrado.dataValues}`)
                         //si no recuerda
                     } else {
-                        res.redirect(`perfil/${userencontrado.dataValues.id}`)
+                        res.redirect(`perfil/${userencontrado.dataValues}`)
                     }
                     //si la contrasena no coincide
                 } else {
@@ -81,7 +75,7 @@ module.exports = {
                             password: {
                                 msg: 'Lacontrasena no coincide con la base'
                             },
-                        }, token
+                        }
                     });
                 };
             } else {
@@ -90,7 +84,7 @@ module.exports = {
                         email: {
                             msg: 'El email no se encuentra registrado en nuestra base de datos' 
                         }, 
-                    }, token
+                    }
                 });
             }
         }

@@ -8,4 +8,5 @@ router.get("/",productoApiController.list)
 router.get('/detalles/:productoId/', productoApiController.detalle);
 
 
+
 module.exports = router;
