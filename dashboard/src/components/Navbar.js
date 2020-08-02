@@ -39,7 +39,7 @@ function NavBar(props) {
             <li className="nav-item dropdown no-arrow">
                 <a className="nav-link dropdown-toggle" href="/" id="userDropdown">
                     <span className="mr-2 d-none d-lg-inline text-gray-600 small">Walter White</span>
-                    <img className="img-profile rounded-circle" src={avatar} width="60"/>
+                    <img className="img-profile rounded-circle" src={avatar} width="60" alt="imagen de usuario"/>
                 </a>
             </li>
 
