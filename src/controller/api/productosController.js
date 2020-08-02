@@ -52,6 +52,25 @@ detalle: async (req, res) => {
                 link: `/api/productos/detalles/${producto.id}`
             }
         })
+},
+ultimo: async (req, res) => {
+    let producto= await db.productos.findAll()
+
+    var max = producto.map (function (elem){
+        return elem.precio
+    })
+
+    max = max.reduce(function(acum, current){
+            return acum+current;
+    });
+    
+    res.json({
+        meta:{
+            status: 200,
+        },
+        data:  {
+            totalprice: max,
+            }
+        })
 }
-   
 }

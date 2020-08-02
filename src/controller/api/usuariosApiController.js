@@ -35,10 +35,34 @@ detalle: async (req, res) => {
             nombre:usuario.nombre,
             apellido: usuario.apellido,
             email: usuario.email,
-            password: usuario.password,
-            categoria: usuario.categoria,
-            image: usuario.image,
+            image: `/img/img-users/${usuario.image}`,
             link: `/api/usuarios/${usuario.id}`
+            }
+        })
+},
+ultimo: async (req, res) => {
+    let usuario= await db.usuarios.findAll()
+
+    var max = usuario.reduce(function(prev, current) {
+        if (current.id > prev.id) {
+            return current;
+        } else {
+            return prev;
+        }
+    });
+    
+    res.json({
+        meta:{
+            status: 200,
+            link: '/api/usuarios/'+ max.id
+        },
+        data:  {
+            id: max.id,
+            nombre: max.nombre,
+            apellido: max.apellido,
+            email: max.email,
+            image: `/img/img-users/${max.image}`,
+            link: `/api/usuarios/${max.id}`
             }
         })
 }
