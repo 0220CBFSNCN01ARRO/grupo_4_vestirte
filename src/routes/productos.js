@@ -31,7 +31,7 @@ router.get('/', productosController.listar);
 
 /*** DETALLE DE PRODUCTO ***/ 
 router.get('/detalles/:productoId/', productosController.detalle);
-
+router.get('/search', productosController.search)
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/crear/', productosController.crear);
 router.post('/crear/',upload.any(),crearValidator.checkProduct,productosController.guardar);

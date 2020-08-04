@@ -1,14 +1,35 @@
 //***MODULE REQUIRE***//
 const db = require ('../database/models')
 const {validationResult} = require('express-validator')
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 //***CONTROLLER METHODS***//
 
 module.exports= {
+
+search: (req, res) => {
+        let productoFiltrados= req.query.query
+        
+         db.productos.findAll( {
+           
+             where:{
+                 nombre:{[Op.like]: `%${productoFiltrados}%`}
+                
+             } 
+              })
+            
+        .then (function(productos){
+            res.render('productos', {productos})
+        })
+            /* res.send(productoFiltrados); */
+       
+    }
+    ,
 crear: (req, res) => {
     db.productos.findAll()
     .then (function(productos){
-        res.render('productos-crear', {productos});
+        res.render('productos-detalle', {productos});
     })
 },
 
@@ -25,7 +46,6 @@ detalle: async (req, res) => {
         
          return res.render('productos-detalle', {producto});
         } ,
-
 
 guardar:  (req, res) => {
    
