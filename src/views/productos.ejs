@@ -5,15 +5,7 @@
 <!-- BARRA DE NAVEGACION -->
 <%-include('./partials/nav.ejs')%>
 <!--  PRODUCTOS  -->
-
-<% if (locals.productosFiltrados) { %>
-    <%-include('./partials/parcial-productos-todosFiltrados.ejs')%> 
-    <% }else if (locals.productos) { %>
-
 <%-include('./partials/parcial-productos-todos.ejs')%> 
-    <% }%>
-
-
 <!--  FOOTER  -->
 <%-include('./partials/footer.ejs')%>
 <!--  SCRIPT -->

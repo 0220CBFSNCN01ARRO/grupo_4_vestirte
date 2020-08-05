@@ -11,16 +11,16 @@ module.exports= {
 search: async (req, res) => {
       let productoFiltrados= req.query.query
         
-      let productosFiltrados=await db.productos.findAll( {
+      let productos=await db.productos.findAll( {
            
              where:{
                  nombre:{[Op.like]: `%${productoFiltrados}%`}
 
              } 
               })
-              res.redirect('/productos', {productosFiltrados})
+              res.render('productos', {productos})
          /*   res.redirect('productos', {productosFiltrados}) */
-        /* let productoFiltrados= req.query.query
+        /* let productoFiltrados= requery.query
         
          db.productos.findAll( {
            
