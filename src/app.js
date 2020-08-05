@@ -17,6 +17,7 @@ const carritoRouter = require('./routes/carrito');
 /* Rutas api */
 var productosApiRouter = require('./routes/api/productos' );
 var usuariosApiRouter = require('./routes/api/usuarios' );
+var dashboardApiRouter = require('./routes/api/dashboard' );
 //***EXPRESS EXECUTION***//
 var app = express();
 
@@ -48,7 +49,7 @@ app.use ('/carrito', carritoRouter);
 /* Rutas api */
 app.use('/api/productos', productosApiRouter);
 app.use('/api/usuarios', usuariosApiRouter);
-
+app.use('/api/dashboard',dashboardApiRouter);
 //***OTHER***//
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

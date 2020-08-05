@@ -34,8 +34,11 @@ list: (req, res) => {
 })
 }
 ,
+
+
 detalle: async (req, res) => {
-    let producto= await db.productos.findByPk(req.params.productoId)
+    let producto= await db.productos.findAll()
+	
     return res.json({
         meta:{
             status: 200,

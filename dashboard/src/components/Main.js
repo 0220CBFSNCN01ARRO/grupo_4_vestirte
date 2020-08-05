@@ -8,16 +8,24 @@ class Main extends Component {
     constructor (){
         super();
         this.state = {
-            Lasproducts: []
+            cards:[]
+
+
         }
     }
     componentDidMount(){
-        fetch("api/usuarios/ultimo")
+        //ultimo usuarios
+        fetch("/api/dashboard/cards")
         .then(res=>res.json())
         .then(res=>{
                 console.log(res.data)
-              })        
+                this.setState({
+                    cards:res.data
+                })
+              }) ; 
+                  
     }
+  
     render(){
         return (
             <div className="container-fluid">
@@ -25,15 +33,15 @@ class Main extends Component {
                 <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
             </div>
                    <div className="row">           
-                <div className="col-md-4 mb-4">
-                    <Card color='primary' text='Products in Database' value='135'/>
-                </div>          
-                <div className="col-md-4 mb-4">
-                <Card color='success' text='Amount in products' value='$546.456'/>                
-                </div>
-               <div className="col-md-4 mb-4">
-                <Card color='warning' text='Users quantity' value='38'/>
-                </div>
+    
+                    {this.state.cards.map(card=>{
+                        return(
+                            <div className="col-md-4 mb-4">
+                            <Card {...card}/>                
+                            </div>  
+                        )
+                    })}
+
             </div>   
             <div className="row">
                 <Lastproduct/>
@@ -47,6 +55,7 @@ class Main extends Component {
             </div>
         </div>
         </div>
+       
         );
     }   
 }

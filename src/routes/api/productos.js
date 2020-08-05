@@ -9,5 +9,4 @@ router.get('/ultimo', productoApiController.ultimo);
 router.get('/:productoId/', productoApiController.detalle);
 
 
-
 module.exports = router;

@@ -23,6 +23,8 @@ list: (req, res) => {
     })
 })
 },
+
+
 detalle: async (req, res) => {
     let usuario= await db.usuarios.findByPk(req.params.usuariosId)
     return res.json({

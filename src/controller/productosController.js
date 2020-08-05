@@ -8,8 +8,19 @@ const Op = Sequelize.Op;
 
 module.exports= {
 
-search: (req, res) => {
-        let productoFiltrados= req.query.query
+search: async (req, res) => {
+      let productoFiltrados= req.query.query
+        
+      let productosFiltrados=await db.productos.findAll( {
+           
+             where:{
+                 nombre:{[Op.like]: `%${productoFiltrados}%`}
+
+             } 
+              })
+              res.redirect('/productos', {productosFiltrados})
+         /*   res.redirect('productos', {productosFiltrados}) */
+        /* let productoFiltrados= req.query.query
         
          db.productos.findAll( {
            
@@ -21,7 +32,7 @@ search: (req, res) => {
             
         .then (function(productos){
             res.render('productos', {productos})
-        })
+        }) */
             /* res.send(productoFiltrados); */
        
     }
