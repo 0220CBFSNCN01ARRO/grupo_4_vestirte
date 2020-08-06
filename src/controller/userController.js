@@ -66,7 +66,7 @@ module.exports = {
                         res.redirect(`perfil/${userencontrado.dataValues}`)
                         //si no recuerda
                     } else {
-                        res.redirect(`perfil/${userencontrado.dataValues}`)
+                        res.redirect(`perfil/${userencontrado.dataValues.id}`)
                     }
                     //si la contrasena no coincide
                 } else {

@@ -1,5 +1,5 @@
 import React, { Component }from 'react';
-import Category from './Category'
+
 
 class Categories extends Component {
     
@@ -11,14 +11,13 @@ class Categories extends Component {
     }
     componentDidMount(){
         //ultimo usuarios
-        fetch("/api/")
+        fetch("/api/productos/categorias")
         .then(res=>res.json())
         .then(res=>{
-            console.log(res.data)
-            this.setState({
-                categorias:res.data
+            console.log ("asd" + res.data)
+            this.setState({categorias:[...res.data]
             })
-        })   
+        })
     }
     render() {
         return (
@@ -30,10 +29,15 @@ class Categories extends Component {
 		<div className="card-body">
 		<div className="row">
 		<div className="col-lg-6 mb-4">
-		{this.state.categorias.map((cate, i) => (
-			<Category key={i}>
-				
-			</Category>))}
+        {this.state.categorias.map((cat, i)=>{
+                return(
+                    <div className="card bg-info text-white shadow">
+                    <div className="card-body">
+                    {cat}
+                    </div>
+                </div>
+                    )
+                })}
 		</div>
 		</div>
 		</div>

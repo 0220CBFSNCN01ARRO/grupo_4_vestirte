@@ -34,8 +34,6 @@ list: (req, res) => {
 })
 }
 ,
-
-
 detalle: async (req, res) => {
     let producto= await db.productos.findAll()
 	
@@ -74,6 +72,21 @@ ultimo: async (req, res) => {
         data:  {
             totalprice: max,
             }
+        })
+},
+categorias: async (req, res) => {
+    let producto = await db.productos.findAll()
+
+    let result = producto.map(a => a.categoria)
+
+    let unique = [...new Set(result)]; 
+	
+    return res.json({
+        meta:{
+            status: 200,
+            link: '/api/productos/categorias'
+        },
+        data: [...unique]
         })
 }
 }
