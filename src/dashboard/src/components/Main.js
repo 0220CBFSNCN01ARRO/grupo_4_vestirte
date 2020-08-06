@@ -8,7 +8,8 @@ class Main extends Component {
     constructor (){
         super();
         this.state = {
-            cards:[]
+            cards:[],
+            Lasproduc: []
             
             
         }
@@ -23,6 +24,12 @@ class Main extends Component {
                 cards:res.data
             })
         }) ; 
+
+        fetch("api/usuarios/ultimo")
+        .then(res=>res.json())
+        .then(res=>{
+                console.log('last'+res.data)
+              })        
         
     }
     
@@ -44,7 +51,7 @@ class Main extends Component {
                 
                 </div>   
                 <div className="row">
-                <Lastproduct/>
+                <Lastproduct/> 
                 <div className="col-lg-6 mb-4">						
                 <Categories />
                 </div>

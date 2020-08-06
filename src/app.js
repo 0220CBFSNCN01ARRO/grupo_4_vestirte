@@ -18,6 +18,7 @@ const carritoRouter = require('./routes/carrito');
 var productosApiRouter = require('./routes/api/productos' );
 var usuariosApiRouter = require('./routes/api/usuarios' );
 var dashboardApiRouter = require('./routes/api/dashboard' );
+const { dirname } = require('path');
 //***EXPRESS EXECUTION***//
 var app = express();
 
@@ -45,12 +46,13 @@ app.use('/', indexRouter);
 app.use('/productos', productosRouter);
 app.use ('/usuarios', usuariosRouter);
 app.use ('/carrito', carritoRouter);
-
+/* app.use('/api/dashboard',function (req,res){
+    res.sendFile(path.resolve(__dirname,'/dashboard/build',index.html))
+}); */ 
 /* Rutas api */
 app.use('/api/productos', productosApiRouter);
 app.use('/api/usuarios', usuariosApiRouter);
-app.use('/api/dashboard',dashboardApiRouter);
-//***OTHER***//
+app.use('/api/dashboard',dashboardApiRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
