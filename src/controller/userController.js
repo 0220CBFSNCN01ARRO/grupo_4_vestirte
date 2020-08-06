@@ -73,7 +73,7 @@ module.exports = {
                     return res.render('usuarios-login', { 
                         errors: {
                             password: {
-                                msg: 'Lacontrasena no coincide con la base'
+                                msg: 'La contrasena no coincide con la base'
                             },
                         }
                     });

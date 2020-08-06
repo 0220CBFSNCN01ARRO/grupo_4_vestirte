@@ -35,12 +35,12 @@
     
     <% if(locals.errors && errors.email) { %>
       <div class='error col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center'>
-      <ul><%= errors.email.msg %></ul>
+      <p><%= errors.email.msg %></p>
       </div>
       <% } %>
     <% if(locals.errors && errors.password) { %>
-      <div class='error col-12 col-sm-12 col-md-12  mb-2 mt-5  text-center'>
-        <ul><%= errors.password.msg %></ul>
+      <div class='error col-12 col-sm-12 col-md-12  mb-2 mt-2  text-center'>
+        <p><%= errors.password.msg %></p>
       </div>
     <% } %>
     <div id="errorTexLogin" class="text-center"></div>

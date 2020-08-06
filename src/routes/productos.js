@@ -5,6 +5,7 @@ const multer = require ('multer');
 let path = require ('path');
 
 const crearValidator = require('../middlewares/creacionProductosValidator')
+const localsVisitados = require('../middlewares/localsVisitados')
 
 
 
@@ -30,7 +31,7 @@ const productosController = require('../controller/productosController.js')
 router.get('/', productosController.listar);
 
 /*** DETALLE DE PRODUCTO ***/ 
-router.get('/detalles/:productoId/', productosController.detalle);
+router.get('/detalles/:productoId/',localsVisitados, productosController.detalle);
 router.get('/search', productosController.search)
 /*** CREAR UN PRODUCTO ***/ 
 router.get('/crear/', productosController.crear);
