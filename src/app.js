@@ -46,9 +46,9 @@ app.use('/', indexRouter);
 app.use('/productos', productosRouter);
 app.use ('/usuarios', usuariosRouter);
 app.use ('/carrito', carritoRouter);
-/* app.use('/api/dashboard',function (req,res){
-    res.sendFile(path.resolve(__dirname,'/dashboard/build',index.html))
-}); */ 
+app.use('/dashboard',function (req,res){
+    res.sendFile(path.resolve(__dirname,'/dashboard/build', 'index.html'))
+});  
 /* Rutas api */
 app.use('/api/productos', productosApiRouter);
 app.use('/api/usuarios', usuariosApiRouter);
