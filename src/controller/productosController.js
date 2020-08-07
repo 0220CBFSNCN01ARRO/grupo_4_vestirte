@@ -19,22 +19,6 @@ search: async (req, res) => {
              } 
               })
               res.render('productos', {productos})
-         /*   res.redirect('productos', {productosFiltrados}) */
-        /* let productoFiltrados= requery.query
-        
-         db.productos.findAll( {
-           
-             where:{
-                 nombre:{[Op.like]: `%${productoFiltrados}%`}
-                
-             } 
-              })
-            
-        .then (function(productos){
-            res.render('productos', {productos})
-        }) */
-            /* res.send(productoFiltrados); */
-       
     }
     ,
 crear: (req, res) => {
@@ -84,11 +68,7 @@ guardar:  (req, res) => {
      
 
 }
-}
-
-
-,
-
+},
 editar: (req, res) => {
    
     db.productos.findByPk(req.params.productoId)
