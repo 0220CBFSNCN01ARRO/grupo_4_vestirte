@@ -112,11 +112,9 @@
 
     let btnc = document.getElementById('btn-com');
     btnc.addEventListener('click', (e)=>{
-    console.log('aaaa')
     var url = window.location.pathname;
     var id = url.substring(url.lastIndexOf('/') + 1);
     CART.add(id)
-    window.location.replace("/carrito");
     })
 
 }
