@@ -26,4 +26,19 @@
     }
     
     })
-})
+
+ })
+ function cambiar(){
+
+    const inputcandado =  document.getElementById('candado')
+if(inputcandado.type=='password'){
+    inputcandado.type= 'text';
+}else{
+    inputcandado.type= 'password';  
+}
+    
+    
+    
+
+
+}

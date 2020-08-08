@@ -48,11 +48,15 @@
     </div>
 
     <nav class="navbar navbar-light bg-light col-lg-5 d-none d-lg-block ">
-        <form  method="GET" action='/productos/search' class="form-inline mx-right d-flex justify-content-end">
-            <input name= "query" class="form-control w-90 rounded-righ" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn boton my-2"  type="submit">
+        <form id="buscarProducto"  method="GET" action='/productos/search' class="form-inline mx-right d-flex justify-content-end">
+            <input id="recono" name= "query" class="form-control w-90 rounded-righ" type="search" value="" placeholder= "Search" aria-label="Search">
+            <button  class="btn boton my-2"  type="submit">
                 <i class="fas fa-search"></i>
             </button>
+            
+                <i  id="vos" class="fa fa-microphone fa-2x mx-2" aria-hidden="true"></i>
+
+            
         </form>
     </nav>
 

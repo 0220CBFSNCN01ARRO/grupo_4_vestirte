@@ -433,3 +433,13 @@ color:#FF8E0A;
       opacity: 0;
       cursor:pointer;
   }
+  #vos {
+    border-radius: 0;
+    border: none;
+    opacity: 70%;
+    cursor: pointer;
+    
+}
+.candado{
+    cursor: pointer;
+}

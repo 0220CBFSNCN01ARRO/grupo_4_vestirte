@@ -4,13 +4,15 @@ const { sequelize } = require('../database/models')
 
 module.exports = {
     root: async (req, res) => {
+        
+        
         let destacados = await db.productos.findAll({
             where: {
                 categoria: 'destacado'
             }
         })
 
-        if (res.locals.user){pendorcho=res.locals.user.id} else {pendorcho=1}
+        if (res.locals.user ){pendorcho=res.locals.user.id} else {pendorcho=1}
 
         let visitados = await db.usuarios.findAll(
             {
@@ -21,6 +23,6 @@ module.exports = {
                 include:'visitados'
         })
 
-        return res.render('index', {destacados, visitados, pendorcho})
+        return res.render('index', {destacados, visitados})
     }
 }
