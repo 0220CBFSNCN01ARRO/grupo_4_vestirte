@@ -24,7 +24,7 @@ search: async (req, res) => {
 crear: (req, res) => {
     db.productos.findAll()
     .then (function(productos){
-        res.render('productos-detalle', {productos});
+        res.render('productos-crear', {productos});
     })
 },
 
