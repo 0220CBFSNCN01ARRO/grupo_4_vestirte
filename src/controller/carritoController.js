@@ -3,17 +3,25 @@ const db = require ('../database/models')
 module.exports= {
 carrito: async (req, res, next) =>{
 
-    if(isNaN(req.body.juy)){
-        return res.send (req.body.juy)
-    
-    }else{
-    
     let productos = [];
-    let prody =  await db.productos.findByPk(req.body.juy)
-    prody = prody.dataValues 
-    productos.push(prody)
+    let qty = [];
+
+    if (req.body.juy){
     
-    return res.render ('carrito', {productos})
+    pabuscar = JSON.parse(req.body.juy)
+    for (prod of pabuscar){
+    let prodyg = {};
+    let prody =  await db.productos.findByPk(prod.id)
+    qty = prod.qty
+    prody = prody.dataValues
+    prodyg = {...prody, qty}
+    productos.push (prodyg)
     }
+return res.render ('carrito', {productos})
+
+} else {
+
+    return res.render ('carrito', {productos})
+}
 },
 }

@@ -1,6 +1,6 @@
 <script>
     window.addEventListener('load', function() {
-
+        
         const CART = {
             KEY: 'bkasjbdfkjasdkfjhaksdfjskd',
             contents: [],
@@ -23,10 +23,10 @@
                 //find an item in the cart by it's id
                 let match = CART.contents.filter(item=>{
                     if(item.id == id)
-                        return true;
+                    return true;
                 });
                 if(match && match[0])
-                    return match[0];
+                return match[0];
             },
             add(id){
                 //add a new item to the cart
@@ -35,20 +35,20 @@
                     CART.increase(id, 1);
                 }else{
                     let obj = {
-                            id: id,
-                            qty: 1,
-                        }
-                        CART.contents.push(obj);
-                        //update localStorage
-                        CART.sync();
+                        id: id,
+                        qty: 1,
                     }
+                    CART.contents.push(obj);
+                    //update localStorage
+                    CART.sync();
                 }
+            }
             ,
             increase(id, qty=1){
                 //increase the quantity of an item in the cart
                 CART.contents = CART.contents.map(item=>{
                     if(item.id === id)
-                        item.qty = item.qty + qty;
+                    item.qty = item.qty + qty;
                     return item;
                 });
                 //update localStorage
@@ -58,12 +58,12 @@
                 //reduce the quantity of an item in the cart
                 CART.contents = CART.contents.map(item=>{
                     if(item.id === id)
-                        item.qty = item.qty - qty;
+                    item.qty = item.qty - qty;
                     return item;
                 });
                 CART.contents.forEach(async item=>{
                     if(item.id === id && item.qty === 0)
-                        await CART.remove(id);
+                    await CART.remove(id);
                 });
                 //update localStorage
                 CART.sync()
@@ -72,7 +72,7 @@
                 //remove an item entirely from CART.contents based on its id
                 CART.contents = CART.contents.filter(item=>{
                     if(item.id !== id)
-                        return true;
+                    return true;
                 });
                 //update localStorage
                 CART.sync()
@@ -100,25 +100,33 @@
             },
         };
         
-    CART.init();
+        CART.init();
+        
+        let btna = document.getElementById('btn-agre');
+        btna.addEventListener('click', (e)=>{
+            var url = window.location.pathname;
+            var id = url.substring(url.lastIndexOf('/') + 1);
+            console.log(id)
+            CART.add(id)
+        })
+        
+            let formc = document.getElementById('form-com');
+             formc.addEventListener('submit', (e)=>{
+              var url = window.location.pathname;
+              var id = url.substring(url.lastIndexOf('/') + 1);
+              id = Number(id)
+              CART.add(id)
+              document.getElementById('juy-input').value = localStorage.getItem(CART.KEY);
+            })
 
-    let btna = document.getElementById('btn-agre');
-    btna.addEventListener('click', (e)=>{
-    var url = window.location.pathname;
-    var id = url.substring(url.lastIndexOf('/') + 1);
-    console.log(id)
-    CART.add(id)
-    })
-
-    let btnc = document.getElementById('btn-com');
-    btnc.addEventListener('click', (e)=>{
-    var url = window.location.pathname;
-    var id = url.substring(url.lastIndexOf('/') + 1);
-    CART.add(id)
-    })
-
-}
-)
-
-
-</script>
+            // let qty = document.getElementById('qty');
+            //  qty.addEventListener('submit', (e)=>{
+            //     let arr = JSON.parse(localStorage.getItem(CART.KEY))
+            //     console.log (arr)
+            // })
+            
+        }
+        )
+        
+        
+    </script>

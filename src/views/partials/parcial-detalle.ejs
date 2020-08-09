@@ -20,11 +20,11 @@
             
                 <div class="d-flex justify-content-start align-items-center ">
                 
-                <form id="btn-com" action="/carrito" method="POST">
+                <form id="form-com" action="/carrito" method="POST">
                 
-                    <input type="number" class="" name="juy" value="<%= producto.id %>">
+                    <input class="d-none" id="juy-input" type="text" name="juy">
                
-                    <button class="btn boton mx-3 my-2"  type="submit">Comprar</button>
+                    <button id="btn-com" class="btn boton mx-3 my-2"  type="submit">Comprar</button>
                 </form>
                 
                 <button class="btn boton-sub mx-2 my-2" id="btn-agre" type="submit">Agregar al Carrito</button>
