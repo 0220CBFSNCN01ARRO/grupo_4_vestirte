@@ -36,8 +36,8 @@ listar: (req, res) => {
 },
 
 detalle: async (req, res) => {
+ 
          let producto= await db.productos.findByPk(req.params.productoId)
-
         
          return res.render('productos-detalle', {producto});
         } ,
