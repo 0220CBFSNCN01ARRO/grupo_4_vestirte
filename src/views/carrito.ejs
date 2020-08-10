@@ -9,21 +9,5 @@
 <!-- FOOTER -->
 <%-include('./partials/footer.ejs')%>
 <!--  SCRIPT -->
-<script>
-
-let localset = localStorage.getItem('cart');
-JSON.parse(localset)
-
-
-for (let i=0; i<localset.length; i++){
-let flashd = document.getElementById(`flash${[i]}`);     
-flashd.addEventListener('click', (e)=>{
-    e.preventDefault();
-    let auxid = document.getElementById(`aux-id${[i]}`).value;
-    console.log (auxid)
-    console.log(localset)
-})}
-
-</script>
 <%-include('./partials/z-carritoscript.ejs')%>
 <%-include('./partials/script.ejs')%>
