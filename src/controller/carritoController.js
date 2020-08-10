@@ -20,7 +20,7 @@ carrito: async (req, res, next) =>{
 return res.render ('carrito', {productos})
 
 } else {
-
+    
     return res.render ('carrito', {productos})
 }
 },
