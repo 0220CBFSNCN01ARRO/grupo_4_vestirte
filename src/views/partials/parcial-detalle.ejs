@@ -18,15 +18,18 @@
             <p class=" p-2 texto-grande">$<%= producto.precio %> </p>
             <img class="img-sm-fluid  mb-2 " src="/img/envios-detalles.png">
             
-            <div class="d-flex justify-content-start align-items-center ">
-    
-            <form method="POST" action="" >
-                <button class="btn boton mx-3 my-2" type="submit">Comprar</button>
-             </form>
-             <form method="POST" action="">
-                <button class="btn boton-sub mx-2 my-2" type="submit">Agregar al Carrito</button>
-             </form>
-             </div>
+                <div class="d-flex justify-content-start align-items-center ">
+                
+                <form id="form-com" action="/carrito" method="POST">
+                
+                    <input style="display:none;" id="juy-input" type="text" name="juy">
+               
+                    <button id="btn-com" class="btn boton mx-3 my-2"  type="submit">Comprar</button>
+                </form>
+                
+                <button class="btn boton-sub mx-2 my-2" id="btn-agre" type="submit">Agregar al Carrito</button>
+             
+            </div>
              <div class=" container mx-2 my-4 d-block d-lg-none">
                 <h3 class=" ">DESCRIPCION</h3>
                 <section>

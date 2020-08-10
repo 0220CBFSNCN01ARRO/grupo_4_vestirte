@@ -24,7 +24,7 @@ search: async (req, res) => {
 crear: (req, res) => {
     db.productos.findAll()
     .then (function(productos){
-        res.render('productos-detalle', {productos});
+        res.render('productos-crear', {productos});
     })
 },
 
@@ -45,9 +45,7 @@ detalle: async (req, res) => {
 guardar:  (req, res) => {
    
     let errors=validationResult(req);
-    console.log(errors)
     if (errors.isEmpty()){
-
     
       db.productos.create ({
         nombre:req.body.nombre,
@@ -73,7 +71,6 @@ editar: (req, res) => {
    
     db.productos.findByPk(req.params.productoId)
     .then (function(productoedit){
-        console.log (productoedit.dataValues)
         res.render('productos-editar',{productoedit})
     })
 },
