@@ -17,7 +17,7 @@ function iniciar(event){
         document.getElementById('recono').value = event.results[i][0].transcript;
         if(document.getElementById('recono').value != null){
             document.forms["buscarProducto"].submit()
-            console.log ()
+           
         }
     }
 
