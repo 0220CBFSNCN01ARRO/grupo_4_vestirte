@@ -7,6 +7,5 @@ const carritoController = require('../controller/carritoController')
 
 /*** CARRITO ***/ 
 router.get('/', carritoController.carrito);
-router.post('/', carritoController.carrito);
 
 module.exports = router;
